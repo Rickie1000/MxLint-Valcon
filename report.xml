@@ -1,0 +1,106 @@
+<testsuites>
+  <testsuite name=".mendix-cache\rules\rules\001_project_settings\001_0001_anonymous_disabled.rego" tests="1" failures="0" skipped="0" time="0.0022612">
+    <testcase name="modelsource\Security$ProjectSecurity.yaml" time="0.0022612"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\001_project_settings\001_0002_demo_users_disabled.rego" tests="1" failures="0" skipped="0" time="0.0010216">
+    <testcase name="modelsource\Security$ProjectSecurity.yaml" time="0.0010216"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\001_project_settings\001_0003_security_checks.rego" tests="1" failures="0" skipped="0" time="0.0011156">
+    <testcase name="modelsource\Security$ProjectSecurity.yaml" time="0.0011156"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\001_project_settings\001_0004_strong_password.rego" tests="1" failures="1" skipped="0" time="0.0013257">
+    <testcase name="modelsource\Security$ProjectSecurity.yaml" time="0.0013257">
+      <failure message="[HIGH, Security, 4100] Password must require symbols" type="AssertionError"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\001_project_settings\001_0005_mxadmin_userid.rego" tests="1" failures="1" skipped="0" time="0.0029588">
+    <testcase name="modelsource\Security$ProjectSecurity.yaml" time="0.0029588">
+      <failure message="[HIGH, Security, 4101] Mendix Admin userid not allowed to be MxAdmin" type="AssertionError"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0001_number_of_persistent_entities.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0002_number_of_attributes.rego" tests="1" failures="1" skipped="0" time="0.0160618">
+    <testcase name="modelsource\MyFirstModule\DomainModels$DomainModel.yaml" time="0.0160618">
+      <failure message="[MEDIUM, Maintainability, 002_0002] Entity TooManyAttributes has 53 attributes which is more than 35" type="AssertionError"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0003_inherit_from_administration_account.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0004_inherit_from_non_system.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0005_avoid_system_entity_association.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0006_avoid_too_many_virtual_attributes.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0007_avoid_using_validation_rules.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\002_domain_model\002_0008_avoid_read_write_default_access_rule.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+  <testsuite name=".mendix-cache\rules\rules\003_modules\003_0001_number_of_modules.rego" tests="1" failures="0" skipped="0" time="0.0025165">
+    <testcase name="C:\Users\RickSchreuder\MxLintOutput\Metadata.yaml" time="0.0025165"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\004_pages\004_0001_inline_style_property_used.rego" tests="7" failures="1" skipped="0" time="2.1549207">
+    <testcase name="modelsource\MyFirstModule\Home_Web.Forms$Page.yaml" time="0.0305714"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_NewEdit.Forms$Page.yaml" time="0.0427262"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_Overview.Forms$Page.yaml" time="0.648258"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Order_NewEdit.Forms$Page.yaml" time="0.1434463"></testcase>
+    <testcase name="C:\Users\RickSchreuder\MxLintOutput\MyFirstModule\Pages\Order_Overview.Forms$Page.yaml" time="0.7851456">
+      <failure message="[MEDIUM, Maintainability, 16385] Form with name &#39;Order_Overview&#39; has inlined style property with value &#39;background-color: red;&#39;" type="AssertionError"></failure>
+    </testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_NewEdit.Forms$Page.yaml" time="0.1375932"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_Overview.Forms$Page.yaml" time="0.36718"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\004_pages\004_0002_alt_text_images.rego" tests="7" failures="0" skipped="0" time="0.5093852000000001">
+    <testcase name="modelsource\MyFirstModule\Home_Web.Forms$Page.yaml" time="0.0203761"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_NewEdit.Forms$Page.yaml" time="0.0118429"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_Overview.Forms$Page.yaml" time="0.1796831"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Order_NewEdit.Forms$Page.yaml" time="0.0278867"></testcase>
+    <testcase name="C:\Users\RickSchreuder\MxLintOutput\MyFirstModule\Pages\Order_Overview.Forms$Page.yaml" time="0.1324695"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_NewEdit.Forms$Page.yaml" time="0.0503072"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_Overview.Forms$Page.yaml" time="0.0868197"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\004_pages\004_0003_one_h1.js" tests="7" failures="0" skipped="0" time="0.0985075">
+    <testcase name="modelsource\MyFirstModule\Home_Web.Forms$Page.yaml" time="0.0021645"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_NewEdit.Forms$Page.yaml" time="0.0031924"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_Overview.Forms$Page.yaml" time="0.0289505"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Order_NewEdit.Forms$Page.yaml" time="0.004003"></testcase>
+    <testcase name="C:\Users\RickSchreuder\MxLintOutput\MyFirstModule\Pages\Order_Overview.Forms$Page.yaml" time="0.0224639"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_NewEdit.Forms$Page.yaml" time="0.0060943"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_Overview.Forms$Page.yaml" time="0.0316389"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\004_pages\004_0004_headings.js" tests="7" failures="3" skipped="0" time="0.0933908">
+    <testcase name="modelsource\MyFirstModule\Home_Web.Forms$Page.yaml" time="0.0023153">
+      <failure message="[HIGH, Accessibility, 004_0004] found H3 in the page. Expected H1 as the first tag." type="AssertionError"></failure>
+    </testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_NewEdit.Forms$Page.yaml" time="0.0026861"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Customer_Overview.Forms$Page.yaml" time="0.0272908"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Order_NewEdit.Forms$Page.yaml" time="0.0039984"></testcase>
+    <testcase name="C:\Users\RickSchreuder\MxLintOutput\MyFirstModule\Pages\Order_Overview.Forms$Page.yaml" time="0.0248987">
+      <failure message="[HIGH, Accessibility, 004_0004] found H2 in the page. Expected H1 as the first tag." type="AssertionError"></failure>
+    </testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_NewEdit.Forms$Page.yaml" time="0.004005"></testcase>
+    <testcase name="modelsource\MyFirstModule\Pages\Product_Overview.Forms$Page.yaml" time="0.0281965">
+      <failure message="[HIGH, Accessibility, 004_0004] found H2 in the page. Expected H1 as the first tag." type="AssertionError"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\005_microflows\005_0001_empty_string_check_not_complete.rego" tests="3" failures="0" skipped="0" time="0.0528227">
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml" time="0.0259642"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml" time="0.0097247"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml" time="0.0171338"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\005_microflows\005_0002_commit_actions_with_a_loop.rego" tests="3" failures="0" skipped="0" time="0.018201000000000002">
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml" time="0.0035684"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml" time="0.0046638"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml" time="0.0099688"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\005_microflows\005_0003_number_of_elements_in_microflow.rego" tests="3" failures="0" skipped="0" time="0.0182878">
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml" time="0.0136328"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml" time="0.0035544"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml" time="0.0011006"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\005_microflows\005_0004_complex_microflows_without_annotations.rego" tests="3" failures="0" skipped="0" time="0.0138673">
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml" time="0.0096465"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml" time="0.002059"></testcase>
+    <testcase name="modelsource\MyFirstModule\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml" time="0.0021618"></testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\006_custom_rules\006_0001_no_default_value.rego" tests="1" failures="1" skipped="0" time="0.0193473">
+    <testcase name="modelsource\MyFirstModule\DomainModels$DomainModel.yaml" time="0.0193473">
+      <failure message="[LOW, Maintainability, 006_0001] TooManyAttributes.pricee has a default value set" type="AssertionError"></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name=".mendix-cache\rules\rules\006_custom_rules\006_0002_little_parameters_microflow.rego" tests="0" failures="0" skipped="0" time="0"></testsuite>
+</testsuites>

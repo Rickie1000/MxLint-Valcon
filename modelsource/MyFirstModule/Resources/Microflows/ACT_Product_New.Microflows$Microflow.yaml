@@ -1,0 +1,110 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: null
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+  $Type: Texts$Text
+  Items: null
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+  $Type: DataTypes$VoidType
+Name: ACT_Product_New
+ObjectCollection:
+  $Type: Microflows$MicroflowObjectCollection
+  Objects:
+  - $Type: Microflows$StartEvent
+  - $Type: Microflows$EndEvent
+    Documentation: ""
+    ReturnValue: ""
+  - $Type: Microflows$MicroflowParameter
+    DefaultValue: ""
+    Documentation: ""
+    HasVariableNameBeenChanged: false
+    IsRequired: true
+    Name: Product
+    VariableType:
+      $Type: DataTypes$ObjectType
+      Entity: MyFirstModule.Product
+  - $Type: Microflows$ActionActivity
+    Action:
+      $Type: Microflows$MicroflowCallAction
+      ErrorHandlingType: Rollback
+      MicroflowCall:
+        $Type: Microflows$MicroflowCall
+        Microflow: MyFirstModule.ACT_Customer_New
+        ParameterMappings:
+        - $Type: Microflows$MicroflowCallParameterMapping
+          Argument: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer
+          Parameter: MyFirstModule.ACT_Customer_New.Customer
+        QueueSettings: null
+      ResultVariableName: ""
+      UseReturnVariable: true
+    AutoGenerateCaption: true
+    BackgroundColor: Default
+    Caption: Activity
+    Disabled: false
+    Documentation: ""
+  - $Type: Microflows$ActionActivity
+    Action:
+      $Type: Microflows$ChangeAction
+      ChangeVariableName: Product
+      Commit: "No"
+      ErrorHandlingType: Rollback
+      Items:
+      - $Type: Microflows$ChangeActionItem
+        Association: ""
+        Attribute: MyFirstModule.Product.Description
+        Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstName
+      RefreshInClient: false
+    AutoGenerateCaption: true
+    BackgroundColor: Default
+    Caption: Activity
+    Disabled: false
+    Documentation: ""
+  - $Type: Microflows$ActionActivity
+    Action:
+      $Type: Microflows$CreateChangeAction
+      Commit: "No"
+      Entity: MyFirstModule.Customer
+      ErrorHandlingType: Rollback
+      Items:
+      - $Type: Microflows$ChangeActionItem
+        Association: ""
+        Attribute: MyFirstModule.Customer.FirstName
+        Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstName
+      RefreshInClient: false
+      VariableName: NewCustomer
+    AutoGenerateCaption: true
+    BackgroundColor: Default
+    Caption: Activity
+    Disabled: false
+    Documentation: ""
+  - $Type: Microflows$ActionActivity
+    Action:
+      $Type: Microflows$ChangeAction
+      ChangeVariableName: Product
+      Commit: "No"
+      ErrorHandlingType: Rollback
+      Items:
+      - $Type: Microflows$ChangeActionItem
+        Association: ""
+        Attribute: MyFirstModule.Product.Name
+        Value: |+
+          if $currentUser/Name = 'Rick' then 'ok'
+          else ' not ok'
+
+      RefreshInClient: false
+    AutoGenerateCaption: true
+    BackgroundColor: Default
+    Caption: Activity
+    Disabled: false
+    Documentation: ""
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: null
+WorkflowActionInfo: null

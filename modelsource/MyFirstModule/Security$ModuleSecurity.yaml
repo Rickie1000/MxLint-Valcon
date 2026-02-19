@@ -1,0 +1,11 @@
+$Type: Security$ModuleSecurity
+ModuleRoles:
+- $Type: Security$ModuleRole
+  Description: ""
+  Name: User
+- $Type: Security$ModuleRole
+  Description: ""
+  Name: Viewer
+- $Type: Security$ModuleRole
+  Description: ""
+  Name: viewerkijky

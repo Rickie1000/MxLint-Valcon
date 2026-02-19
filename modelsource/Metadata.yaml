@@ -1,0 +1,153 @@
+BuildVersion: 10.24.4.77222
+Modules:
+- Attributes:
+    $ID:
+      Data: MEcUqdIy206OoeJy2Ocp9w==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 187a228a-53df-4a26-a300-919850c06416
+    AppStorePackageId: 117187
+    AppStoreVersion: 3.18.1
+    AppStoreVersionGuid: 187a228a-53df-4a26-a300-919850c06416
+    FromAppStore: true
+    IsThemeModule: true
+    Name: Atlas_Core
+    NewSortIndex: 38
+  ID: MEcUqdIy206OoeJy2Ocp9w==
+  Name: Atlas_Core
+- Attributes:
+    $ID:
+      Data: S79HwF/84U2kWlBpt16Fkg==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 7f8db04e-3aeb-456d-8289-0d67e1076dc4
+    AppStorePackageId: 205506
+    AppStoreVersion: 4.0.2
+    AppStoreVersionGuid: 7f8db04e-3aeb-456d-8289-0d67e1076dc4
+    FromAppStore: true
+    IsThemeModule: true
+    Name: FeedbackModule
+    NewSortIndex: 4
+  ID: S79HwF/84U2kWlBpt16Fkg==
+  Name: FeedbackModule
+- Attributes:
+    $ID:
+      Data: U8/8N8slb0ynfRzl9T6zCg==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 1d7b7a3f-84e6-4fc1-baf0-afbd0ee23b13
+    AppStorePackageId: 23513
+    AppStoreVersion: 4.3.2
+    AppStoreVersionGuid: 2059615c-c6f1-4103-aedb-14820c077a1c
+    FromAppStore: true
+    IsThemeModule: false
+    Name: Administration
+    NewSortIndex: -0.5
+  ID: U8/8N8slb0ynfRzl9T6zCg==
+  Name: Administration
+- Attributes:
+    $ID:
+      Data: YX+AdAaCW0qcodEuAoVGuA==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 08060dc1-8f61-4969-8f90-707c74fc0cc1
+    AppStorePackageId: 117183
+    AppStoreVersion: 3.9.0
+    AppStoreVersionGuid: dffd0e8b-7c68-4819-82b6-005d072d8d93
+    FromAppStore: true
+    IsThemeModule: true
+    Name: Atlas_Web_Content
+    NewSortIndex: 39
+  ID: YX+AdAaCW0qcodEuAoVGuA==
+  Name: Atlas_Web_Content
+- Attributes:
+    $ID:
+      Data: ZsCUfQN7PEynQZhfP58Tfw==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 75fda84f-6c3d-460d-98eb-50cdbfd3b53d
+    AppStorePackageId: 109515
+    AppStoreVersion: 6.0.0
+    AppStoreVersionGuid: fbe19914-6248-4c40-8871-650074e864c6
+    FromAppStore: true
+    IsThemeModule: false
+    Name: NanoflowCommons
+    NewSortIndex: 2.75
+  ID: ZsCUfQN7PEynQZhfP58Tfw==
+  Name: NanoflowCommons
+- Attributes:
+    $ID:
+      Data: aZc+BnA/OUmUR4dZLrzR4A==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 87f3694f-b0d1-432e-a150-df1753dbd0e8
+    AppStorePackageId: 114337
+    AppStoreVersion: 2.11.0
+    AppStoreVersionGuid: 7b3e3f82-d071-403f-b385-99fb32ce8703
+    FromAppStore: true
+    IsThemeModule: false
+    Name: WebActions
+    NewSortIndex: 3
+  ID: aZc+BnA/OUmUR4dZLrzR4A==
+  Name: WebActions
+- Attributes:
+    $ID:
+      Data: d3vb2fLNbE2ds9NaDktjjw==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: b0376c9a-37f9-4c96-bca9-491d20f3e975
+    AppStorePackageId: 116540
+    AppStoreVersion: 3.0.2
+    AppStoreVersionGuid: 54be8d9d-96f0-4876-8773-b1c88e5ebd85
+    FromAppStore: true
+    IsThemeModule: true
+    Name: DataWidgets
+    NewSortIndex: 2
+  ID: d3vb2fLNbE2ds9NaDktjjw==
+  Name: DataWidgets
+- Attributes:
+    $ID:
+      Data: erAGntTXME6PouYMHSTH7g==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: 63c5c6b9-7230-44b3-a72f-bd2ebd5248c4
+    AppStorePackageId: 235351
+    AppStoreVersion: 2.2.2
+    AppStoreVersionGuid: 6ce0cc45-9691-4746-8051-fa7e3f67ee88
+    FromAppStore: true
+    IsThemeModule: false
+    Name: FileUploader
+    NewSortIndex: 3.3002477385276068
+  ID: erAGntTXME6PouYMHSTH7g==
+  Name: FileUploader
+- Attributes:
+    $ID:
+      Data: xn10Fre2rkKqvyVdyirurw==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: ""
+    AppStorePackageId: 0
+    AppStoreVersion: ""
+    AppStoreVersionGuid: ""
+    FromAppStore: false
+    IsThemeModule: false
+    Name: MyFirstModule
+    NewSortIndex: 2
+  ID: xn10Fre2rkKqvyVdyirurw==
+  Name: MyFirstModule
+- Attributes:
+    $ID:
+      Data: d+cW49+YREutAz27UupGpw==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: ""
+    AppStorePackageId: 0
+    AppStoreVersion: ""
+    AppStoreVersionGuid: ""
+    FromAppStore: false
+    IsThemeModule: false
+    Name: MySecondModule
+    NewSortIndex: 3.6561185037531305
+  ID: d+cW49+YREutAz27UupGpw==
+  Name: MySecondModule
+ProductVersion: 10.24.4.77222
