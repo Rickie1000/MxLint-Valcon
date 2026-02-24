@@ -36,7 +36,11 @@ ObjectCollection:
       Commit: "No"
       Entity: MyFirstModule.Customer
       ErrorHandlingType: Rollback
-      Items: null
+      Items:
+      - $Type: Microflows$ChangeActionItem
+        Association: ""
+        Attribute: MyFirstModule.Customer.LastNAme
+        Value: '''kaas'''
       RefreshInClient: false
       VariableName: NewCustomer
     AutoGenerateCaption: true
