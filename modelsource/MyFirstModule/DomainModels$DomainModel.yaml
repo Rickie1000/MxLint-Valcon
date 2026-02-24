@@ -43,7 +43,41 @@ Associations:
     Subtype: 0
   Source: null
   StorageFormat: Column
-CrossAssociations: null
+CrossAssociations:
+- $Type: DomainModels$CrossAssociation
+  Child: Administration.Account
+  DeleteBehavior:
+    $Type: DomainModels$DeleteBehavior
+    ChildDeleteBehavior: DeleteMeButKeepReferences
+    ChildErrorMessage: null
+    ParentDeleteBehavior: DeleteMeButKeepReferences
+    ParentErrorMessage: null
+  Documentation: ""
+  ExportLevel: Hidden
+  Name: TestEntity_Account
+  Owner: Default
+  ParentPointer:
+    Data: Dx48UMbXCU+ppa+Xv9MqKg==
+    Subtype: 0
+  Source: null
+  StorageFormat: Column
+- $Type: DomainModels$CrossAssociation
+  Child: Administration.Account
+  DeleteBehavior:
+    $Type: DomainModels$DeleteBehavior
+    ChildDeleteBehavior: DeleteMeButKeepReferences
+    ChildErrorMessage: null
+    ParentDeleteBehavior: DeleteMeButKeepReferences
+    ParentErrorMessage: null
+  Documentation: ""
+  ExportLevel: Hidden
+  Name: TestEntity_Account_2
+  Owner: Default
+  ParentPointer:
+    Data: Dx48UMbXCU+ppa+Xv9MqKg==
+    Subtype: 0
+  Source: null
+  StorageFormat: Column
 Documentation: ""
 Entities:
 - $Type: DomainModels$EntityImpl

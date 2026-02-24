@@ -1,0 +1,36 @@
+TestCases:
+
+###############################################################################
+# PASS CASE
+# Attributes have NO default value, or default value is empty / null
+###############################################################################
+
+- name: PASS_attributes_without_default_value
+  allow: true
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+          - Name: Attr2
+            Value:
+              DefaultValue: null
+          - Name: Attr3
+            Value:
+              DefaultValue: ""
+
+
+###############################################################################
+# FAIL CASE
+# Attribute has a concrete default value set → should fail
+###############################################################################
+
+- name: FAIL_attribute_with_default_value
+  allow: false
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+            Value:
+              DefaultValue: "0"

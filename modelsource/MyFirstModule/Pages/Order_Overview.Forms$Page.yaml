@@ -2715,6 +2715,509 @@ FormCall:
                           ConditionalVisibilitySettings: null
                           Editable: Always
                           LabelTemplate: null
+                          Name: image1
+                          Object:
+                            $Type: CustomWidgets$WidgetObject
+                            Properties:
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: d9ol/x3yd0SgXggxt0jZZg==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: image
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: +fEJ5sTD5EyBzNEgJm8pXw==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: 6sY325whFEyErcRdDZdFgQ==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: lDyxU4HFykegltuNUK5ZNQ==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: NUcYes3ZRU61BRFpcm7ooA==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: neuAa9IXEkqRktFK5F3DDg==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: 1tvYEeRX9EqG1cP6GG5Npw==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: cVSqLk/t80mGS9Fbh7g0Hw==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: PLoaPNNmDkix4H13DHC0jA==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: IZEynWEX9k6hk/L594j39g==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: v92bNl2rPkGAM6gj1+g8kA==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: "false"
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: /M3oVxeqkkSFPx11bNJ8ig==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: RxLBaVXH5kKmZJXM/ASL6g==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: ugKrnyV/3U++XBnY0iasGg==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: RW42O/bNNEC4SG3XN+R6nQ==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: action
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: +RJHoT74KUW7MEypzLoMqw==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: plEggdNBS0WlmjMeXKfTLA==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: QF5SbjIGxkSwZBAnur7+UA==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: 5GhuJEOhSUq2RJgRvBtNqg==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: ""
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate:
+                                  $Type: Forms$ClientTemplate
+                                  Fallback:
+                                    $Type: Texts$Text
+                                    Items: null
+                                  Parameters: null
+                                  Template:
+                                    $Type: Texts$Text
+                                    Items: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: y6uIHNwsxEKa+bzp2l1u5w==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: D77XVlXZGkay2ShnHynPBg==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: auto
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: MGItGJFkxUiOWfmU3vOg+w==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: XrrxCNKAUkmkiHXKbEOYzg==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: "100"
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: 7ToHGDTuS0GMh0+TrNQDqA==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: +xr9tON1PkGbOQOA/ObL2Q==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: auto
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: c2mbV7GSoEOHFr8itZBD6A==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: /ZCy7zcbH0yPlv9kWcFNVQ==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: "100"
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: 0+DQaq4Z0ESOGM9y82D9bw==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: dicsoUlPBUKAmDszJ9esHQ==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: "14"
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: GIrF8Um7oka099Fqm8l+tQ==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: fvK7iRuCT0OJNn2sX1WCNQ==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: fullImage
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: gA2yNgUN9kO86JTdfsScFQ==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            - $Type: CustomWidgets$WidgetProperty
+                              TypePointer:
+                                Data: C8LnVNpfJU6xxuI0Sq20bQ==
+                                Subtype: 0
+                              Value:
+                                $Type: CustomWidgets$WidgetValue
+                                Action:
+                                  $Type: Forms$NoAction
+                                  DisabledDuringExecution: true
+                                AttributeRef: null
+                                DataSource: null
+                                EntityRef: null
+                                Expression: ""
+                                Form: ""
+                                Icon: null
+                                Microflow: ""
+                                Nanoflow: ""
+                                Objects: null
+                                PrimitiveValue: "true"
+                                Selection: None
+                                SourceVariable: null
+                                TextTemplate: null
+                                TranslatableValue: null
+                                TypePointer:
+                                  Data: +Cf1UQ2h+0C5QdkpNxI5ag==
+                                  Subtype: 0
+                                Widgets: null
+                                XPathConstraint: ""
+                            TypePointer:
+                              Data: JoEtLA1j+EO6Kq48j/ZRDw==
+                              Subtype: 0
+                          TabIndex: 0
+                        - $Type: CustomWidgets$CustomWidget
+                          Appearance:
+                            $Type: Forms$Appearance
+                            Class: ""
+                            DesignProperties: null
+                            DynamicClasses: ""
+                            Style: ""
+                          ConditionalEditabilitySettings: null
+                          ConditionalVisibilitySettings: null
+                          Editable: Always
+                          LabelTemplate: null
                           Name: textFilter1
                           Object:
                             $Type: CustomWidgets$WidgetObject
@@ -5953,6 +6456,509 @@ FormCall:
                     Tooltip:
                       $Type: Texts$Text
                       Items: null
+                  - $Type: CustomWidgets$CustomWidget
+                    Appearance:
+                      $Type: Forms$Appearance
+                      Class: ""
+                      DesignProperties: null
+                      DynamicClasses: ""
+                      Style: ""
+                    ConditionalEditabilitySettings: null
+                    ConditionalVisibilitySettings: null
+                    Editable: Always
+                    LabelTemplate: null
+                    Name: image2
+                    Object:
+                      $Type: CustomWidgets$WidgetObject
+                      Properties:
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: k6FUQ1itjUWth0dCCtTpxg==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: image
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: fA9yLyzeJ0SIeAKojgKkiQ==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: +XaZyz0An0mvgNgqNSlOpg==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: +aeFq2d5X0CfFoJtEKnLsw==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: r+Vp72LxaUaYBmTZKN6YgA==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: hbRKpFeOcUyv2YjMw5SO/A==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: m5noZYhEOkuirKyBUe5VBA==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: y1cfPS1E90q3+50j57jVUw==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: zFEo9FuFo0y2rAz13rKNUg==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: 6BoJY4YJnUKRjeGQPeLiDA==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: I1R8shuEokSH8i1Nu1t7lg==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: "false"
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: p2vbhyz140W//tOxvM7yZQ==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: UQEEKNM6LEeOgZsjB287ag==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: VOJkHqP5lk2JR+2bB1g5wQ==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: vEP7O2NnbUm9mkpaOlFiFA==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: action
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: zyhLcf1etUaw2lOUDSKGAQ==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: BOOV5ze3+0ClSD/81utvRQ==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: ssj++bUaEESKVnNi4ICjsw==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: Bx56BE0wPkafaCZOxdSShQ==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: ""
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate:
+                            $Type: Forms$ClientTemplate
+                            Fallback:
+                              $Type: Texts$Text
+                              Items: null
+                            Parameters: null
+                            Template:
+                              $Type: Texts$Text
+                              Items: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: JeozGcXcMEajMyoERzxdRw==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: frt4hebLaUuY4bHFm0WLvg==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: auto
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: ZZkUuGBZb0Ki7x1DUN85NQ==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: VC23ttyxrkySTeccn+7lLw==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: "100"
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: Psq4MxOYwE2QMghduhplrg==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: glYMe5vAA0Og+lzjq29o2g==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: auto
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: qCmUXTexUkembO0W/yYq4A==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: SnKJhFGk+EyljGMX6POQGw==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: "100"
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: G1eHfe/jcku8hsch3pllsA==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: LRXU67G52EyLayGBy4OT3g==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: "14"
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: gX7AAPUnJUOO3bd4EQTT/A==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: lAQa3kAP60qfVc8ZVd7hbA==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: fullImage
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: XPl71Pgt1U+i9fTjE6J2zw==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      - $Type: CustomWidgets$WidgetProperty
+                        TypePointer:
+                          Data: Mvfr+HorvEq1qcqw1y2VbQ==
+                          Subtype: 0
+                        Value:
+                          $Type: CustomWidgets$WidgetValue
+                          Action:
+                            $Type: Forms$NoAction
+                            DisabledDuringExecution: true
+                          AttributeRef: null
+                          DataSource: null
+                          EntityRef: null
+                          Expression: ""
+                          Form: ""
+                          Icon: null
+                          Microflow: ""
+                          Nanoflow: ""
+                          Objects: null
+                          PrimitiveValue: "true"
+                          Selection: None
+                          SourceVariable: null
+                          TextTemplate: null
+                          TranslatableValue: null
+                          TypePointer:
+                            Data: dRJtMTkBE0OTeUSQ+hzKig==
+                            Subtype: 0
+                          Widgets: null
+                          XPathConstraint: ""
+                      TypePointer:
+                        Data: c3n7HNg9rE2GyM7NcAMnag==
+                        Subtype: 0
+                    TabIndex: 0
                   XPathConstraint: ""
               - $Type: CustomWidgets$WidgetProperty
                 TypePointer:

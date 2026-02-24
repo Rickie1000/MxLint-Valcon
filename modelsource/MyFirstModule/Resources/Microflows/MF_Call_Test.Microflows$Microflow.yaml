@@ -61,19 +61,6 @@ ObjectCollection:
     Caption: Activity
     Disabled: false
     Documentation: ""
-  - $Type: Microflows$ActionActivity
-    Action:
-      $Type: Microflows$ChangeAction
-      ChangeVariableName: ""
-      Commit: "No"
-      ErrorHandlingType: Rollback
-      Items: null
-      RefreshInClient: false
-    AutoGenerateCaption: true
-    BackgroundColor: Default
-    Caption: Activity
-    Disabled: false
-    Documentation: ""
 ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: null
