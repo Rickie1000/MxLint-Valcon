@@ -1,4 +1,4 @@
-BuildVersion: 10.24.4.77222
+BuildVersion: 10.24.8.80126
 Modules:
 - Attributes:
     $ID:
@@ -107,6 +107,21 @@ Modules:
   Name: DataWidgets
 - Attributes:
     $ID:
+      Data: d+cW49+YREutAz27UupGpw==
+      Subtype: 0
+    $Type: Projects$ModuleImpl
+    AppStoreGuid: ""
+    AppStorePackageId: 0
+    AppStoreVersion: ""
+    AppStoreVersionGuid: ""
+    FromAppStore: false
+    IsThemeModule: false
+    Name: MySecondModule
+    NewSortIndex: 3.6561185037531305
+  ID: d+cW49+YREutAz27UupGpw==
+  Name: MySecondModule
+- Attributes:
+    $ID:
       Data: erAGntTXME6PouYMHSTH7g==
       Subtype: 0
     $Type: Projects$ModuleImpl
@@ -135,19 +150,4 @@ Modules:
     NewSortIndex: 2
   ID: xn10Fre2rkKqvyVdyirurw==
   Name: MyFirstModule
-- Attributes:
-    $ID:
-      Data: d+cW49+YREutAz27UupGpw==
-      Subtype: 0
-    $Type: Projects$ModuleImpl
-    AppStoreGuid: ""
-    AppStorePackageId: 0
-    AppStoreVersion: ""
-    AppStoreVersionGuid: ""
-    FromAppStore: false
-    IsThemeModule: false
-    Name: MySecondModule
-    NewSortIndex: 3.6561185037531305
-  ID: d+cW49+YREutAz27UupGpw==
-  Name: MySecondModule
-ProductVersion: 10.24.4.77222
+ProductVersion: 10.24.8.80126
