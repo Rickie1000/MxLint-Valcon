@@ -1903,18 +1903,6 @@ FormCall:
                                                                 - 130
                                                                 - 140
                                                       TabIndex: 0
-                                                    - $Type: Forms$NavigationTree
-                                                      Appearance:
-                                                        $Type: Forms$Appearance
-                                                        Class: ""
-                                                        DesignProperties: []
-                                                        DynamicClasses: ""
-                                                        Style: ""
-                                                      MenuSource:
-                                                        $Type: Forms$MenuDocumentSource
-                                                        Menu: MyFirstModule.rtrtyr
-                                                      Name: navigationTree1
-                                                      TabIndex: 0
                                                 XPathConstraint: ""
                                             - $Type: CustomWidgets$WidgetProperty
                                               TypePointer:

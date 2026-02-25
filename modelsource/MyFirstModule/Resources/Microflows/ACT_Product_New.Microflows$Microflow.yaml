@@ -42,7 +42,7 @@ ObjectCollection:
                       Argument: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer
                       Parameter: MyFirstModule.ACT_Customer_New.Customer
                 QueueSettings: null
-            ResultVariableName: ""
+            ResultVariableName: Customer
             UseReturnVariable: true
           AutoGenerateCaption: true
           BackgroundColor: Default

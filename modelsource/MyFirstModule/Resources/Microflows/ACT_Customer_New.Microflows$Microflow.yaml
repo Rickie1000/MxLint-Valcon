@@ -12,7 +12,7 @@ ExportLevel: Hidden
 MarkAsUsed: false
 MicroflowActionInfo: null
 MicroflowReturnType:
-    $Type: DataTypes$VoidType
+    $Type: DataTypes$StringType
 Name: ACT_Customer_New
 ObjectCollection:
     $Type: Microflows$MicroflowObjectCollection
@@ -20,7 +20,7 @@ ObjectCollection:
         - $Type: Microflows$StartEvent
         - $Type: Microflows$EndEvent
           Documentation: ""
-          ReturnValue: ""
+          ReturnValue: $Variable
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
           Documentation: ""
@@ -32,23 +32,29 @@ ObjectCollection:
             Entity: MyFirstModule.Customer
         - $Type: Microflows$ActionActivity
           Action:
-            $Type: Microflows$CreateChangeAction
-            Commit: "No"
-            Entity: MyFirstModule.Customer
+            $Type: Microflows$ChangeVariableAction
+            ChangeVariableName: Variable
             ErrorHandlingType: Rollback
-            Items:
-                - $Type: Microflows$ChangeActionItem
-                  Association: ""
-                  Attribute: MyFirstModule.Customer.LastNAme
-                  Value: '''kaas'''
-            RefreshInClient: false
-            VariableName: NewCustomer
+            Value: '''Rick changed'''
           AutoGenerateCaption: true
           BackgroundColor: Default
           Caption: Activity
           Disabled: false
           Documentation: ""
-ReturnVariableName: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateVariableAction
+            ErrorHandlingType: Rollback
+            InitialValue: '''Rick'''
+            VariableName: Variable
+            VariableType:
+                $Type: DataTypes$StringType
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+ReturnVariableName: Variable
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null

@@ -67,7 +67,7 @@ ObjectCollection:
             ErrorHandlingType: Rollback
             MicroflowCall:
                 $Type: Microflows$MicroflowCall
-                Microflow: ""
+                Microflow: MyFirstModule.MF_Test_CommitInLoop
                 ParameterMappings: []
                 QueueSettings: null
             ResultVariableName: ""
