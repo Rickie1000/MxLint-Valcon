@@ -34,7 +34,7 @@ errors contains error_message if {
   action_type := action["$Type"]
 
   # cover the variants seen in exports
-  is_change_or_create_action(action_type)
+  is_change_or_create_object_action(action_type)
 
   change_item := action.Items[_]
   value_expression := change_item.Value

@@ -31,7 +31,7 @@ ObjectCollection:
         - $Type: Microflows$InheritanceSplit
           Caption: ""
           Documentation: ""
-          SplitVariableName: ""
+          SplitVariableName: currentUser
         - $Type: Microflows$ActionActivity
           Action:
             $Type: Microflows$CastAction

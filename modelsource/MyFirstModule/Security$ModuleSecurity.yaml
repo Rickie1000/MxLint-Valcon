@@ -9,3 +9,6 @@ ModuleRoles:
     - $Type: Security$ModuleRole
       Description: ""
       Name: viewerkijky
+    - $Type: Security$ModuleRole
+      Description: ""
+      Name: Tester

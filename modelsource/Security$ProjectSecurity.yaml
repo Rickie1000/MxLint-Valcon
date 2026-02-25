@@ -66,6 +66,5 @@ UserRoles:
       ManageableRoles: []
       ModuleRoles:
         - System.User
-        - MyFirstModule.Viewer
-        - MySecondModule.Viewer
-      Name: Viewer
+        - MyFirstModule.Tester
+      Name: Tester
