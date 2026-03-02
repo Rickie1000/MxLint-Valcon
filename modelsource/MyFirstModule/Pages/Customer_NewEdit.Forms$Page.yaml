@@ -161,7 +161,7 @@ FormCall:
                               AriaRequired: false
                               AttributeRef:
                                 $Type: DomainModels$AttributeRef
-                                Attribute: MyFirstModule.Customer.FirstName
+                                Attribute: MyFirstModule.Customer.FirstNam
                                 EntityRef: null
                               AutoFocus: false
                               Autocomplete: true

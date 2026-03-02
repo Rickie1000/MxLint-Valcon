@@ -830,7 +830,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.FirstName
+                                                        Attribute: MyFirstModule.Customer.FirstNam
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null
@@ -9433,7 +9433,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.FirstName
+                                                        Attribute: MyFirstModule.Customer.FirstNam
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null

@@ -59,7 +59,7 @@ ObjectCollection:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
                   Attribute: MyFirstModule.Product.Description
-                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstName
+                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
             RefreshInClient: false
           AutoGenerateCaption: true
           BackgroundColor: Default
@@ -75,8 +75,8 @@ ObjectCollection:
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Customer.FirstName
-                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstName
+                  Attribute: MyFirstModule.Customer.FirstNam
+                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
             RefreshInClient: false
             VariableName: NewCustomer
           AutoGenerateCaption: true

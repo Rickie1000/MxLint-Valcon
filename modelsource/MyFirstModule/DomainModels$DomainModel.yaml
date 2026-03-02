@@ -182,7 +182,7 @@ Entities:
         - $Type: DomainModels$Attribute
           Documentation: ""
           ExportLevel: Hidden
-          Name: FirstName
+          Name: FirstNam
           NewType:
             $Type: DomainModels$StringAttributeType
             Length: 200
