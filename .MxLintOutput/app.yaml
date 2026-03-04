@@ -1,0 +1,93 @@
+content:
+    - name: Metadata.yaml
+      type: file
+      path: Metadata.yaml
+    - name: MyFirstModule
+      type: directory
+      path: MyFirstModule
+      content:
+        - name: DomainModels$DomainModel.yaml
+          type: file
+          path: MyFirstModule\DomainModels$DomainModel.yaml
+        - name: Enumeration.Enumerations$Enumeration.yaml
+          type: file
+          path: MyFirstModule\Enumeration.Enumerations$Enumeration.yaml
+        - name: Home_Web.Forms$Page.yaml
+          type: file
+          path: MyFirstModule\Home_Web.Forms$Page.yaml
+        - name: Images.Images$ImageCollection.yaml
+          type: file
+          path: MyFirstModule\Images.Images$ImageCollection.yaml
+        - name: Pages
+          type: directory
+          path: MyFirstModule\Pages
+          content:
+            - name: Customer_NewEdit.Forms$Page.yaml
+              type: file
+              path: MyFirstModule\Pages\Customer_NewEdit.Forms$Page.yaml
+            - name: Customer_Overview.Forms$Page.yaml
+              type: file
+              path: MyFirstModule\Pages\Customer_Overview.Forms$Page.yaml
+            - name: Order_NewEdit.Forms$Page.yaml
+              type: file
+              path: MyFirstModule\Pages\Order_NewEdit.Forms$Page.yaml
+            - name: Order_Overview.Forms$Page.yaml
+              type: file
+              path: MyFirstModule\Pages\Order_Overview.Forms$Page.yaml
+            - name: Product_NewEdit.Forms$Page.yaml
+              type: file
+              path: MyFirstModule\Pages\Product_NewEdit.Forms$Page.yaml
+            - name: Product_Overview.Forms$Page.yaml
+              type: file
+              path: MyFirstModule\Pages\Product_Overview.Forms$Page.yaml
+        - name: Projects$ModuleSettings.yaml
+          type: file
+          path: MyFirstModule\Projects$ModuleSettings.yaml
+        - name: Resources
+          type: directory
+          path: MyFirstModule\Resources
+          content:
+            - name: Enumerations
+              type: directory
+              path: MyFirstModule\Resources\Enumerations
+              content:
+                - name: ENUM_Order_Status.Enumerations$Enumeration.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Enumerations\ENUM_Order_Status.Enumerations$Enumeration.yaml
+            - name: Microflows
+              type: directory
+              path: MyFirstModule\Resources\Microflows
+              content:
+                - name: ACT_Customer_New.Microflows$Microflow.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Microflows\ACT_Customer_New.Microflows$Microflow.yaml
+                - name: ACT_Order_New.Microflows$Microflow.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml
+                - name: ACT_Product_New.Microflows$Microflow.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Microflows\ACT_Product_New.Microflows$Microflow.yaml
+                - name: MF_Call_Test.Microflows$Microflow.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Microflows\MF_Call_Test.Microflows$Microflow.yaml
+                - name: MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
+                - name: MF_Test_CommitInLoop.Microflows$Microflow.yaml
+                  type: file
+                  path: MyFirstModule\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml
+        - name: Security$ModuleSecurity.yaml
+          type: file
+          path: MyFirstModule\Security$ModuleSecurity.yaml
+    - name: Navigation$NavigationDocument.yaml
+      type: file
+      path: Navigation$NavigationDocument.yaml
+    - name: Security$ProjectSecurity.yaml
+      type: file
+      path: Security$ProjectSecurity.yaml
+    - name: Settings$ProjectSettings.yaml
+      type: file
+      path: Settings$ProjectSettings.yaml
+    - name: Texts$SystemTextCollection.yaml
+      type: file
+      path: Texts$SystemTextCollection.yaml

@@ -1,0 +1,38 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — DivContainer without on-click action
+###############################################################################
+
+- name: allow_container_no_onclick
+  allow: true
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Forms$DivContainer
+          Name: container1
+          OnClickAction: null
+          Appearance:
+            $Type: Forms$Appearance
+            Class: ""
+          RenderMode: Div
+          Widgets: []
+###############################################################################
+# FAIL CASE — DivContainer with on-click action
+###############################################################################
+
+- name: disallow_container_with_onclick
+  allow: false
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Forms$DivContainer
+          Name: container1
+          OnClickAction:
+            $Type: Forms$FormAction
+            DisabledDuringExecution: true
+          Appearance:
+            $Type: Forms$Appearance
+            Class: ""
+          RenderMode: Div
+          Widgets: []

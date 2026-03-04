@@ -1,0 +1,937 @@
+$Type: DomainModels$DomainModel
+Annotations: []
+Associations:
+    - $Type: DomainModels$Association
+      ChildConnection: 42;100
+      ChildPointer:
+        subtype: 0
+        data:
+            - 61
+            - 250
+            - 142
+            - 153
+            - 2
+            - 187
+            - 0
+            - 79
+            - 187
+            - 255
+            - 103
+            - 198
+            - 146
+            - 66
+            - 253
+            - 111
+      DeleteBehavior:
+        $Type: DomainModels$DeleteBehavior
+        ChildDeleteBehavior: DeleteMeButKeepReferences
+        ChildErrorMessage: null
+        ParentDeleteBehavior: DeleteMeButKeepReferences
+        ParentErrorMessage: null
+      Documentation: ""
+      ExportLevel: Hidden
+      Name: Order_Customer
+      Owner: Default
+      ParentConnection: 44;0
+      ParentPointer:
+        subtype: 0
+        data:
+            - 162
+            - 122
+            - 237
+            - 226
+            - 143
+            - 221
+            - 27
+            - 77
+            - 152
+            - 95
+            - 133
+            - 241
+            - 182
+            - 173
+            - 184
+            - 72
+      Source: null
+      StorageFormat: Column
+    - $Type: DomainModels$Association
+      ChildConnection: 100;58
+      ChildPointer:
+        subtype: 0
+        data:
+            - 162
+            - 122
+            - 237
+            - 226
+            - 143
+            - 221
+            - 27
+            - 77
+            - 152
+            - 95
+            - 133
+            - 241
+            - 182
+            - 173
+            - 184
+            - 72
+      DeleteBehavior:
+        $Type: DomainModels$DeleteBehavior
+        ChildDeleteBehavior: DeleteMeButKeepReferences
+        ChildErrorMessage: null
+        ParentDeleteBehavior: DeleteMeButKeepReferences
+        ParentErrorMessage: null
+      Documentation: ""
+      ExportLevel: Hidden
+      Name: Product_Order
+      Owner: Default
+      ParentConnection: 0;58
+      ParentPointer:
+        subtype: 0
+        data:
+            - 6
+            - 105
+            - 114
+            - 58
+            - 178
+            - 148
+            - 179
+            - 71
+            - 145
+            - 34
+            - 195
+            - 239
+            - 13
+            - 240
+            - 123
+            - 186
+      Source: null
+      StorageFormat: Column
+CrossAssociations:
+    - $Type: DomainModels$CrossAssociation
+      Child: Administration.Account
+      DeleteBehavior:
+        $Type: DomainModels$DeleteBehavior
+        ChildDeleteBehavior: DeleteMeButKeepReferences
+        ChildErrorMessage: null
+        ParentDeleteBehavior: DeleteMeButKeepReferences
+        ParentErrorMessage: null
+      Documentation: ""
+      ExportLevel: Hidden
+      Name: TestEntity_Account
+      Owner: Default
+      ParentPointer:
+        subtype: 0
+        data:
+            - 15
+            - 30
+            - 60
+            - 80
+            - 198
+            - 215
+            - 9
+            - 79
+            - 169
+            - 165
+            - 175
+            - 151
+            - 191
+            - 211
+            - 42
+            - 42
+      Source: null
+      StorageFormat: Column
+    - $Type: DomainModels$CrossAssociation
+      Child: Administration.Account
+      DeleteBehavior:
+        $Type: DomainModels$DeleteBehavior
+        ChildDeleteBehavior: DeleteMeButKeepReferences
+        ChildErrorMessage: null
+        ParentDeleteBehavior: DeleteMeButKeepReferences
+        ParentErrorMessage: null
+      Documentation: ""
+      ExportLevel: Hidden
+      Name: TestEntity_Account_2
+      Owner: Default
+      ParentPointer:
+        subtype: 0
+        data:
+            - 15
+            - 30
+            - 60
+            - 80
+            - 198
+            - 215
+            - 9
+            - 79
+            - 169
+            - 165
+            - 175
+            - 151
+            - 191
+            - 211
+            - 42
+            - 42
+      Source: null
+      StorageFormat: Column
+Documentation: ""
+Entities:
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: FirstNam
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: LastNAme
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: DateOfBirth
+          NewType:
+            $Type: DomainModels$DateTimeAttributeType
+            LocalizeDate: true
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Email
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$CalculatedValue
+            Microflow: MyFirstModule.ACT_Customer_New
+            PassEntity: true
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Attribute
+          NewType:
+            $Type: DomainModels$IntegerAttributeType
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: "0"
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Customer
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Name
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Description
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 1000
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Price
+          NewType:
+            $Type: DomainModels$DecimalAttributeType
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Product
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: OrderNumber
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Date
+          NewType:
+            $Type: DomainModels$DateTimeAttributeType
+            LocalizeDate: true
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Notes
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Status
+          NewType:
+            $Type: DomainModels$EnumerationAttributeType
+            Enumeration: MyFirstModule.ENUM_Order_Status
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Order
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Name
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: TestEntity
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Name
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Team
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Children
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Parent
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: School
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Teacher
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Head
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Knee
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Toe
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Body
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Mouth
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Fork
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Spoon
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Knife
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Table
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Room
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Kitchen
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Living_Room
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Test_Room
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Backdoor
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Frontdoor
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Door
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Bath
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Shower
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Kid
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Number
+          NewType:
+            $Type: DomainModels$IntegerAttributeType
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: City
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Town
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Date
+          NewType:
+            $Type: DomainModels$DateTimeAttributeType
+            LocalizeDate: true
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Sixteen
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Time
+          NewType:
+            $Type: DomainModels$DateTimeAttributeType
+            LocalizeDate: true
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Reality
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Show
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: TV
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Cheese
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Bacon
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Egg
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Chef
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Waiter
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Roommate
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: House
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Villa
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Vacation
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Supermarkt
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Markt
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Superman
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Hero
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Batman
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Disney
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Netflix
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Movie
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Series
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: pricee
+          NewType:
+            $Type: DomainModels$DecimalAttributeType
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: "0"
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: TooManyAttributes
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes: []
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Entity
+      Source: null
+      ValidationRules: []

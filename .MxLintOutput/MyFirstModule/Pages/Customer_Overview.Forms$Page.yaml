@@ -104,7 +104,7 @@ FormCall:
                                     Items:
                                         - $Type: Texts$Translation
                                           LanguageCode: en_US
-                                          Text: 'Page header '
+                                          Text: Page header test
                               Name: text40
                               NativeAccessibilitySettings: null
                               NativeTextStyle: Text
@@ -11642,30 +11642,6 @@ FormCall:
                                               Tooltip:
                                                 $Type: Texts$Text
                                                 Items: []
-                                            - $Type: Forms$DivContainer
-                                              Appearance:
-                                                $Type: Forms$Appearance
-                                                Class: ""
-                                                DesignProperties: []
-                                                DynamicClasses: ""
-                                                Style: ""
-                                              ConditionalVisibilitySettings: null
-                                              Name: container2
-                                              NativeAccessibilitySettings: null
-                                              OnClickAction:
-                                                $Type: Forms$FormAction
-                                                DisabledDuringExecution: true
-                                                FormSettings:
-                                                    $Type: Forms$FormSettings
-                                                    Form: MyFirstModule.Order_Overview
-                                                    ParameterMappings: []
-                                                    TitleOverride: null
-                                                NumberOfPagesToClose2: ""
-                                                PagesForSpecializations: []
-                                              RenderMode: Div
-                                              ScreenReaderHidden: false
-                                              TabIndex: 0
-                                              Widgets: []
                                         XPathConstraint: ""
                                     - $Type: CustomWidgets$WidgetProperty
                                       TypePointer:

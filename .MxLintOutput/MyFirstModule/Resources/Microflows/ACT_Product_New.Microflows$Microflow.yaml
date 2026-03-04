@@ -23,7 +23,7 @@ ObjectCollection:
           ReturnValue: ""
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
-          Documentation: d
+          Documentation: ""
           HasVariableNameBeenChanged: false
           IsRequired: true
           Name: Product
@@ -60,7 +60,7 @@ ObjectCollection:
                   Association: ""
                   Attribute: MyFirstModule.Product.Description
                   Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
-            RefreshInClient: true
+            RefreshInClient: false
           AutoGenerateCaption: true
           BackgroundColor: Default
           Caption: Activity
@@ -77,7 +77,7 @@ ObjectCollection:
                   Association: ""
                   Attribute: MyFirstModule.Customer.FirstNam
                   Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
-            RefreshInClient: true
+            RefreshInClient: false
             VariableName: NewCustomer
           AutoGenerateCaption: true
           BackgroundColor: Default
@@ -94,10 +94,12 @@ ObjectCollection:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
                   Attribute: MyFirstModule.Product.Name
-                  Value: |-
+                  Value: |+
                     if $currentUser/Name = 'Rick' then 'ok'
                     else ' not ok'
-            RefreshInClient: true
+
+
+            RefreshInClient: false
           AutoGenerateCaption: true
           BackgroundColor: Default
           Caption: Activity

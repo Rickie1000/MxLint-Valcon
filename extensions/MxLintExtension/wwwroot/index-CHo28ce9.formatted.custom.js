@@ -12259,7 +12259,30 @@ const fv = () => i.jsx("svg", {
     }), [v, f] = p.useState(!1), {
       success: b,
       error: _
-    } = lh(), [T, R] = p.useState(!1), [S, d] = p.useState(["HIGH", "MEDIUM", "LOW"]), [z, A] = p.useState(["fail"]), [B, q] = p.useState(""), [G, el] = p.useState([]), [Z, P] = p.useState([]), [ll, V] = p.useState([]), [Y, cl] = p.useState("severity"), [$, nl] = p.useState("asc"), [Sl, Rl] = p.useState("none"), [Vl, he] = p.useState(!1), [wl, Ie] = p.useState(() => new Set), [Qe, fe] = p.useState(!1), [E, Q] = p.useState(-1), [tl, _l] = p.useState(() => new Set), [Al, m] = p.useState(!1), [U, k] = p.useState(""), [K, sl] = p.useState("markdown"), [hl, gl] = p.useState(null), Il = p.useRef(0), Yl = p.useRef(null), Ae = p.useRef(null), $t = p.useMemo(() => {
+    } = lh(), [T, R] = p.useState(!1), 
+    [S, d] = p.useState(["HIGH", "MEDIUM", "LOW"]), 
+    [z, A] = p.useState(["fail"]), 
+    [B, q] = p.useState(""), 
+    [G, el] = p.useState([]), 
+    [Z, P] = p.useState([]), 
+    [ll, V] = p.useState([]), 
+    [Y, cl] = p.useState("severity"), 
+    [$, nl] = p.useState("asc"), 
+    [Sl, Rl] = p.useState("none"), 
+    [Vl, he] = p.useState(!1), 
+    [Ar, zr] = p.useState(!0), //CUSTOM ADDED CODE
+    [wl, Ie] = p.useState(() => new Set), 
+    [Qe, fe] = p.useState(!1), 
+    [E, Q] = p.useState(-1), 
+    [tl, _l] = p.useState(() => new Set), 
+    [Al, m] = p.useState(!1), 
+    [U, k] = p.useState(""), 
+    [K, sl] = p.useState("markdown"), 
+    [hl, gl] = p.useState(null), 
+    Il = p.useRef(0), 
+    Yl = p.useRef(null), 
+    Ae = p.useRef(null), 
+    $t = p.useMemo(() => {
       const D = new Map;
       for (const X of o.rules) D.set(X.path, X);
       return D
@@ -12375,21 +12398,32 @@ const fv = () => i.jsx("svg", {
         const {
           message: W
         } = X.data;
-        W === "refreshData" ? await lt() : W === "start" ? f(!0) : W === "end" && f(!1)
+        W === "refreshData" ? (Ar ? await lt() : void 0) : W === "start" ? f(!0) : W === "end" && f(!1)
       };
       return window.chrome?.webview && (window.chrome.webview.addEventListener("message", D), Ls("MessageListenerRegistered")), () => {
         window.chrome?.webview && window.chrome.webview.removeEventListener("message", D)
       }
-    }, [lt]), p.useEffect(() => {
+    }, [lt, Ar]),
+    // Custom added code
+    p.useEffect(() => {
       const D = setTimeout(() => void lt(), 0);
+
+      // Non-webview: only do the initial refresh
       if (!window.chrome?.webview) return () => clearTimeout(D);
+
+      // Webview: if auto refresh is off, do not start polling
+      if (!Ar) return () => clearTimeout(D);
+
       const X = setInterval(() => {
         Ls("refreshData"), lt()
       }, 1e3);
+
       return () => {
         clearTimeout(D), clearInterval(X)
       }
-    }, [lt]), p.useEffect(() => {
+    }, [lt, Ar]),
+    
+     p.useEffect(() => {
       if (E >= 0 && Ae.current) {
         const D = E * un,
           X = Ae.current;
@@ -12450,16 +12484,48 @@ const fv = () => i.jsx("svg", {
         await lt() ? b("Lint results refreshed.") : _("Failed to refresh lint results.")
       }, [lt, b, _]),
       rn = p.useCallback(async () => {
-      // Ask the host to run MxLint
-      Ls("run-mxlint");
+        b("Running MxLint...");
 
-      // Optional: show immediate feedback
-      b("Running MxLint...");
+        const ports = [3210, 3211, 3212, 3213];
+        let responseText = null;
 
-      // Do NOT call lt() here yet if the run takes time.
-      // The host should send "end" (or a dedicated message) when finished,
-      // and then we refresh.
-      }, [b]),
+        for (const port of ports) {
+          try {
+            const res = await fetch(`http://127.0.0.1:${port}/run`, { method: "POST" });
+            const txt = await res.text();
+
+            if (res.ok) {
+              responseText = txt;
+              break;
+            }
+
+            // If server responded but failed
+            _("MxLint failed. Check runner output.");
+            console.log(txt);
+            return;
+
+          } catch (e) {
+            // Try next port silently
+          }
+        }
+
+        if (!responseText) {
+          _("Runner not reachable. Start scripts/mxlint-runner.ps1 first.");
+          return;
+        }
+
+        // After successful run → refresh lint results in UI
+        await lt() 
+          ? b("Lint results refreshed.") 
+          : _("Failed to refresh lint results.");
+
+      }, [lt, b, _]),
+
+      // CUSTOM ADDED CODE: toggle auto-refresh
+      to = p.useCallback(() => {
+      zr(D => !D)
+      }, []),
+
       It = p.useCallback(() => {
         d(["HIGH", "MEDIUM", "LOW"]), A(["fail"]), el([]), P([]), V([]), q(""), he(!1), Nl()
       }, [Nl]),
@@ -12787,7 +12853,25 @@ ${"-".repeat(20)}
           onClick: () => void rn(),
           title: "Run MxLint and fetch new results",
           children: "Run"
-        }),i.jsxs(ee, {
+        }),
+        
+        // CUSTOM ADDED CODE: auto-refresh toggle
+        i.jsx("button", {
+          type: "button",
+          onClick: to,
+          className: `mxlint-switch${Ar ? " is-on" : ""}`,
+          title: Ar ? "Auto refresh is ON (click to turn OFF)" : "Auto refresh is OFF (click to turn ON)",
+          "aria-pressed": Ar,
+          children: [
+            i.jsx("span", { className: "mxlint-switch__label", children: "Auto refresh" }),
+            i.jsx("span", {
+              className: "mxlint-switch__track",
+              children: i.jsx("span", { className: "mxlint-switch__thumb" })
+            })
+          ]
+        })  ,
+        
+        i.jsxs(ee, {
           variant: "ghost",
           icon: i.jsx(X0, {}),
           onClick: () => R(D => !D),

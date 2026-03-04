@@ -1,6 +1,5 @@
 $Type: Forms$Page
-AllowedModuleRoles:
-    - MyFirstModule.User
+AllowedModuleRoles: []
 Appearance:
     $Type: Forms$Appearance
     Class: ""

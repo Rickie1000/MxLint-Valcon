@@ -5,6 +5,68 @@ body {
  font-family:var(--ui-font-family);
  color:var(--ui-text-primary)
 }
+
+/* Base switch button */
+/* Wrapper button */
+.mxlint-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mxlint-switch:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.mxlint-switch:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Label */
+.mxlint-switch__label {
+  line-height: 1;
+}
+
+/* Track */
+.mxlint-switch__track {
+  width: 34px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  box-sizing: border-box;
+  background: #d1d5db;            /* gray OFF */
+  transition: background 150ms ease;
+}
+
+/* Thumb */
+.mxlint-switch__thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6b7280;            /* gray thumb OFF */
+  transform: translateX(0);
+  transition: transform 150ms ease, background 150ms ease;
+}
+
+/* ON state */
+.mxlint-switch.is-on .mxlint-switch__track {
+  background: #22c55e;            /* green ON */
+}
+
+.mxlint-switch.is-on .mxlint-switch__thumb {
+  background: #ffffff;            /* white thumb ON */
+  transform: translateX(16px);
+}
+
 .lint-pane {
  font-family:Segoe UI,
  -apple-system,

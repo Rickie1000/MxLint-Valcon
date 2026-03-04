@@ -2,6 +2,8 @@
 # scope: package
 # title: Do not use default values on attributes
 # description: Avoid default values because it introduces hidden logic that is hard to detect via "find changes".
+# authors:
+# - Rick Schreuder
 # custom:
 #  category: Maintainability
 #  rulename: NoDefaultValue
