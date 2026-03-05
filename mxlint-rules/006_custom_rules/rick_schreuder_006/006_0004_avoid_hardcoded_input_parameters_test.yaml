@@ -1,0 +1,55 @@
+tests:
+
+###############################################################################
+# FAIL CASE
+# Boolean INPUT parameter is used in ExclusiveSplit → should raise error
+###############################################################################
+
+  - name: FAIL_boolean_input_parameter_used_in_exclusive_split
+    input:
+      ObjectCollection:
+        Objects:
+
+          # Boolean microflow INPUT parameter
+          - $Type: Microflows$MicroflowParameter
+            Name: IsValid
+            VariableType:
+              $Type: DataTypes$BooleanType
+
+          # Exclusive split using that input parameter
+          - $Type: Microflows$ExclusiveSplit
+            SplitCondition:
+              $Type: Microflows$ExpressionSplitCondition
+              Expression: $IsValid
+
+    expect:
+      errors:
+        - message: "Boolean input parameter 'IsValid'"
+
+
+###############################################################################
+# PASS CASE
+# Boolean LOCAL variable is used in ExclusiveSplit → allowed
+###############################################################################
+
+  - name: PASS_boolean_local_variable_used_in_exclusive_split
+    input:
+      ObjectCollection:
+        Objects:
+
+          # Locally created boolean variable
+          - $Type: Microflows$ActionActivity
+            Action:
+              $Type: Microflows$CreateVariableAction
+              VariableName: IsValid
+              VariableType:
+                $Type: DataTypes$BooleanType
+
+          # Exclusive split using local variable
+          - $Type: Microflows$ExclusiveSplit
+            SplitCondition:
+              $Type: Microflows$ExpressionSplitCondition
+              Expression: $IsValid
+
+    expect:
+      errors: []

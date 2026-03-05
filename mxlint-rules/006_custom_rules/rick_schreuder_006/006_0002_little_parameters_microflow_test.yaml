@@ -1,0 +1,65 @@
+TestCases:
+
+###############################################################################
+# PASS CASE
+# No Parameters field exists → allowed
+###############################################################################
+
+  - name: PASS_no_parameters_field
+    allow: true
+    input:
+      Name: MF_NoParams
+
+
+###############################################################################
+# PASS CASE
+# Exactly 5 parameters → allowed (maximum)
+###############################################################################
+
+  - name: PASS_five_parameters
+    allow: true
+    input:
+      Name: MF_FiveParams
+      Parameters:
+        - Name: P1
+        - Name: P2
+        - Name: P3
+        - Name: P4
+        - Name: P5
+
+
+###############################################################################
+# FAIL CASE
+# Six parameters at root level → should fail
+###############################################################################
+
+  - name: FAIL_six_parameters_root
+    allow: false
+    input:
+      Name: MF_SixParams
+      Parameters:
+        - Name: P1
+        - Name: P2
+        - Name: P3
+        - Name: P4
+        - Name: P5
+        - Name: P6
+
+
+###############################################################################
+# FAIL CASE
+# Six parameters inside Microflow.Parameters → should fail
+###############################################################################
+
+  - name: FAIL_six_parameters_nested
+    allow: false
+    input:
+      Name: MF_SixParamsNested
+      Microflow:
+        Parameters:
+          - Name: P1
+          - Name: P2
+          - Name: P3
+          - Name: P4
+          - Name: P5
+          - Name: P6

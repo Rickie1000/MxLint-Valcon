@@ -1,0 +1,39 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — Change Object uses normal value (no reference path)
+###############################################################################
+
+- name: allow_change_object_simple_value
+  allow: true
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Entity: MyModule.Order
+            ObjectVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Attribute: MyModule.Order.Status
+                Value: "MyModule.ENUM_Order_Status.Draft"
+
+###############################################################################
+# FAIL CASE — Change Object uses reference path in Value
+###############################################################################
+
+- name: disallow_change_object_reference_path_in_value
+  allow: false
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Entity: MyModule.Order
+            ObjectVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Attribute: MyModule.Order.Customer
+                Value: "$Product/MyModule.Product_Order/MyModule.Order_OrderCustomer/MyModule.Customer"

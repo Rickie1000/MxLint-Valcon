@@ -1,0 +1,33 @@
+microflow:
+  objects:
+    # Counted (1): Create Object + Commit = Yes
+    - "$type": "CreateObjectAction"
+      commit: "Yes"
+
+    # Counted (2): Create Object + Commit = YesWithoutEvents
+    - "$type": "CreateObjectAction"
+      commit: "YesWithoutEvents"
+
+    # Not counted: Create Object + Commit = No
+    - "$type": "CreateObjectAction"
+      commit: "No"
+
+    # Counted (3): Change Object + Commit = Yes
+    - "$type": "ChangeObjectAction"
+      commit: "Yes"
+
+    # Counted (4): Change Object + Commit = YesWithoutEvents
+    - "$type": "ChangeObjectAction"
+      commit: "YesWithoutEvents"
+
+    # Not counted: Change Object + Commit = No
+    - "$type": "ChangeObjectAction"
+      commit: "No"
+
+    # Counted (5): Change Object + Commit = Yes
+    - "$type": "ChangeObjectAction"
+      commit: "Yes"
+
+    # Counted (6): Create Object + Commit = Yes
+    - "$type": "CreateObjectAction"
+      commit: "Yes"

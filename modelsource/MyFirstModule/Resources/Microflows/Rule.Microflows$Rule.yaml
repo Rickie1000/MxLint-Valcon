@@ -5,41 +5,41 @@ Excluded: false
 ExportLevel: Hidden
 MarkAsUsed: false
 MicroflowReturnType:
-  $Type: DataTypes$BooleanType
+    $Type: DataTypes$BooleanType
 Name: Rule
 ObjectCollection:
-  $Type: Microflows$MicroflowObjectCollection
-  Objects:
-  - $Type: Microflows$StartEvent
-  - $Type: Microflows$EndEvent
-    Documentation: ""
-    ReturnValue: ""
-  - $Type: Microflows$ActionActivity
-    Action:
-      $Type: Microflows$JavaActionCallAction
-      ErrorHandlingType: Rollback
-      JavaAction: ""
-      ParameterMappings: null
-      QueueSettings: null
-      ResultVariableName: ""
-      UseReturnVariable: true
-    AutoGenerateCaption: true
-    BackgroundColor: Default
-    Caption: Activity
-    Disabled: false
-    Documentation: ""
-  - $Type: Microflows$InheritanceSplit
-    Caption: ""
-    Documentation: ""
-    SplitVariableName: ""
-  - $Type: Microflows$ActionActivity
-    Action:
-      $Type: Microflows$CastAction
-      ErrorHandlingType: Rollback
-      VariableName: ObjectName
-    AutoGenerateCaption: true
-    BackgroundColor: Default
-    Caption: Activity
-    Disabled: false
-    Documentation: ""
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$JavaActionCallAction
+            ErrorHandlingType: Rollback
+            JavaAction: ""
+            ParameterMappings: []
+            QueueSettings: null
+            ResultVariableName: ""
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$InheritanceSplit
+          Caption: ""
+          Documentation: ""
+          SplitVariableName: currentUser
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CastAction
+            ErrorHandlingType: Rollback
+            VariableName: ObjectName
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
 ReturnVariableName: ""

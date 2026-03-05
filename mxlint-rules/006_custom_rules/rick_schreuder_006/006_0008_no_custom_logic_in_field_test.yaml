@@ -1,0 +1,32 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — simple variable assignment
+###############################################################################
+
+- name: allow_simple_value
+  allow: true
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Items:
+              - Value: "$MyVariable"
+
+
+###############################################################################
+# FAIL CASE — inline logic
+###############################################################################
+
+- name: disallow_inline_logic
+  allow: false
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Items:
+              - Value: "if $User/Name = 'Rick' then 'ok' else 'not ok'"

@@ -1,0 +1,34 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — simple object variable is passed
+###############################################################################
+
+- name: allow_simple_object_variable
+  allow: true
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            MicroflowCall:
+              ParameterMappings:
+                - Argument: $SomeObject
+
+
+###############################################################################
+# FAIL CASE — reference path is used as argument
+###############################################################################
+
+- name: disallow_reference_expression
+  allow: false
+  input:
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            MicroflowCall:
+              ParameterMappings:
+                - Argument: $SourceObject/SomeModule.Source_Target/SomeModule.TargetObject
