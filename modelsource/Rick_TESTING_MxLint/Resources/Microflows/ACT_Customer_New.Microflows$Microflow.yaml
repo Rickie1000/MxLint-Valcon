@@ -1,0 +1,60 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: null
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+  $Type: Texts$Text
+  Items: null
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+  $Type: DataTypes$StringType
+Name: ACT_Customer_New
+ObjectCollection:
+  $Type: Microflows$MicroflowObjectCollection
+  Objects:
+  - $Type: Microflows$StartEvent
+  - $Type: Microflows$EndEvent
+    Documentation: ""
+    ReturnValue: $Variable
+  - $Type: Microflows$MicroflowParameter
+    DefaultValue: ""
+    Documentation: ""
+    HasVariableNameBeenChanged: false
+    IsRequired: true
+    Name: Customer
+    VariableType:
+      $Type: DataTypes$ObjectType
+      Entity: Rick_TESTING_MxLint.Customer
+  - $Type: Microflows$ActionActivity
+    Action:
+      $Type: Microflows$ChangeVariableAction
+      ChangeVariableName: Variable
+      ErrorHandlingType: Rollback
+      Value: '''Rick changed'''
+    AutoGenerateCaption: true
+    BackgroundColor: Default
+    Caption: Activity
+    Disabled: false
+    Documentation: ""
+  - $Type: Microflows$ActionActivity
+    Action:
+      $Type: Microflows$CreateVariableAction
+      ErrorHandlingType: Rollback
+      InitialValue: '''Rick'''
+      VariableName: Variable
+      VariableType:
+        $Type: DataTypes$StringType
+    AutoGenerateCaption: true
+    BackgroundColor: Default
+    Caption: Activity
+    Disabled: false
+    Documentation: ""
+ReturnVariableName: Variable
+Url: ""
+UrlSearchParameters: null
+WorkflowActionInfo: null
