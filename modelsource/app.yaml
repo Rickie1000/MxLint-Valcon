@@ -2,118 +2,86 @@ content:
     - name: Metadata.yaml
       type: file
       path: Metadata.yaml
-    - name: MyFirstModule
-      type: directory
-      path: MyFirstModule
-      content:
-        - name: DomainModels$DomainModel.yaml
-          type: file
-          path: MyFirstModule\DomainModels$DomainModel.yaml
-        - name: Enumeration.Enumerations$Enumeration.yaml
-          type: file
-          path: MyFirstModule\Enumeration.Enumerations$Enumeration.yaml
-        - name: Home_Web.Forms$Page.yaml
-          type: file
-          path: MyFirstModule\Home_Web.Forms$Page.yaml
-        - name: Images.Images$ImageCollection.yaml
-          type: file
-          path: MyFirstModule\Images.Images$ImageCollection.yaml
-        - name: Pages
-          type: directory
-          path: MyFirstModule\Pages
-          content:
-            - name: Customer_NewEdit.Forms$Page.yaml
-              type: file
-              path: MyFirstModule\Pages\Customer_NewEdit.Forms$Page.yaml
-            - name: Customer_Overview.Forms$Page.yaml
-              type: file
-              path: MyFirstModule\Pages\Customer_Overview.Forms$Page.yaml
-            - name: Order_NewEdit.Forms$Page.yaml
-              type: file
-              path: MyFirstModule\Pages\Order_NewEdit.Forms$Page.yaml
-            - name: Order_Overview.Forms$Page.yaml
-              type: file
-              path: MyFirstModule\Pages\Order_Overview.Forms$Page.yaml
-            - name: Product_NewEdit.Forms$Page.yaml
-              type: file
-              path: MyFirstModule\Pages\Product_NewEdit.Forms$Page.yaml
-            - name: Product_Overview.Forms$Page.yaml
-              type: file
-              path: MyFirstModule\Pages\Product_Overview.Forms$Page.yaml
-        - name: Projects$ModuleSettings.yaml
-          type: file
-          path: MyFirstModule\Projects$ModuleSettings.yaml
-        - name: Resources
-          type: directory
-          path: MyFirstModule\Resources
-          content:
-            - name: Enumerations
-              type: directory
-              path: MyFirstModule\Resources\Enumerations
-              content:
-                - name: ENUM_Order_Status.Enumerations$Enumeration.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Enumerations\ENUM_Order_Status.Enumerations$Enumeration.yaml
-            - name: Microflows
-              type: directory
-              path: MyFirstModule\Resources\Microflows
-              content:
-                - name: ACT_Customer_New.Microflows$Microflow.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\ACT_Customer_New.Microflows$Microflow.yaml
-                - name: ACT_Order_New.Microflows$Microflow.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml
-                - name: ACT_Product_New.Microflows$Microflow.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\ACT_Product_New.Microflows$Microflow.yaml
-                - name: MF_Call_Test.Microflows$Microflow.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\MF_Call_Test.Microflows$Microflow.yaml
-                - name: MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
-                - name: MF_Test_CommitInLoop.Microflows$Microflow.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml
-                - name: Rule.Microflows$Rule.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\Rule.Microflows$Rule.yaml
-                - name: rtrtyr.Menus$MenuDocument.yaml
-                  type: file
-                  path: MyFirstModule\Resources\Microflows\rtrtyr.Menus$MenuDocument.yaml
-        - name: Security$ModuleSecurity.yaml
-          type: file
-          path: MyFirstModule\Security$ModuleSecurity.yaml
-    - name: MySecondModule
-      type: directory
-      path: MySecondModule
-      content:
-        - name: DomainModels$DomainModel.yaml
-          type: file
-          path: MySecondModule\DomainModels$DomainModel.yaml
-        - name: Microflows
-          type: directory
-          path: MySecondModule\Microflows
-          content:
-            - name: ACT_Order_New.Microflows$Microflow.yaml
-              type: file
-              path: MySecondModule\Microflows\ACT_Order_New.Microflows$Microflow.yaml
-            - name: MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
-              type: file
-              path: MySecondModule\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
-            - name: MF_Test_CommitInLoop.Microflows$Microflow.yaml
-              type: file
-              path: MySecondModule\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml
-        - name: Projects$ModuleSettings.yaml
-          type: file
-          path: MySecondModule\Projects$ModuleSettings.yaml
-        - name: Security$ModuleSecurity.yaml
-          type: file
-          path: MySecondModule\Security$ModuleSecurity.yaml
     - name: Navigation$NavigationDocument.yaml
       type: file
       path: Navigation$NavigationDocument.yaml
+    - name: Rick_TESTING_MxLint
+      type: directory
+      path: Rick_TESTING_MxLint
+      content:
+        - name: DomainModels$DomainModel.yaml
+          type: file
+          path: Rick_TESTING_MxLint\DomainModels$DomainModel.yaml
+        - name: Enumeration.Enumerations$Enumeration.yaml
+          type: file
+          path: Rick_TESTING_MxLint\Enumeration.Enumerations$Enumeration.yaml
+        - name: Home_Web.Forms$Page.yaml
+          type: file
+          path: Rick_TESTING_MxLint\Home_Web.Forms$Page.yaml
+        - name: Images.Images$ImageCollection.yaml
+          type: file
+          path: Rick_TESTING_MxLint\Images.Images$ImageCollection.yaml
+        - name: Pages
+          type: directory
+          path: Rick_TESTING_MxLint\Pages
+          content:
+            - name: Customer_NewEdit.Forms$Page.yaml
+              type: file
+              path: Rick_TESTING_MxLint\Pages\Customer_NewEdit.Forms$Page.yaml
+            - name: Customer_Overview.Forms$Page.yaml
+              type: file
+              path: Rick_TESTING_MxLint\Pages\Customer_Overview.Forms$Page.yaml
+            - name: Order_NewEdit.Forms$Page.yaml
+              type: file
+              path: Rick_TESTING_MxLint\Pages\Order_NewEdit.Forms$Page.yaml
+            - name: Order_Overview.Forms$Page.yaml
+              type: file
+              path: Rick_TESTING_MxLint\Pages\Order_Overview.Forms$Page.yaml
+            - name: Product_NewEdit.Forms$Page.yaml
+              type: file
+              path: Rick_TESTING_MxLint\Pages\Product_NewEdit.Forms$Page.yaml
+            - name: Product_Overview.Forms$Page.yaml
+              type: file
+              path: Rick_TESTING_MxLint\Pages\Product_Overview.Forms$Page.yaml
+        - name: Projects$ModuleSettings.yaml
+          type: file
+          path: Rick_TESTING_MxLint\Projects$ModuleSettings.yaml
+        - name: Resources
+          type: directory
+          path: Rick_TESTING_MxLint\Resources
+          content:
+            - name: Enumerations
+              type: directory
+              path: Rick_TESTING_MxLint\Resources\Enumerations
+              content:
+                - name: ENUM_Order_Status.Enumerations$Enumeration.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Enumerations\ENUM_Order_Status.Enumerations$Enumeration.yaml
+            - name: Microflows
+              type: directory
+              path: Rick_TESTING_MxLint\Resources\Microflows
+              content:
+                - name: ACT_Customer_New.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\ACT_Customer_New.Microflows$Microflow.yaml
+                - name: ACT_Order_New.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\ACT_Order_New.Microflows$Microflow.yaml
+                - name: ACT_Product_New.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\ACT_Product_New.Microflows$Microflow.yaml
+                - name: MF_Call_Test.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\MF_Call_Test.Microflows$Microflow.yaml
+                - name: MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\MF_Order_GenerateOrderNumber.Microflows$Microflow.yaml
+                - name: MF_Test_CommitInLoop.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml
+        - name: Security$ModuleSecurity.yaml
+          type: file
+          path: Rick_TESTING_MxLint\Security$ModuleSecurity.yaml
     - name: Security$ProjectSecurity.yaml
       type: file
       path: Security$ProjectSecurity.yaml

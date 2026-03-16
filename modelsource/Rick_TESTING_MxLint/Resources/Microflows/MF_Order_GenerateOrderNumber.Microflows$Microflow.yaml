@@ -13,7 +13,7 @@ MarkAsUsed: false
 MicroflowActionInfo: null
 MicroflowReturnType:
     $Type: DataTypes$ObjectType
-    Entity: MyFirstModule.Order
+    Entity: Rick_TESTING_MxLint.Order
 Name: MF_Order_GenerateOrderNumber
 ObjectCollection:
     $Type: Microflows$MicroflowObjectCollection
@@ -44,7 +44,7 @@ ObjectCollection:
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Order.OrderNumber
+                  Attribute: Rick_TESTING_MxLint.Order.OrderNumber
                   Value: $OrderNr
             RefreshInClient: false
           AutoGenerateCaption: true
@@ -60,7 +60,23 @@ ObjectCollection:
           Name: Order
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Order
+            Entity: Rick_TESTING_MxLint.Order
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            ErrorHandlingType: Rollback
+            MicroflowCall:
+                $Type: Microflows$MicroflowCall
+                Microflow: Rick_TESTING_MxLint.MF_Test_CommitInLoop
+                ParameterMappings: []
+                QueueSettings: null
+            ResultVariableName: ""
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
 ReturnVariableName: Order
 Url: ""
 UrlSearchParameters: []

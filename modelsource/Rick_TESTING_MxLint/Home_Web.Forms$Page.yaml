@@ -1,6 +1,6 @@
 $Type: Forms$Page
 AllowedModuleRoles:
-    - MyFirstModule.User
+    - Rick_TESTING_MxLint.User
 Appearance:
     $Type: Forms$Appearance
     Class: ""

@@ -307,7 +307,7 @@ FormCall:
                                             $Type: CustomWidgets$CustomWidgetXPathSource
                                             EntityRef:
                                                 $Type: DomainModels$DirectEntityRef
-                                                Entity: MyFirstModule.Customer
+                                                Entity: Rick_TESTING_MxLint.Customer
                                             ForceFullObjects: false
                                             SortBar:
                                                 $Type: Forms$GridSortBar
@@ -830,7 +830,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.FirstNam
+                                                        Attribute: Rick_TESTING_MxLint.Customer.FirstNam
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null
@@ -2921,7 +2921,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.LastNAme
+                                                        Attribute: Rick_TESTING_MxLint.Customer.LastNAme
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null
@@ -5012,7 +5012,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.DateOfBirth
+                                                        Attribute: Rick_TESTING_MxLint.Customer.DateOfBirth
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null
@@ -7342,7 +7342,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.Email
+                                                        Attribute: Rick_TESTING_MxLint.Customer.Email
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null
@@ -9433,7 +9433,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                     AttributeRef:
                                                         $Type: DomainModels$AttributeRef
-                                                        Attribute: MyFirstModule.Customer.FirstNam
+                                                        Attribute: Rick_TESTING_MxLint.Customer.FirstNam
                                                         EntityRef: null
                                                     DataSource: null
                                                     EntityRef: null
@@ -9534,7 +9534,7 @@ FormCall:
                                                             DisabledDuringExecution: true
                                                             FormSettings:
                                                                 $Type: Forms$FormSettings
-                                                                Form: MyFirstModule.Customer_NewEdit
+                                                                Form: Rick_TESTING_MxLint.Customer_NewEdit
                                                                 ParameterMappings: []
                                                                 TitleOverride: null
                                                             NumberOfPagesToClose2: ""
@@ -11605,11 +11605,11 @@ FormCall:
                                                 DisabledDuringExecution: true
                                                 EntityRef:
                                                     $Type: DomainModels$DirectEntityRef
-                                                    Entity: MyFirstModule.Customer
+                                                    Entity: Rick_TESTING_MxLint.Customer
                                                 NumberOfPagesToClose2: ""
                                                 PageSettings:
                                                     $Type: Forms$FormSettings
-                                                    Form: MyFirstModule.Customer_NewEdit
+                                                    Form: Rick_TESTING_MxLint.Customer_NewEdit
                                                     ParameterMappings: []
                                                     TitleOverride: null
                                               Appearance:
@@ -11657,7 +11657,7 @@ FormCall:
                                                 DisabledDuringExecution: true
                                                 FormSettings:
                                                     $Type: Forms$FormSettings
-                                                    Form: MyFirstModule.Order_Overview
+                                                    Form: Rick_TESTING_MxLint.Order_Overview
                                                     ParameterMappings: []
                                                     TitleOverride: null
                                                 NumberOfPagesToClose2: ""

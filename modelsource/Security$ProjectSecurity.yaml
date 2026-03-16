@@ -44,7 +44,7 @@ UserRoles:
       ModuleRoles:
         - System.Administrator
         - Administration.Administrator
-        - MyFirstModule.User
+        - Rick_TESTING_MxLint.User
       Name: Administrator
     - $Type: Security$UserRole
       CheckSecurity: true
@@ -56,7 +56,7 @@ UserRoles:
         - Administration.User
         - FeedbackModule.User
         - System.User
-        - MyFirstModule.User
+        - Rick_TESTING_MxLint.User
       Name: User
     - $Type: Security$UserRole
       CheckSecurity: true
@@ -66,5 +66,5 @@ UserRoles:
       ManageableRoles: []
       ModuleRoles:
         - System.User
-        - MyFirstModule.Tester
+        - Rick_TESTING_MxLint.Tester
       Name: Tester

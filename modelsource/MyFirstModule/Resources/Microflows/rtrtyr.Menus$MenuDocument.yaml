@@ -1,8 +1,0 @@
-$Type: Menus$MenuDocument
-Documentation: ""
-Excluded: false
-ExportLevel: Hidden
-ItemCollection:
-    $Type: Menus$MenuItemCollection
-    Items: []
-Name: rtrtyr

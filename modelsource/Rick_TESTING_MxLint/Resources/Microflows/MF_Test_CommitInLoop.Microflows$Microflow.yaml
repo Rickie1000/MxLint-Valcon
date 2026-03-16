@@ -24,7 +24,7 @@ ObjectCollection:
         - $Type: Microflows$ActionActivity
           Action:
             $Type: Microflows$CreateListAction
-            Entity: MyFirstModule.TestEntity
+            Entity: Rick_TESTING_MxLint.TestEntity
             ErrorHandlingType: Rollback
             VariableName: TestList
           AutoGenerateCaption: true
@@ -58,12 +58,12 @@ ObjectCollection:
           Action:
             $Type: Microflows$CreateChangeAction
             Commit: "No"
-            Entity: MyFirstModule.TestEntity
+            Entity: Rick_TESTING_MxLint.TestEntity
             ErrorHandlingType: Rollback
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.TestEntity.Name
+                  Attribute: Rick_TESTING_MxLint.TestEntity.Name
                   Value: '''A'''
             RefreshInClient: false
             VariableName: NewTestEntity
@@ -76,12 +76,12 @@ ObjectCollection:
           Action:
             $Type: Microflows$CreateChangeAction
             Commit: "No"
-            Entity: MyFirstModule.TestEntity
+            Entity: Rick_TESTING_MxLint.TestEntity
             ErrorHandlingType: Rollback
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.TestEntity.Name
+                  Attribute: Rick_TESTING_MxLint.TestEntity.Name
                   Value: '''B'''
             RefreshInClient: false
             VariableName: NewTestEntity_1

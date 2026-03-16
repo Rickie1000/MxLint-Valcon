@@ -178,7 +178,7 @@ FormCall:
                                         $Type: CustomWidgets$CustomWidgetXPathSource
                                         EntityRef:
                                             $Type: DomainModels$DirectEntityRef
-                                            Entity: MyFirstModule.Product
+                                            Entity: Rick_TESTING_MxLint.Product
                                         ForceFullObjects: false
                                         SortBar:
                                             $Type: Forms$GridSortBar
@@ -701,7 +701,7 @@ FormCall:
                                                     DisabledDuringExecution: true
                                                 AttributeRef:
                                                     $Type: DomainModels$AttributeRef
-                                                    Attribute: MyFirstModule.Product.Name
+                                                    Attribute: Rick_TESTING_MxLint.Product.Name
                                                     EntityRef: null
                                                 DataSource: null
                                                 EntityRef: null
@@ -2792,7 +2792,7 @@ FormCall:
                                                     DisabledDuringExecution: true
                                                 AttributeRef:
                                                     $Type: DomainModels$AttributeRef
-                                                    Attribute: MyFirstModule.Product.Description
+                                                    Attribute: Rick_TESTING_MxLint.Product.Description
                                                     EntityRef: null
                                                 DataSource: null
                                                 EntityRef: null
@@ -4883,7 +4883,7 @@ FormCall:
                                                     DisabledDuringExecution: true
                                                 AttributeRef:
                                                     $Type: DomainModels$AttributeRef
-                                                    Attribute: MyFirstModule.Product.Price
+                                                    Attribute: Rick_TESTING_MxLint.Product.Price
                                                     EntityRef: null
                                                 DataSource: null
                                                 EntityRef: null
@@ -6974,7 +6974,7 @@ FormCall:
                                                     DisabledDuringExecution: true
                                                 AttributeRef:
                                                     $Type: DomainModels$AttributeRef
-                                                    Attribute: MyFirstModule.Product.Name
+                                                    Attribute: Rick_TESTING_MxLint.Product.Name
                                                     EntityRef: null
                                                 DataSource: null
                                                 EntityRef: null
@@ -7075,7 +7075,7 @@ FormCall:
                                                         DisabledDuringExecution: true
                                                         FormSettings:
                                                             $Type: Forms$FormSettings
-                                                            Form: MyFirstModule.Product_NewEdit
+                                                            Form: Rick_TESTING_MxLint.Product_NewEdit
                                                             ParameterMappings: []
                                                             TitleOverride: null
                                                         NumberOfPagesToClose2: ""
@@ -9146,11 +9146,11 @@ FormCall:
                                             DisabledDuringExecution: true
                                             EntityRef:
                                                 $Type: DomainModels$DirectEntityRef
-                                                Entity: MyFirstModule.Product
+                                                Entity: Rick_TESTING_MxLint.Product
                                             NumberOfPagesToClose2: ""
                                             PageSettings:
                                                 $Type: Forms$FormSettings
-                                                Form: MyFirstModule.Product_NewEdit
+                                                Form: Rick_TESTING_MxLint.Product_NewEdit
                                                 ParameterMappings: []
                                                 TitleOverride: null
                                           Appearance:

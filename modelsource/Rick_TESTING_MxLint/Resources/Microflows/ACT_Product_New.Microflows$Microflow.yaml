@@ -29,18 +29,18 @@ ObjectCollection:
           Name: Product
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Product
+            Entity: Rick_TESTING_MxLint.Product
         - $Type: Microflows$ActionActivity
           Action:
             $Type: Microflows$MicroflowCallAction
             ErrorHandlingType: Rollback
             MicroflowCall:
                 $Type: Microflows$MicroflowCall
-                Microflow: MyFirstModule.ACT_Customer_New
+                Microflow: Rick_TESTING_MxLint.ACT_Customer_New
                 ParameterMappings:
                     - $Type: Microflows$MicroflowCallParameterMapping
-                      Argument: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer
-                      Parameter: MyFirstModule.ACT_Customer_New.Customer
+                      Argument: $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer
+                      Parameter: Rick_TESTING_MxLint.ACT_Customer_New.Customer
                 QueueSettings: null
             ResultVariableName: Customer
             UseReturnVariable: true
@@ -58,8 +58,8 @@ ObjectCollection:
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Product.Description
-                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
+                  Attribute: Rick_TESTING_MxLint.Product.Description
+                  Value: $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer/FirstNam
             RefreshInClient: true
           AutoGenerateCaption: true
           BackgroundColor: Default
@@ -70,13 +70,13 @@ ObjectCollection:
           Action:
             $Type: Microflows$CreateChangeAction
             Commit: "No"
-            Entity: MyFirstModule.Customer
+            Entity: Rick_TESTING_MxLint.Customer
             ErrorHandlingType: Rollback
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Customer.FirstNam
-                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
+                  Attribute: Rick_TESTING_MxLint.Customer.FirstNam
+                  Value: $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer/FirstNam
             RefreshInClient: true
             VariableName: NewCustomer
           AutoGenerateCaption: true
@@ -93,7 +93,7 @@ ObjectCollection:
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Product.Name
+                  Attribute: Rick_TESTING_MxLint.Product.Name
                   Value: |-
                     if $currentUser/Name = 'Rick' then 'ok'
                     else ' not ok'

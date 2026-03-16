@@ -1,6 +1,6 @@
 $Type: Forms$Page
 AllowedModuleRoles:
-    - MyFirstModule.User
+    - Rick_TESTING_MxLint.User
 Appearance:
     $Type: Forms$Appearance
     Class: ""
@@ -62,7 +62,7 @@ FormCall:
                             $Type: Forms$DataViewSource
                             EntityRef:
                                 $Type: DomainModels$DirectEntityRef
-                                Entity: MyFirstModule.Customer
+                                Entity: Rick_TESTING_MxLint.Customer
                             ForceFullObjects: false
                             SourceVariable:
                                 $Type: Forms$PageVariable
@@ -161,7 +161,7 @@ FormCall:
                               AriaRequired: false
                               AttributeRef:
                                 $Type: DomainModels$AttributeRef
-                                Attribute: MyFirstModule.Customer.FirstNam
+                                Attribute: Rick_TESTING_MxLint.Customer.FirstNam
                                 EntityRef: null
                               AutoFocus: false
                               Autocomplete: true
@@ -237,7 +237,7 @@ FormCall:
                               AriaRequired: false
                               AttributeRef:
                                 $Type: DomainModels$AttributeRef
-                                Attribute: MyFirstModule.Customer.LastNAme
+                                Attribute: Rick_TESTING_MxLint.Customer.LastNAme
                                 EntityRef: null
                               AutoFocus: false
                               Autocomplete: true
@@ -313,7 +313,7 @@ FormCall:
                               AriaRequired: false
                               AttributeRef:
                                 $Type: DomainModels$AttributeRef
-                                Attribute: MyFirstModule.Customer.DateOfBirth
+                                Attribute: Rick_TESTING_MxLint.Customer.DateOfBirth
                                 EntityRef: null
                               ConditionalEditabilitySettings: null
                               ConditionalVisibilitySettings: null
@@ -377,7 +377,7 @@ FormCall:
                               AriaRequired: false
                               AttributeRef:
                                 $Type: DomainModels$AttributeRef
-                                Attribute: MyFirstModule.Customer.Email
+                                Attribute: Rick_TESTING_MxLint.Customer.Email
                                 EntityRef: null
                               AutoFocus: false
                               Autocomplete: true
@@ -457,7 +457,7 @@ Parameters:
       Name: Customer
       ParameterType:
         $Type: DataTypes$ObjectType
-        Entity: MyFirstModule.Customer
+        Entity: Rick_TESTING_MxLint.Customer
 PopupCloseAction: ""
 PopupHeight: 0
 PopupResizable: true

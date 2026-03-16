@@ -29,7 +29,7 @@ ObjectCollection:
           Name: Customer
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Customer
+            Entity: Rick_TESTING_MxLint.Customer
         - $Type: Microflows$ActionActivity
           Action:
             $Type: Microflows$ChangeVariableAction

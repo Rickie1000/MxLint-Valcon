@@ -12,7 +12,7 @@ Profiles:
       HomePage:
         $Type: Navigation$HomePage
         Microflow: ""
-        Page: MyFirstModule.Home_Web
+        Page: Rick_TESTING_MxLint.Home_Web
       Kind: Responsive
       LoginPageSettings:
         $Type: Forms$FormSettings
@@ -28,7 +28,7 @@ Profiles:
                 DisabledDuringExecution: false
                 FormSettings:
                     $Type: Forms$FormSettings
-                    Form: MyFirstModule.Home_Web
+                    Form: Rick_TESTING_MxLint.Home_Web
                     ParameterMappings: []
                     TitleOverride: null
                 NumberOfPagesToClose2: ""

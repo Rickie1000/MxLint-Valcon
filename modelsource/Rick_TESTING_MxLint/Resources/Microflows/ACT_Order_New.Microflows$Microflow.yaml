@@ -1,7 +1,7 @@
 $Type: Microflows$Microflow
 AllowConcurrentExecution: true
 AllowedModuleRoles:
-    - MyFirstModule.User
+    - Rick_TESTING_MxLint.User
 ApplyEntityAccess: false
 ConcurrencyErrorMicroflow: ""
 ConcurrenyErrorMessage:
@@ -26,17 +26,17 @@ ObjectCollection:
           Action:
             $Type: Microflows$CreateChangeAction
             Commit: YesWithoutEvents
-            Entity: MyFirstModule.Order
+            Entity: Rick_TESTING_MxLint.Order
             ErrorHandlingType: Rollback
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Order.Date
+                  Attribute: Rick_TESTING_MxLint.Order.Date
                   Value: '[%CurrentDateTime%]'
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Order.Status
-                  Value: MyFirstModule.ENUM_Order_Status.Draft
+                  Attribute: Rick_TESTING_MxLint.Order.Status
+                  Value: Rick_TESTING_MxLint.ENUM_Order_Status.Draft
             RefreshInClient: false
             VariableName: NewOrder
           AutoGenerateCaption: true
@@ -50,7 +50,7 @@ ObjectCollection:
             ErrorHandlingType: Rollback
             FormSettings:
                 $Type: Forms$FormSettings
-                Form: MyFirstModule.Order_Overview
+                Form: Rick_TESTING_MxLint.Order_Overview
                 ParameterMappings: []
                 TitleOverride: null
             NumberOfPagesToClose: ""
@@ -65,11 +65,11 @@ ObjectCollection:
             ErrorHandlingType: Rollback
             MicroflowCall:
                 $Type: Microflows$MicroflowCall
-                Microflow: MyFirstModule.MF_Order_GenerateOrderNumber
+                Microflow: Rick_TESTING_MxLint.MF_Order_GenerateOrderNumber
                 ParameterMappings:
                     - $Type: Microflows$MicroflowCallParameterMapping
                       Argument: $Order
-                      Parameter: MyFirstModule.MF_Order_GenerateOrderNumber.Order
+                      Parameter: Rick_TESTING_MxLint.MF_Order_GenerateOrderNumber.Order
                 QueueSettings: null
             ResultVariableName: Order_2
             UseReturnVariable: true
@@ -86,7 +86,7 @@ ObjectCollection:
           Name: Order
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Order
+            Entity: Rick_TESTING_MxLint.Order
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
           Documentation: ""
@@ -95,7 +95,7 @@ ObjectCollection:
           Name: Customer
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Customer
+            Entity: Rick_TESTING_MxLint.Customer
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
           Documentation: ""
@@ -104,7 +104,7 @@ ObjectCollection:
           Name: Product
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Product
+            Entity: Rick_TESTING_MxLint.Product
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
           Documentation: ""
@@ -113,7 +113,7 @@ ObjectCollection:
           Name: TooManyAttributes
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.TooManyAttributes
+            Entity: Rick_TESTING_MxLint.TooManyAttributes
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
           Documentation: ""
@@ -122,7 +122,7 @@ ObjectCollection:
           Name: TestEntity
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.TestEntity
+            Entity: Rick_TESTING_MxLint.TestEntity
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
           Documentation: ""
@@ -131,17 +131,17 @@ ObjectCollection:
           Name: Entity
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Entity
+            Entity: Rick_TESTING_MxLint.Entity
         - $Type: Microflows$ActionActivity
           Action:
             $Type: Microflows$CreateChangeAction
             Commit: "Yes"
-            Entity: MyFirstModule.Order
+            Entity: Rick_TESTING_MxLint.Order
             ErrorHandlingType: Rollback
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Order.Date
+                  Attribute: Rick_TESTING_MxLint.Order.Date
                   Value: '[%CurrentDateTime%]'
             RefreshInClient: false
             VariableName: NewOrder_2

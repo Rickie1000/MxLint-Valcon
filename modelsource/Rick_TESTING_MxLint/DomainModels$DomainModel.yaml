@@ -218,7 +218,7 @@ Entities:
             Length: 200
           Value:
             $Type: DomainModels$CalculatedValue
-            Microflow: MyFirstModule.ACT_Customer_New
+            Microflow: Rick_TESTING_MxLint.ACT_Customer_New
             PassEntity: true
         - $Type: DomainModels$Attribute
           Documentation: ""
@@ -244,7 +244,7 @@ Entities:
       Source: null
       ValidationRules:
         - $Type: DomainModels$ValidationRule
-          Attribute: MyFirstModule.Customer.FirstNam
+          Attribute: Rick_TESTING_MxLint.Customer.FirstNam
           Message:
             $Type: Texts$Text
             Items:
@@ -338,7 +338,7 @@ Entities:
           Name: Status
           NewType:
             $Type: DomainModels$EnumerationAttributeType
-            Enumeration: MyFirstModule.ENUM_Order_Status
+            Enumeration: Rick_TESTING_MxLint.ENUM_Order_Status
           Value:
             $Type: DomainModels$StoredValue
             DefaultValue: ""

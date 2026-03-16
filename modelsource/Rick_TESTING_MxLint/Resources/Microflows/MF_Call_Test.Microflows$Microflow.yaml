@@ -29,18 +29,18 @@ ObjectCollection:
           Name: Order
           VariableType:
             $Type: DataTypes$ObjectType
-            Entity: MyFirstModule.Order
+            Entity: Rick_TESTING_MxLint.Order
         - $Type: Microflows$ActionActivity
           Action:
             $Type: Microflows$MicroflowCallAction
             ErrorHandlingType: Rollback
             MicroflowCall:
                 $Type: Microflows$MicroflowCall
-                Microflow: MyFirstModule.ACT_Customer_New
+                Microflow: Rick_TESTING_MxLint.ACT_Customer_New
                 ParameterMappings:
                     - $Type: Microflows$MicroflowCallParameterMapping
-                      Argument: $Order/MyFirstModule.Order_Customer/MyFirstModule.Customer
-                      Parameter: MyFirstModule.ACT_Customer_New.Customer
+                      Argument: $Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer
+                      Parameter: Rick_TESTING_MxLint.ACT_Customer_New.Customer
                 QueueSettings: null
             ResultVariableName: Customer
             UseReturnVariable: true
