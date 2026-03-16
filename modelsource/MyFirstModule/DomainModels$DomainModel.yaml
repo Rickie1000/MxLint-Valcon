@@ -182,7 +182,7 @@ Entities:
         - $Type: DomainModels$Attribute
           Documentation: ""
           ExportLevel: Hidden
-          Name: FirstName
+          Name: FirstNam
           NewType:
             $Type: DomainModels$StringAttributeType
             Length: 200
@@ -242,7 +242,17 @@ Entities:
         Persistable: true
       Name: Customer
       Source: null
-      ValidationRules: []
+      ValidationRules:
+        - $Type: DomainModels$ValidationRule
+          Attribute: MyFirstModule.Customer.FirstNam
+          Message:
+            $Type: Texts$Text
+            Items:
+                - $Type: Texts$Translation
+                  LanguageCode: en_US
+                  Text: Please select firstname
+          RuleInfo:
+            $Type: DomainModels$RequiredRuleInfo
     - $Type: DomainModels$EntityImpl
       AccessRules: []
       Attributes:

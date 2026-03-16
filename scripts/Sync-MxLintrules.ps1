@@ -6,8 +6,8 @@ param(
   [string]$SourceDir = "mxlint-rules\",
 
   # Doelmap waar de extension/CLI de regels oppikt
-  # (jouw setup gebruikt .mendix-cache\rules\rules\..., dus we syncen daar naartoe)
-  [string]$TargetDir = ".mendix-cache\rules\rules",
+  # (jouw setup gebruikt .mendix-cache\rules\..., dus we syncen daar naartoe)
+  [string]$TargetDir = ".mendix-cache\rules",
 
   # Optioneel: target leegmaken voordat je kopieert
   [switch]$CleanTarget

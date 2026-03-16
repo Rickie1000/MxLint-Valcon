@@ -23,7 +23,7 @@ ObjectCollection:
           ReturnValue: ""
         - $Type: Microflows$MicroflowParameter
           DefaultValue: ""
-          Documentation: ""
+          Documentation: d
           HasVariableNameBeenChanged: false
           IsRequired: true
           Name: Product
@@ -42,7 +42,7 @@ ObjectCollection:
                       Argument: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer
                       Parameter: MyFirstModule.ACT_Customer_New.Customer
                 QueueSettings: null
-            ResultVariableName: ""
+            ResultVariableName: Customer
             UseReturnVariable: true
           AutoGenerateCaption: true
           BackgroundColor: Default
@@ -59,8 +59,8 @@ ObjectCollection:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
                   Attribute: MyFirstModule.Product.Description
-                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstName
-            RefreshInClient: false
+                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
+            RefreshInClient: true
           AutoGenerateCaption: true
           BackgroundColor: Default
           Caption: Activity
@@ -75,9 +75,9 @@ ObjectCollection:
             Items:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
-                  Attribute: MyFirstModule.Customer.FirstName
-                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstName
-            RefreshInClient: false
+                  Attribute: MyFirstModule.Customer.FirstNam
+                  Value: $Product/MyFirstModule.Product_Order/MyFirstModule.Order/MyFirstModule.Order_Customer/MyFirstModule.Customer/FirstNam
+            RefreshInClient: true
             VariableName: NewCustomer
           AutoGenerateCaption: true
           BackgroundColor: Default
@@ -94,11 +94,10 @@ ObjectCollection:
                 - $Type: Microflows$ChangeActionItem
                   Association: ""
                   Attribute: MyFirstModule.Product.Name
-                  Value: |+
+                  Value: |-
                     if $currentUser/Name = 'Rick' then 'ok'
                     else ' not ok'
-
-            RefreshInClient: false
+            RefreshInClient: true
           AutoGenerateCaption: true
           BackgroundColor: Default
           Caption: Activity
