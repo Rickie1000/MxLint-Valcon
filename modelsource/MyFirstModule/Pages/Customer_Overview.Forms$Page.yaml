@@ -104,7 +104,7 @@ FormCall:
                                     Items:
                                         - $Type: Texts$Translation
                                           LanguageCode: en_US
-                                          Text: 'Page header '
+                                          Text: 'Page '
                               Name: text40
                               NativeAccessibilitySettings: null
                               NativeTextStyle: Text

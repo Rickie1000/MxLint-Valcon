@@ -12480,10 +12480,10 @@ const fv = () => i.jsx("svg", {
       et = p.useCallback(D => {
         Y === D ? nl(X => X === "asc" ? "desc" : "asc") : (cl(D), nl("asc"))
       }, [Y]),
-      fn = p.useCallback(async () => { // CUSTOM ADDED CODE
+      fn = p.useCallback(async () => { 
         await lt() ? b("Lint results refreshed.") : _("Failed to refresh lint results.")
       }, [lt, b, _]),
-      rn = p.useCallback(async () => {
+      rn = p.useCallback(async () => { // CUSTOM ADDED CODE
         b("Running MxLint...");
 
         const ports = [3210, 3211, 3212, 3213];

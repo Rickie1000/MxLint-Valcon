@@ -1,0 +1,64 @@
+TestCases:
+
+###############################################################################
+# PASS CASES
+# No validation rules present, or ValidationRules exists but is empty
+###############################################################################
+
+- name: PASS_no_validation_rules
+  allow: true
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+          - Name: Attr2
+            Value:
+              DefaultValue: null
+
+- name: PASS_empty_validation_rules_array_on_attribute
+  allow: true
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+            ValidationRules: []
+
+- name: PASS_empty_validation_rules_array_in_value_block
+  allow: true
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+            Value:
+              ValidationRules: []
+
+###############################################################################
+# FAIL CASES
+# Any concrete validation rule configured should fail
+###############################################################################
+
+- name: FAIL_validation_rules_on_attribute
+  allow: false
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+            ValidationRules:
+              - Type: Required
+
+- name: FAIL_validation_rules_in_value_block
+  allow: false
+  input:
+    Entities:
+      - Name: Entity1
+        Attributes:
+          - Name: Attr1
+            Value:
+              ValidationRules:
+                - Type: Range
+                  Min: 0
+                  Max: 10
