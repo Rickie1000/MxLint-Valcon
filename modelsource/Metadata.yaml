@@ -280,3 +280,34 @@ Modules:
         IsThemeModule: false
         Name: MyFirstModule
         NewSortIndex: 2
+    - Name: TestLucas
+      ID: CByCfYneqE+slQxY7yKXcg==
+      Attributes:
+        $ID:
+            subtype: 0
+            data:
+                - 8
+                - 28
+                - 130
+                - 125
+                - 137
+                - 222
+                - 168
+                - 79
+                - 172
+                - 149
+                - 12
+                - 88
+                - 239
+                - 34
+                - 151
+                - 114
+        $Type: Projects$ModuleImpl
+        AppStoreGuid: ""
+        AppStorePackageId: 0
+        AppStoreVersion: ""
+        AppStoreVersionGuid: ""
+        FromAppStore: false
+        IsThemeModule: false
+        Name: TestLucas
+        NewSortIndex: 3.7588798055411163

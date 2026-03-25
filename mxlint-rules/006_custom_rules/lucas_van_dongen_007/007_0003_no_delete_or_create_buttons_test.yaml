@@ -1,0 +1,64 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — No create/delete buttons present
+# Only custom actions or other buttons → allow: true
+###############################################################################
+
+- name: allow_no_create_delete_buttons
+  allow: true
+  input:
+
+    SomePage:
+      Widgets:
+
+        - $Type: Forms$ActionButton
+          Name: SaveButton
+          Action:
+            $Type: Custom$SaveAction
+
+        - $Type: Forms$Label
+          Caption: Example label
+
+
+###############################################################################
+# FAIL CASE — Create button detected
+# Forms$CreateObjectClientAction should trigger the rule → allow: false
+###############################################################################
+
+- name: disallow_create_button
+  allow: false
+  input:
+
+    Page:
+      Widgets:
+
+        - $Type: Forms$ActionButton
+          Name: CreateButton
+          Action:
+            $Type: Forms$CreateObjectClientAction
+
+        - $Type: Forms$ActionButton
+          Name: SaveButton
+          Action:
+            $Type: Custom$SaveAction
+
+###############################################################################
+# FAIL CASE — Delete button detected
+# Forms$DeleteClientAction should trigger the rule → allow: false
+###############################################################################
+
+- name: disallow_delete_button
+  allow: false
+  input:
+
+    Page:
+      Widgets:
+
+        - $Type: Forms$ActionButton
+          Name: DeleteButton
+          Action:
+            $Type: Forms$DeleteClientAction
+
+        - $Type: Forms$Label
+          Caption: Delete record

@@ -1,0 +1,33 @@
+$Type: DomainModels$DomainModel
+Annotations: []
+Associations: []
+CrossAssociations: []
+Documentation: ""
+Entities:
+    - $Type: DomainModels$EntityImpl
+      AccessRules:
+        - $Type: DomainModels$AccessRule
+          AllowCreate: true
+          AllowDelete: true
+          AllowedModuleRoles:
+            - TestLucas.user
+          DefaultMemberAccessRights: ReadWrite
+          Documentation: ""
+          MemberAccesses: []
+          XPathConstraint: ""
+          XPathConstraintCaption: ""
+      Attributes: []
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Test
+      Source: null
+      ValidationRules: []
