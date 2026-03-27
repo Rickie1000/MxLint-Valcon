@@ -1,0 +1,123 @@
+$Type: DomainModels$DomainModel
+Annotations: []
+Associations:
+    - $Type: DomainModels$Association
+      ChildConnection: 0;0
+      ChildPointer:
+        subtype: 0
+        data:
+            - 87
+            - 55
+            - 139
+            - 91
+            - 238
+            - 67
+            - 198
+            - 65
+            - 165
+            - 246
+            - 248
+            - 51
+            - 177
+            - 141
+            - 64
+            - 74
+      DeleteBehavior:
+        $Type: DomainModels$DeleteBehavior
+        ChildDeleteBehavior: DeleteMeButKeepReferences
+        ChildErrorMessage: null
+        ParentDeleteBehavior: DeleteMeButKeepReferences
+        ParentErrorMessage: null
+      Documentation: ""
+      ExportLevel: Hidden
+      Name: Person_HouseHold
+      Owner: Both
+      ParentConnection: 100;0
+      ParentPointer:
+        subtype: 0
+        data:
+            - 106
+            - 119
+            - 111
+            - 187
+            - 101
+            - 13
+            - 156
+            - 64
+            - 158
+            - 89
+            - 109
+            - 178
+            - 50
+            - 86
+            - 61
+            - 203
+      Source: null
+      StorageFormat: Column
+CrossAssociations: []
+Documentation: ""
+Entities:
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Name
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Gender
+          NewType:
+            $Type: DomainModels$EnumerationAttributeType
+            Enumeration: Mark_TESTING_MxLint.Gender
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Person
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Address
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: HouseHold
+      Source: null
+      ValidationRules: []

@@ -1,0 +1,100 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: []
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$ObjectType
+    Entity: Mark_TESTING_MxLint.Person
+Name: INCORRECT_OPR_Person_RetrieveOrCreateMaleForHousehold
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: $Person
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: true
+          IsRequired: true
+          Name: HouseHold
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Mark_TESTING_MxLint.HouseHold
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$RetrieveAction
+            ErrorHandlingType: Rollback
+            ResultVariableName: Person
+            RetrieveSource:
+                $Type: Microflows$DatabaseRetrieveSource
+                Entity: Mark_TESTING_MxLint.Person
+                NewSortings:
+                    $Type: Microflows$SortingsList
+                    Sortings: []
+                Range:
+                    $Type: Microflows$ConstantRange
+                    SingleObject: true
+                XpathConstraint: |-
+                    [Mark_TESTING_MxLint.Person_HouseHold = $HouseHold]
+                    [Name = $Name]
+                    [Gender = 'Male']
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ExclusiveSplit
+          Caption: '!= empty'
+          Documentation: ""
+          ErrorHandlingType: Rollback
+          SplitCondition:
+            $Type: Microflows$ExpressionSplitCondition
+            Expression: $Person != empty
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Commit: "No"
+            Entity: Mark_TESTING_MxLint.Person
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: Mark_TESTING_MxLint.Person_HouseHold
+                  Attribute: ""
+                  Value: $HouseHold
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Mark_TESTING_MxLint.Person.Name
+                  Value: $Name
+            RefreshInClient: false
+            VariableName: NewPerson
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: $NewPerson
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: true
+          IsRequired: true
+          Name: Name
+          VariableType:
+            $Type: DataTypes$StringType
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null
