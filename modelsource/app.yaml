@@ -27,6 +27,15 @@ content:
         - name: OPR_Person_RetrieveOrCreateMaleForHousehold.Microflows$Microflow.yaml
           type: file
           path: Mark_TESTING_MxLint\OPR_Person_RetrieveOrCreateMaleForHousehold.Microflows$Microflow.yaml
+        - name: OPR_RetrieveCurrentUserByAssociation.Microflows$Microflow.yaml
+          type: file
+          path: Mark_TESTING_MxLint\OPR_RetrieveCurrentUserByAssociation.Microflows$Microflow.yaml
+        - name: OPR_RetrieveCurrentUserByDatabaseOverID.Microflows$Microflow.yaml
+          type: file
+          path: Mark_TESTING_MxLint\OPR_RetrieveCurrentUserByDatabaseOverID.Microflows$Microflow.yaml
+        - name: OPR_RetrieveCurrentUserByDatabaseOverSession.Microflows$Microflow.yaml
+          type: file
+          path: Mark_TESTING_MxLint\OPR_RetrieveCurrentUserByDatabaseOverSession.Microflows$Microflow.yaml
         - name: Projects$ModuleSettings.yaml
           type: file
           path: Mark_TESTING_MxLint\Projects$ModuleSettings.yaml

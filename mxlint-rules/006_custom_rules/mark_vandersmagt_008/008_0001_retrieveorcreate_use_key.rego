@@ -306,7 +306,7 @@ type_of(x) := t if {
 # ---------------------------------------------------------
 extract_xpath_vars(xpath) := vars if {
     # Step 1: normalize separators
-    normalized := replace(replace(replace(replace(xpath, "[", " "), "]", " "), " AND ", " "), " OR ", " ")
+    normalized := replace(replace(replace(replace(xpath, "[", " "), "]", " "), "AND", " "), "OR", " ")
 
     # Step 2: split on whitespace
     parts := split(normalized, " ")
@@ -330,8 +330,3 @@ extract_xpath_vars(xpath) := vars if {
     }
     vars := vars_dollar | vars_literal
 }
-
-# ---------------------------------------------------------
-# Get the last segment after the last dot
-# e.g., "Mark_TESTING_MxLint.Gender.Male" -> "Male"
-# ---------------------------------------------------------
