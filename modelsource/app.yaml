@@ -70,6 +70,9 @@ content:
                 - name: ACT_Product_New.Microflows$Microflow.yaml
                   type: file
                   path: Rick_TESTING_MxLint\Resources\Microflows\ACT_Product_New.Microflows$Microflow.yaml
+                - name: ACT_TestClientActivities_0010.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\ACT_TestClientActivities_0010.Microflows$Microflow.yaml
                 - name: MF_Call_Test.Microflows$Microflow.yaml
                   type: file
                   path: Rick_TESTING_MxLint\Resources\Microflows\MF_Call_Test.Microflows$Microflow.yaml
@@ -79,6 +82,9 @@ content:
                 - name: MF_Test_CommitInLoop.Microflows$Microflow.yaml
                   type: file
                   path: Rick_TESTING_MxLint\Resources\Microflows\MF_Test_CommitInLoop.Microflows$Microflow.yaml
+                - name: OPR_TestClientActivities_0010.Microflows$Microflow.yaml
+                  type: file
+                  path: Rick_TESTING_MxLint\Resources\Microflows\OPR_TestClientActivities_0010.Microflows$Microflow.yaml
         - name: Security$ModuleSecurity.yaml
           type: file
           path: Rick_TESTING_MxLint\Security$ModuleSecurity.yaml

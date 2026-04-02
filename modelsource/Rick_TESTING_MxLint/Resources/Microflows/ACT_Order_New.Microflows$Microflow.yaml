@@ -143,7 +143,7 @@ ObjectCollection:
                   Association: ""
                   Attribute: Rick_TESTING_MxLint.Order.Date
                   Value: '[%CurrentDateTime%]'
-            RefreshInClient: false
+            RefreshInClient: true
             VariableName: NewOrder_2
           AutoGenerateCaption: true
           BackgroundColor: Default
@@ -193,6 +193,66 @@ ObjectCollection:
           Name: IsTrue
           VariableType:
             $Type: DataTypes$BooleanType
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order_2
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order_2
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order_2
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order_2
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: NewOrder
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
 ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []

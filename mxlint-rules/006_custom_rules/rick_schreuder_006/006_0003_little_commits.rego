@@ -1,16 +1,16 @@
 # METADATA
 # scope: package
-# title: Use as few committing Create/Change Object actions as possible (max 2 per microflow)
-# description: Counts Create/Change Object actions where Commit != No. Fails if more than 2 are present in a single microflow.
+# title: Use as few committing Create/Change Object actions as possible
+# description: Counts Create/Change Object actions where Commit != No, plus Commit Object actions. Reports LOW for 1-2 commits, MEDIUM for 3-6, and HIGH for more than 6 commits.
 # authors:
 # - Rick Schreuder
 # custom:
 #  category: Maintainability
 #  rulename: ReduceCommits
-#  severity: MEDIUM
+#  severity: LOW
 #  rulenumber: 006_0003
 #  remediation: Centralize persistence logic and avoid committing objects in many places.
-#  input: '**/*$Microflow.yaml'
+#  input: .*\\$Microflow\.yaml
 
 package app.custom.microflows.reduce_commits
 
@@ -18,31 +18,67 @@ import rego.v1
 
 annotation := rego.metadata.chain()[1].annotations
 
-threshold := 2
-
 default allow := false
 allow if count(errors) == 0
 
+# -----------------------------
+# LOW: 1-2 commits
+# -----------------------------
 errors contains err if {
   n := total_commit_count
-  n > threshold
+  n >= 1
+  n <= 2
 
-  err := sprintf("[%v, %v, %v] %v (found %d > %d)",
+  err := sprintf("[%v, %v, %v] %v (found %d commits; consider reducing commits)",
     [
-      annotation.custom.severity,
+      "LOW",
       annotation.custom.category,
       annotation.custom.rulenumber,
       annotation.title,
-      n,
-      threshold
+      n
     ]
   )
 }
 
 # -----------------------------
-# Total commits in THIS microflow file:
-# - CreateChangeAction where Commit != No  (Yes/YesWithoutEvents)
-# - CommitAction (commit object)
+# MEDIUM: 3-6 commits
+# -----------------------------
+errors contains err if {
+  n := total_commit_count
+  n >= 3
+  n <= 6
+
+  err := sprintf("[%v, %v, %v] %v (found %d commits; too many commits)",
+    [
+      "MEDIUM",
+      annotation.custom.category,
+      annotation.custom.rulenumber,
+      annotation.title,
+      n
+    ]
+  )
+}
+
+# -----------------------------
+# HIGH: >6 commits
+# -----------------------------
+errors contains err if {
+  n := total_commit_count
+  n > 6
+
+  err := sprintf("[%v, %v, %v] %v (found %d commits; excessive commits)",
+    [
+      "HIGH",
+      annotation.custom.category,
+      annotation.custom.rulenumber,
+      annotation.title,
+      n
+    ]
+  )
+}
+
+# -----------------------------
+# Count commits
 # -----------------------------
 total_commit_count := n if {
   objs := microflow_objects
@@ -65,20 +101,20 @@ total_commit_count := n if {
   n := count(create_change_commits) + count(commit_actions)
 }
 
-# Your exporter uses ObjectCollection.Objects
+# -----------------------------
+# Helpers
+# -----------------------------
 microflow_objects := objs if {
   objs := input.ObjectCollection.Objects
 } else := objs if {
   objs := []
 }
 
-# ActionActivity node wrapper
 is_action_activity(o) if {
   t := lower(type_of(o))
   contains(t, "actionactivity")
 }
 
-# Actions
 is_create_change_action(a) if {
   t := lower(type_of(a))
   contains(t, "createchangeaction")
@@ -89,7 +125,6 @@ is_commit_action(a) if {
   contains(t, "commitaction")
 }
 
-# $Type helper (your YAML uses $Type)
 type_of(x) := t if {
   t := x["$Type"]
 } else := t if {
@@ -98,7 +133,6 @@ type_of(x) := t if {
   t := ""
 }
 
-# Commit must be Yes / YesWithoutEvents, i.e., not No
 commit_is_enabled(a) if {
   v := lower(commit_value(a))
   v != ""
