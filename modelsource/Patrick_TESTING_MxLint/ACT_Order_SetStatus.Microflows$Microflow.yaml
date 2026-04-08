@@ -1,0 +1,140 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles:
+    - Patrick_TESTING_MxLint.User
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items:
+        - $Type: Texts$Translation
+          LanguageCode: en_US
+          Text: ""
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$VoidType
+Name: ACT_Order_SetStatus
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: ENUM_Order_Status
+          VariableType:
+            $Type: DataTypes$EnumerationType
+            Enumeration: Rick_TESTING_MxLint.ENUM_Order_Status
+        - $Type: Microflows$ExclusiveSplit
+          Caption: Status
+          Documentation: ""
+          ErrorHandlingType: Rollback
+          SplitCondition:
+            $Type: Microflows$ExpressionSplitCondition
+            Expression: $ENUM_Order_Status
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Patrick_TESTING_MxLint.Order.Status
+                  Value: Rick_TESTING_MxLint.ENUM_Order_Status.Draft
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Order
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Patrick_TESTING_MxLint.Order
+        - $Type: Microflows$ExclusiveMerge
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order
+            ErrorHandlingType: Rollback
+            RefreshInClient: true
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Patrick_TESTING_MxLint.Order.Status
+                  Value: Rick_TESTING_MxLint.ENUM_Order_Status.Shipped
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Patrick_TESTING_MxLint.Order.Status
+                  Value: Rick_TESTING_MxLint.ENUM_Order_Status.Cancelled
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Patrick_TESTING_MxLint.Order.Status
+                  Value: Rick_TESTING_MxLint.ENUM_Order_Status.Confirmed
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null

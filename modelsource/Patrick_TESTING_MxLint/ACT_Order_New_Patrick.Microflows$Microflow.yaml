@@ -1,0 +1,266 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles:
+    - Patrick_TESTING_MxLint.User
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$VoidType
+Name: ACT_Order_New_Patrick
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Commit: YesWithoutEvents
+            Entity: Rick_TESTING_MxLint.Order
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Order.Date
+                  Value: '[%CurrentDateTime%]'
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Order.Status
+                  Value: Rick_TESTING_MxLint.ENUM_Order_Status.Draft
+            RefreshInClient: false
+            VariableName: NewOrder
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ShowFormAction
+            ErrorHandlingType: Rollback
+            FormSettings:
+                $Type: Forms$FormSettings
+                Form: Rick_TESTING_MxLint.Order_Overview
+                ParameterMappings: []
+                TitleOverride: null
+            NumberOfPagesToClose: ""
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            ErrorHandlingType: Rollback
+            MicroflowCall:
+                $Type: Microflows$MicroflowCall
+                Microflow: Rick_TESTING_MxLint.MF_Order_GenerateOrderNumber
+                ParameterMappings:
+                    - $Type: Microflows$MicroflowCallParameterMapping
+                      Argument: $Order
+                      Parameter: Rick_TESTING_MxLint.MF_Order_GenerateOrderNumber.Order
+                QueueSettings: null
+            ResultVariableName: Order_2
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: Order
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Order
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Order
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Customer
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Customer
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Product
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Product
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: TooManyAttributes
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.TooManyAttributes
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: TestEntity
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.TestEntity
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Entity
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Entity
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Commit: "Yes"
+            Entity: Rick_TESTING_MxLint.Order
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Order.Date
+                  Value: '[%CurrentDateTime%]'
+            RefreshInClient: false
+            VariableName: NewOrder_2
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order_2
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ExclusiveSplit
+          Caption: IsValid
+          Documentation: ""
+          ErrorHandlingType: Rollback
+          SplitCondition:
+            $Type: Microflows$ExpressionSplitCondition
+            Expression: $IsTrue
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateVariableAction
+            ErrorHandlingType: Rollback
+            InitialValue: "true"
+            VariableName: IsValid
+            VariableType:
+                $Type: DataTypes$BooleanType
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: "true"
+          Documentation: IsValid
+          HasVariableNameBeenChanged: true
+          IsRequired: false
+          Name: IsTrue
+          VariableType:
+            $Type: DataTypes$BooleanType
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: NewOrder
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Order.Notes
+                  Value: $Notes
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ExclusiveSplit
+          Caption: Notes = 1?
+          Documentation: ""
+          ErrorHandlingType: Rollback
+          SplitCondition:
+            $Type: Microflows$ExpressionSplitCondition
+            Expression: $Notes = '1'
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateVariableAction
+            ErrorHandlingType: Rollback
+            InitialValue: '''1'''
+            VariableName: Notes
+            VariableType:
+                $Type: DataTypes$StringType
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ExclusiveMerge
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: NewOrder
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Order.Notes
+                  Value: $Notes
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: NewOrder
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null
