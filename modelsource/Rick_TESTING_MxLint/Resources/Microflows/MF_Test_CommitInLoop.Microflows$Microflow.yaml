@@ -116,3 +116,27 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: MF_Test_CommitInLoop
+    RETURN TYPE: void
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$CreateListAction
+
+      // action: Microflows$CreateChangeAction
+
+      // action: Microflows$CreateChangeAction
+
+      // action: Microflows$ChangeListAction
+
+      // action: Microflows$ChangeListAction
+
+      FOR EACH IteratorTestEntity IN TestList
+        // action: Microflows$CommitAction
+      END FOR
+
+
+    END

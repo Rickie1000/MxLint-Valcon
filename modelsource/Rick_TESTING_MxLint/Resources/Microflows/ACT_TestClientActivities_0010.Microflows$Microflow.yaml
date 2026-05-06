@@ -60,3 +60,17 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: ACT_TestClientActivities_0010
+    RETURN TYPE: void
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$ShowMessageAction
+
+      call Rick_TESTING_MxLint.OPR_TestClientActivities_0010()
+
+
+    END

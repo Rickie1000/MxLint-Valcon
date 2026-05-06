@@ -102,3 +102,29 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: OPR_Person_RetrieveOrCreateMaleForHousehold
+    RETURN TYPE: Mark_TESTING_MxLint.Person
+    PARAMETERS:
+      - HouseHold: Mark_TESTING_MxLint.HouseHold (required)
+      - Name: string (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      Person = retrieve from database Mark_TESTING_MxLint.Person
+
+      IF $Person != empty THEN
+        GOTO L001
+      ELSE
+        GOTO L002
+      END IF
+
+      LABEL L001
+
+      LABEL L002
+      // action: Microflows$CreateChangeAction
+
+
+    END

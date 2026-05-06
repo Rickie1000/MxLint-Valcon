@@ -144,7 +144,81 @@ ObjectCollection:
           Caption: Activity
           Disabled: false
           Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$RetrieveAction
+            ErrorHandlingType: Rollback
+            ResultVariableName: Entity_3
+            RetrieveSource:
+                $Type: Microflows$AssociationRetrieveSource
+                AssociationId: TestLucas.Entity_3_Entity_2
+                StartVariableName: Entity_2
+          AutoGenerateCaption: true
+          BackgroundColor: Orange
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Entity_2
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: TestLucas.Entity_2
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: NewEntity
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: TestLucas.Entity.Attribute
+                  Value: "false"
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Orange
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
 ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: Microflow_colors
+    RETURN TYPE: void
+    PARAMETERS:
+      - Entity_2: TestLucas.Entity_2 (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$CreateChangeAction
+
+      Entity_3 = retrieve from database <entity>
+
+      NewEntity.Attribute = false
+
+      Variable = false
+
+      Variable = true
+
+      // action: Microflows$CommitAction
+
+      commit NewEntity
+
+      NewEntity.Attribute = true
+
+      // action: Microflows$DeleteAction
+
+      call TestLucas.Sub_flow()
+
+      log info: "use good colors"
+
+
+    END

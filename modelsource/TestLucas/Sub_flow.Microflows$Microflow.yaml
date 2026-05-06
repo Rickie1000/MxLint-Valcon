@@ -62,3 +62,19 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: Sub_flow
+    RETURN TYPE: void
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$CreateChangeAction
+
+      // action: Microflows$CommitAction
+
+      // action: Microflows$DeleteAction
+
+
+    END
