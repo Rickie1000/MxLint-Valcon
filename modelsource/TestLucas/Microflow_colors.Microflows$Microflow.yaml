@@ -1,0 +1,150 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: []
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$VoidType
+Name: Microflow_colors
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Commit: "No"
+            Entity: TestLucas.Entity
+            ErrorHandlingType: Rollback
+            Items: []
+            RefreshInClient: false
+            VariableName: NewEntity
+          AutoGenerateCaption: true
+          BackgroundColor: Orange
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateVariableAction
+            ErrorHandlingType: Rollback
+            InitialValue: "false"
+            VariableName: Variable
+            VariableType:
+                $Type: DataTypes$BooleanType
+          AutoGenerateCaption: true
+          BackgroundColor: Yellow
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: NewEntity
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Purple
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$DeleteAction
+            DeleteVariableName: NewEntity
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Red
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            ErrorHandlingType: Rollback
+            MicroflowCall:
+                $Type: Microflows$MicroflowCall
+                Microflow: TestLucas.Sub_flow
+                ParameterMappings: []
+                QueueSettings: null
+            ResultVariableName: ""
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Green
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$LogMessageAction
+            ErrorHandlingType: Rollback
+            IncludeLatestStackTrace: false
+            Level: Info
+            MessageTemplate:
+                $Type: Microflows$StringTemplate
+                Parameters: []
+                Text: use good colors
+            Node: '''test'''
+          AutoGenerateCaption: true
+          BackgroundColor: Gray
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: NewEntity
+            Commit: "Yes"
+            ErrorHandlingType: Rollback
+            Items: []
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Purple
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: NewEntity
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: TestLucas.Entity.Attribute
+                  Value: "true"
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeVariableAction
+            ChangeVariableName: Variable
+            ErrorHandlingType: Rollback
+            Value: "true"
+          AutoGenerateCaption: true
+          BackgroundColor: Yellow
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null

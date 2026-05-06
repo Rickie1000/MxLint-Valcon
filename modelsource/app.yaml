@@ -220,6 +220,34 @@ content:
     - name: Settings$ProjectSettings.yaml
       type: file
       path: Settings$ProjectSettings.yaml
+    - name: TestLucas
+      type: directory
+      path: TestLucas
+      content:
+        - name: DomainModels$DomainModel.yaml
+          type: file
+          path: TestLucas\DomainModels$DomainModel.yaml
+        - name: Microflow_colors.Microflows$Microflow.yaml
+          type: file
+          path: TestLucas\Microflow_colors.Microflows$Microflow.yaml
+        - name: Projects$ModuleSettings.yaml
+          type: file
+          path: TestLucas\Projects$ModuleSettings.yaml
+        - name: Security$ModuleSecurity.yaml
+          type: file
+          path: TestLucas\Security$ModuleSecurity.yaml
+        - name: Sub_flow.Microflows$Microflow.yaml
+          type: file
+          path: TestLucas\Sub_flow.Microflows$Microflow.yaml
+        - name: Test.Forms$Page.yaml
+          type: file
+          path: TestLucas\Test.Forms$Page.yaml
+        - name: Test_NewEdit.Forms$Page.yaml
+          type: file
+          path: TestLucas\Test_NewEdit.Forms$Page.yaml
+        - name: Test_Popup.Forms$Page.yaml
+          type: file
+          path: TestLucas\Test_Popup.Forms$Page.yaml
     - name: Texts$SystemTextCollection.yaml
       type: file
       path: Texts$SystemTextCollection.yaml

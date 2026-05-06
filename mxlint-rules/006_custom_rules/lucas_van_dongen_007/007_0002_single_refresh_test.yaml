@@ -1,0 +1,62 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — Low number of client refreshes (1 counted: ActionActivity with RefreshInClient=true)
+# Total count: 1 <= threshold (2) → allow: true
+###############################################################################
+
+- name: allow_single_client_refresh
+  allow: true
+  input:
+    ObjectCollection:
+      Objects:
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            RefreshInClient: true
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            RefreshInClient: false
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+
+
+###############################################################################
+# FAIL CASE — High number of client refreshes (3 counted: ActionActivity with RefreshInClient=true)
+# Total count: 3 > threshold (2) → allow: false
+###############################################################################
+
+- name: disallow_multiple_client_refreshes
+  allow: false
+  input:
+    ObjectCollection:
+      Objects:
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            RefreshInClient: true
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            RefreshInClient: true
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            RefreshInClient: false
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            RefreshInClient: true
+
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateObjectAction

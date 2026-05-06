@@ -1,0 +1,48 @@
+TestCases:
+
+###############################################################################
+# PASS CASE — No validation used
+# Validation object exists but Expression is empty → allow: true
+###############################################################################
+
+- name: allow_widget_without_validation_expression
+  allow: true
+  input:
+
+    Page:
+      Widgets:
+
+        - $Type: Forms$TextBox
+          Name: textBox1
+          Validation:
+            $Type: Forms$WidgetValidation
+            Expression: ""
+            Message:
+              $Type: Texts$Text
+              Items: []
+
+        - $Type: Forms$Data
+
+
+###############################################################################
+# FAIL CASE — Validation expression used
+# Expression contains validation logic → allow: false
+###############################################################################
+
+- name: disallow_widget_with_validation_expression
+  allow: false
+  input:
+
+    Page:
+      Widgets:
+
+        - $Type: Forms$TextBox
+          Name: textBox1
+          Validation:
+            $Type: Forms$WidgetValidation
+            Expression: $value != empty
+            Message:
+              $Type: Texts$Text
+              Items: []
+
+        - $Type: Forms$Data

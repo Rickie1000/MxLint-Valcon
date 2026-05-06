@@ -1,0 +1,301 @@
+$Type: Forms$Page
+AllowedModuleRoles: []
+Appearance:
+    $Type: Forms$Appearance
+    Class: ""
+    DesignProperties: []
+    DynamicClasses: ""
+    Style: ""
+CanvasHeight: 600
+CanvasWidth: 1198
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+FormCall:
+    $Type: Forms$LayoutCall
+    Arguments:
+        - $Type: Forms$FormCallArgument
+          Parameter: Atlas_Core.Atlas_Default.Main
+          Widgets:
+            - $Type: Forms$TextBox
+              Appearance:
+                $Type: Forms$Appearance
+                Class: ""
+                DesignProperties: []
+                DynamicClasses: ""
+                Style: ""
+              AriaRequired: false
+              AttributeRef:
+                $Type: DomainModels$AttributeRef
+                Attribute: TestLucas.Test.testname
+                EntityRef: null
+              AutoFocus: false
+              Autocomplete: true
+              AutocompletePurpose: "On"
+              ConditionalEditabilitySettings: null
+              ConditionalVisibilitySettings: null
+              Editable: Always
+              FormattingInfo:
+                $Type: Forms$FormattingInfo
+                CustomDateFormat: ""
+                DateFormat: Date
+                DecimalPrecision: 2
+                EnumFormat: Text
+                GroupDigits: false
+              InputMask: ""
+              IsPasswordBox: false
+              KeyboardType: Default
+              LabelTemplate:
+                $Type: Forms$ClientTemplate
+                Fallback:
+                    $Type: Texts$Text
+                    Items: []
+                Parameters: []
+                Template:
+                    $Type: Texts$Text
+                    Items:
+                        - $Type: Texts$Translation
+                          LanguageCode: en_US
+                          Text: testname
+              MaxLengthCode: -1
+              Name: textBox1
+              NativeAccessibilitySettings: null
+              OnChangeAction:
+                $Type: Forms$NoAction
+                DisabledDuringExecution: true
+              OnEnterAction:
+                $Type: Forms$NoAction
+                DisabledDuringExecution: true
+              OnEnterKeyPressAction:
+                $Type: Forms$NoAction
+                DisabledDuringExecution: true
+              OnLeaveAction:
+                $Type: Forms$NoAction
+                DisabledDuringExecution: true
+              PlaceholderTemplate:
+                $Type: Forms$ClientTemplate
+                Fallback:
+                    $Type: Texts$Text
+                    Items: []
+                Parameters: []
+                Template:
+                    $Type: Texts$Text
+                    Items: []
+              ReadOnlyStyle: Inherit
+              ScreenReaderLabel: null
+              SourceVariable:
+                $Type: Forms$PageVariable
+                LocalVariable: ""
+                PageParameter: Test
+                SnippetParameter: ""
+                UseAllPages: false
+                Widget: ""
+              SubmitBehaviour: OnEndEditing
+              SubmitOnInputDelay: 300
+              TabIndex: 0
+              Validation:
+                $Type: Forms$WidgetValidation
+                Expression: ""
+                Message:
+                    $Type: Texts$Text
+                    Items: []
+            - $Type: Forms$DataView
+              Appearance:
+                $Type: Forms$Appearance
+                Class: ""
+                DesignProperties: []
+                DynamicClasses: ""
+                Style: ""
+              ConditionalEditabilitySettings: null
+              ConditionalVisibilitySettings: null
+              DataSource:
+                $Type: Forms$DataViewSource
+                EntityRef:
+                    $Type: DomainModels$DirectEntityRef
+                    Entity: TestLucas.Test
+                ForceFullObjects: false
+                SourceVariable:
+                    $Type: Forms$PageVariable
+                    LocalVariable: ""
+                    PageParameter: Test
+                    SnippetParameter: ""
+                    UseAllPages: false
+                    Widget: ""
+              Editability: Always
+              FooterWidgets:
+                - $Type: Forms$ActionButton
+                  Action:
+                    $Type: Forms$CreateObjectClientAction
+                    DisabledDuringExecution: true
+                    EntityRef:
+                        $Type: DomainModels$DirectEntityRef
+                        Entity: TestLucas.Test
+                    NumberOfPagesToClose2: ""
+                    PageSettings:
+                        $Type: Forms$FormSettings
+                        Form: TestLucas.Test_NewEdit
+                        ParameterMappings: []
+                        TitleOverride: null
+                  Appearance:
+                    $Type: Forms$Appearance
+                    Class: ""
+                    DesignProperties: []
+                    DynamicClasses: ""
+                    Style: ""
+                  AriaRole: Button
+                  ButtonStyle: Default
+                  CaptionTemplate:
+                    $Type: Forms$ClientTemplate
+                    Fallback:
+                        $Type: Texts$Text
+                        Items: []
+                    Parameters: []
+                    Template:
+                        $Type: Texts$Text
+                        Items:
+                            - $Type: Texts$Translation
+                              LanguageCode: en_US
+                              Text: New
+                  ConditionalVisibilitySettings: null
+                  Icon: null
+                  Name: actionButton4
+                  NativeAccessibilitySettings: null
+                  RenderType: Button
+                  TabIndex: 0
+                  Tooltip:
+                    $Type: Texts$Text
+                    Items: []
+                - $Type: Forms$ActionButton
+                  Action:
+                    $Type: Forms$DeleteClientAction
+                    ClosePage: true
+                    DisabledDuringExecution: true
+                    SourceVariable: null
+                  Appearance:
+                    $Type: Forms$Appearance
+                    Class: ""
+                    DesignProperties: []
+                    DynamicClasses: ""
+                    Style: ""
+                  AriaRole: Button
+                  ButtonStyle: Default
+                  CaptionTemplate:
+                    $Type: Forms$ClientTemplate
+                    Fallback:
+                        $Type: Texts$Text
+                        Items: []
+                    Parameters: []
+                    Template:
+                        $Type: Texts$Text
+                        Items:
+                            - $Type: Texts$Translation
+                              LanguageCode: en_US
+                              Text: Delete
+                  ConditionalVisibilitySettings: null
+                  Icon: null
+                  Name: actionButton1
+                  NativeAccessibilitySettings: null
+                  RenderType: Button
+                  TabIndex: 0
+                  Tooltip:
+                    $Type: Texts$Text
+                    Items: []
+                - $Type: Forms$ActionButton
+                  Action:
+                    $Type: Forms$SaveChangesClientAction
+                    ClosePage: true
+                    DisabledDuringExecution: true
+                    SyncAutomatically: false
+                  Appearance:
+                    $Type: Forms$Appearance
+                    Class: ""
+                    DesignProperties: []
+                    DynamicClasses: ""
+                    Style: ""
+                  AriaRole: Button
+                  ButtonStyle: Success
+                  CaptionTemplate:
+                    $Type: Forms$ClientTemplate
+                    Fallback:
+                        $Type: Texts$Text
+                        Items: []
+                    Parameters: []
+                    Template:
+                        $Type: Texts$Text
+                        Items:
+                            - $Type: Texts$Translation
+                              LanguageCode: en_US
+                              Text: Save
+                  ConditionalVisibilitySettings: null
+                  Icon: null
+                  Name: actionButton2
+                  NativeAccessibilitySettings: null
+                  RenderType: Button
+                  TabIndex: 0
+                  Tooltip:
+                    $Type: Texts$Text
+                    Items: []
+                - $Type: Forms$ActionButton
+                  Action:
+                    $Type: Forms$CancelChangesClientAction
+                    ClosePage: true
+                    DisabledDuringExecution: true
+                  Appearance:
+                    $Type: Forms$Appearance
+                    Class: ""
+                    DesignProperties: []
+                    DynamicClasses: ""
+                    Style: ""
+                  AriaRole: Button
+                  ButtonStyle: Default
+                  CaptionTemplate:
+                    $Type: Forms$ClientTemplate
+                    Fallback:
+                        $Type: Texts$Text
+                        Items: []
+                    Parameters: []
+                    Template:
+                        $Type: Texts$Text
+                        Items:
+                            - $Type: Texts$Translation
+                              LanguageCode: en_US
+                              Text: Cancel
+                  ConditionalVisibilitySettings: null
+                  Icon: null
+                  Name: actionButton3
+                  NativeAccessibilitySettings: null
+                  RenderType: Button
+                  TabIndex: 0
+                  Tooltip:
+                    $Type: Texts$Text
+                    Items: []
+              LabelWidth: 3
+              Name: dataView1
+              NoEntityMessage:
+                $Type: Texts$Text
+                Items: []
+              ReadOnlyStyle: Control
+              ShowFooter: true
+              TabIndex: 0
+              Widgets: []
+    Form: Atlas_Core.Atlas_Default
+MarkAsUsed: false
+Name: Test
+Parameters:
+    - $Type: Forms$PageParameter
+      Name: Test
+      ParameterType:
+        $Type: DataTypes$ObjectType
+        Entity: TestLucas.Test
+PopupCloseAction: ""
+PopupHeight: 0
+PopupResizable: true
+PopupWidth: 0
+Title:
+    $Type: Texts$Text
+    Items:
+        - $Type: Texts$Translation
+          LanguageCode: en_US
+          Text: Test
+Url: ""
+Variables: []

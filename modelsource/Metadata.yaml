@@ -1,5 +1,5 @@
-ProductVersion: 10.24.16.96987
-BuildVersion: 10.24.16.96987
+ProductVersion: 10.24.8.80126
+BuildVersion: 10.24.8.80126
 Modules:
     - Name: Atlas_Core
       ID: MEcUqdIy206OoeJy2Ocp9w==
@@ -249,7 +249,7 @@ Modules:
         IsThemeModule: false
         Name: FileUploader
         NewSortIndex: 3.3002477385276068
-    - Name: Rick_TESTING_MxLint
+    - Name: MyFirstModule
       ID: xn10Fre2rkKqvyVdyirurw==
       Attributes:
         $ID:
@@ -278,30 +278,30 @@ Modules:
         AppStoreVersionGuid: ""
         FromAppStore: false
         IsThemeModule: false
-        Name: Rick_TESTING_MxLint
+        Name: MyFirstModule
         NewSortIndex: 2
-    - Name: Patrick_TESTING_MxLint
-      ID: 1CwpiUOPN0i1DQ/0ee8U7w==
+    - Name: TestLucas
+      ID: CByCfYneqE+slQxY7yKXcg==
       Attributes:
         $ID:
             subtype: 0
             data:
-                - 212
-                - 44
-                - 41
+                - 8
+                - 28
+                - 130
+                - 125
                 - 137
-                - 67
-                - 143
-                - 55
-                - 72
-                - 181
-                - 13
-                - 15
-                - 244
-                - 121
+                - 222
+                - 168
+                - 79
+                - 172
+                - 149
+                - 12
+                - 88
                 - 239
-                - 20
-                - 239
+                - 34
+                - 151
+                - 114
         $Type: Projects$ModuleImpl
         AppStoreGuid: ""
         AppStorePackageId: 0
@@ -309,5 +309,5 @@ Modules:
         AppStoreVersionGuid: ""
         FromAppStore: false
         IsThemeModule: false
-        Name: Patrick_TESTING_MxLint
-        NewSortIndex: 3.6850139687687533
+        Name: TestLucas
+        NewSortIndex: 3.7588798055411163
