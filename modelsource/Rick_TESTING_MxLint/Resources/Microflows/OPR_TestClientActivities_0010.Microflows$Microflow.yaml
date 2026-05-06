@@ -44,3 +44,15 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: OPR_TestClientActivities_0010
+    RETURN TYPE: void
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$ShowMessageAction
+
+
+    END

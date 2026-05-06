@@ -58,3 +58,19 @@ ReturnVariableName: Variable
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: ACT_Customer_New
+    RETURN TYPE: string
+    PARAMETERS:
+      - Customer: Rick_TESTING_MxLint.Customer (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      Variable = 'Rick'
+
+      Variable = 'Rick changed'
+
+
+    END

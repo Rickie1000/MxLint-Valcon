@@ -107,3 +107,24 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: ACT_Product_New
+    RETURN TYPE: void
+    PARAMETERS:
+      - Product: Rick_TESTING_MxLint.Product (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$CreateChangeAction
+
+      Product.Description = $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer/FirstNam
+
+      Product.Name = if $currentUser/Name = 'Rick' then 'ok'
+    else ' not ok'
+
+      call Rick_TESTING_MxLint.ACT_Customer_New(Customer = $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer)
+
+
+    END

@@ -138,3 +138,45 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: ACT_Order_SetStatus
+    RETURN TYPE: void
+    PARAMETERS:
+      - ENUM_Order_Status: DataTypes$EnumerationType (required)
+      - Order: Patrick_TESTING_MxLint.Order (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      IF $ENUM_Order_Status THEN
+        GOTO L001  // case: Draft
+        // OR GOTO L003  // case: Confirmed
+        // OR GOTO L004  // case: Shipped
+        // OR GOTO L005  // case: Cancelled
+        // OR GOTO L006  // case: (empty)
+      END IF
+
+      LABEL L001
+      Order.Status = Rick_TESTING_MxLint.ENUM_Order_Status.Draft
+
+      LABEL L002
+
+      // action: Microflows$CommitAction
+
+
+      LABEL L003
+      Order.Status = Rick_TESTING_MxLint.ENUM_Order_Status.Confirmed
+      GOTO L002
+
+      LABEL L004
+      Order.Status = Rick_TESTING_MxLint.ENUM_Order_Status.Shipped
+      GOTO L002
+
+      LABEL L005
+      Order.Status = Rick_TESTING_MxLint.ENUM_Order_Status.Cancelled
+      GOTO L002
+
+      LABEL L006
+
+    END

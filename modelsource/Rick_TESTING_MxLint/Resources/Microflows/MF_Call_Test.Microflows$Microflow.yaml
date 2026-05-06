@@ -65,3 +65,19 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: MF_Call_Test
+    RETURN TYPE: void
+    PARAMETERS:
+      - Order: Rick_TESTING_MxLint.Order (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      call Rick_TESTING_MxLint.ACT_Customer_New(Customer = $Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer)
+
+      // action: Microflows$CommitAction
+
+
+    END

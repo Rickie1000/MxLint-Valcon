@@ -81,3 +81,22 @@ ReturnVariableName: Order
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: MF_Order_GenerateOrderNumber
+    RETURN TYPE: Rick_TESTING_MxLint.Order
+    PARAMETERS:
+      - Order: Rick_TESTING_MxLint.Order (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      OrderNr = 'ORD-' + formatDateTime([%CurrentDateTime%], 'yyyyMMdd-HHmmss')
+
+      call Rick_TESTING_MxLint.MF_Test_CommitInLoop()
+
+      Order.OrderNumber = $OrderNr
+      commit Order
+
+
+    END

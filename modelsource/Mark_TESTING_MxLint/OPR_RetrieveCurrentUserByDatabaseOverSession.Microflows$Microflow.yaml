@@ -45,3 +45,15 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: OPR_RetrieveCurrentUserByDatabaseOverSession
+    RETURN TYPE: void
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      User = retrieve from database System.User
+
+
+    END

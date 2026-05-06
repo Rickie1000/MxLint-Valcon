@@ -264,3 +264,61 @@ ReturnVariableName: ""
 Url: ""
 UrlSearchParameters: []
 WorkflowActionInfo: null
+pseudocode: |-
+    MICROFLOW: ACT_Order_New_Patrick
+    RETURN TYPE: void
+    PARAMETERS:
+      - Customer: Rick_TESTING_MxLint.Customer (required)
+      - Entity: Rick_TESTING_MxLint.Entity (required)
+      - IsTrue: boolean (optional)
+      - Order: Rick_TESTING_MxLint.Order (required)
+      - Product: Rick_TESTING_MxLint.Product (required)
+      - TestEntity: Rick_TESTING_MxLint.TestEntity (required)
+      - TooManyAttributes: Rick_TESTING_MxLint.TooManyAttributes (required)
+
+    PSEUDOCODE
+    ----------
+    BEGIN
+
+      // action: Microflows$CreateChangeAction
+
+      IsValid = true
+
+      call Rick_TESTING_MxLint.MF_Order_GenerateOrderNumber(Order = $Order)
+
+      IF $IsTrue THEN
+        GOTO L001
+      ELSE
+        GOTO L005
+      END IF
+
+      LABEL L001
+      // action: Microflows$CreateChangeAction
+
+      Notes = '1'
+
+      IF $Notes = '1' THEN
+        GOTO L002
+      ELSE
+        GOTO L004
+      END IF
+
+      LABEL L002
+      NewOrder.Notes = $Notes
+
+      LABEL L003
+
+      // action: Microflows$CommitAction
+
+      // action: Microflows$CommitAction
+
+      // action: Microflows$ShowFormAction
+
+
+      LABEL L004
+      NewOrder.Notes = $Notes
+      GOTO L003
+
+      LABEL L005
+
+    END
