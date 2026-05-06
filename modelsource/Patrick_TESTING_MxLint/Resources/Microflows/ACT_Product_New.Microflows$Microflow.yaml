@@ -1,0 +1,109 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: []
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$VoidType
+Name: ACT_Product_New
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: d
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Product
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Product
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            ErrorHandlingType: Rollback
+            MicroflowCall:
+                $Type: Microflows$MicroflowCall
+                Microflow: Rick_TESTING_MxLint.ACT_Customer_New
+                ParameterMappings:
+                    - $Type: Microflows$MicroflowCallParameterMapping
+                      Argument: $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer
+                      Parameter: Rick_TESTING_MxLint.ACT_Customer_New.Customer
+                QueueSettings: null
+            ResultVariableName: Customer
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Product
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Product.Description
+                  Value: $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer/FirstNam
+            RefreshInClient: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Commit: "No"
+            Entity: Rick_TESTING_MxLint.Customer
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Customer.FirstNam
+                  Value: $Product/Rick_TESTING_MxLint.Product_Order/Rick_TESTING_MxLint.Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer/FirstNam
+            RefreshInClient: true
+            VariableName: NewCustomer
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Product
+            Commit: "No"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Product.Name
+                  Value: |-
+                    if $currentUser/Name = 'Rick' then 'ok'
+                    else ' not ok'
+            RefreshInClient: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null

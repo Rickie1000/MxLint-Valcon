@@ -24,5 +24,14 @@ The **custom rules are stored in Git** and automatically **synced into the Mendi
 ### 1) Allow PowerShell scripts
 Open **PowerShell as Administrator** and run:
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+```powershell Set-ExecutionPolicy -ExecutionPolicy RemoteSigned```
+
+
+### 2) Enable Studio Pro extension development mode
+
+1. Locate your Mendix Studio Pro 10.24.8 shortcut (Start Menu or Desktop)
+2. Right-click → Properties
+3. In the Target field, append (after the closing quote):
+
+

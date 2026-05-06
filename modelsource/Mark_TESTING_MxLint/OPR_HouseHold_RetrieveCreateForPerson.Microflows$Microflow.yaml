@@ -1,0 +1,79 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: []
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$ObjectType
+    Entity: Mark_TESTING_MxLint.HouseHold
+Name: OPR_HouseHold_RetrieveCreateForPerson
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: $HouseHold
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Person
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Mark_TESTING_MxLint.Person
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$RetrieveAction
+            ErrorHandlingType: Rollback
+            ResultVariableName: HouseHold
+            RetrieveSource:
+                $Type: Microflows$AssociationRetrieveSource
+                AssociationId: Mark_TESTING_MxLint.Person_HouseHold
+                StartVariableName: Person
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ExclusiveSplit
+          Caption: '!= empty'
+          Documentation: ""
+          ErrorHandlingType: Rollback
+          SplitCondition:
+            $Type: Microflows$ExpressionSplitCondition
+            Expression: $HouseHold != empty
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateChangeAction
+            Commit: "No"
+            Entity: Mark_TESTING_MxLint.HouseHold
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: Mark_TESTING_MxLint.Person_HouseHold
+                  Attribute: ""
+                  Value: $Person
+            RefreshInClient: false
+            VariableName: NewHouseHold
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: $NewHouseHold
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null

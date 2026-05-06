@@ -1,0 +1,67 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: []
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$VoidType
+Name: MF_Call_Test
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Order
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Order
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            ErrorHandlingType: Rollback
+            MicroflowCall:
+                $Type: Microflows$MicroflowCall
+                Microflow: Rick_TESTING_MxLint.ACT_Customer_New
+                ParameterMappings:
+                    - $Type: Microflows$MicroflowCallParameterMapping
+                      Argument: $Order/Rick_TESTING_MxLint.Order_Customer/Rick_TESTING_MxLint.Customer
+                      Parameter: Rick_TESTING_MxLint.ACT_Customer_New.Customer
+                QueueSettings: null
+            ResultVariableName: Customer
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order
+            ErrorHandlingType: Rollback
+            RefreshInClient: false
+            WithEvents: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+ReturnVariableName: ""
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null

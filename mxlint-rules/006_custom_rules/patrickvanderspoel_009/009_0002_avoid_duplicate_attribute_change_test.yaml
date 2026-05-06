@@ -1,0 +1,219 @@
+TestCases:
+
+###############################################################################
+# PASS CASES
+###############################################################################
+
+- name: PASS_single_change
+  allow: true
+  input:
+    Name: OPR_Order_SetStatus
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Approved'"
+
+- name: PASS_different_attributes_separate_activities
+  allow: true
+  input:
+    Name: OPR_Order_Update
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Approved'"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Amount
+                Value: "$CalculatedAmount"
+
+- name: PASS_multiple_attrs_one_activity
+  allow: true
+  input:
+    Name: OPR_Order_Initialize
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Draft'"
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Amount
+                Value: "0"
+
+- name: PASS_same_attr_different_variables
+  allow: true
+  input:
+    Name: OPR_Order_CopyStatus
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: SourceOrder
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Draft'"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: TargetOrder
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Approved'"
+
+- name: PASS_no_change_actions
+  allow: true
+  input:
+    Name: RET_Order_GetAll
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$RetrieveAction
+
+
+###############################################################################
+# FAIL CASES
+###############################################################################
+
+- name: FAIL_duplicate_change_2x
+  allow: false
+  input:
+    Name: OPR_Order_SetStatus
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Draft'"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Approved'"
+
+- name: FAIL_duplicate_change_4x_real_world
+  allow: false
+  input:
+    Name: ACT_Order_SetStatus
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Draft'"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Shipped'"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Cancelled'"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Confirmed'"
+
+- name: FAIL_one_duplicate_one_unique
+  allow: false
+  input:
+    Name: OPR_Order_Update
+    ObjectCollection:
+      Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Draft'"
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Amount
+                Value: "0"
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Items:
+              - $Type: Microflows$ChangeActionItem
+                Association: ""
+                Attribute: MyModule.Order.Status
+                Value: "'Approved'"

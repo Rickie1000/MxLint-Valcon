@@ -1,0 +1,83 @@
+$Type: Microflows$Microflow
+AllowConcurrentExecution: true
+AllowedModuleRoles: []
+ApplyEntityAccess: false
+ConcurrencyErrorMicroflow: ""
+ConcurrenyErrorMessage:
+    $Type: Texts$Text
+    Items: []
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+MarkAsUsed: false
+MicroflowActionInfo: null
+MicroflowReturnType:
+    $Type: DataTypes$ObjectType
+    Entity: Rick_TESTING_MxLint.Order
+Name: MF_Order_GenerateOrderNumber
+ObjectCollection:
+    $Type: Microflows$MicroflowObjectCollection
+    Objects:
+        - $Type: Microflows$StartEvent
+        - $Type: Microflows$EndEvent
+          Documentation: ""
+          ReturnValue: $Order
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateVariableAction
+            ErrorHandlingType: Rollback
+            InitialValue: '''ORD-'' + formatDateTime([%CurrentDateTime%], ''yyyyMMdd-HHmmss'')'
+            VariableName: OrderNr
+            VariableType:
+                $Type: DataTypes$StringType
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ChangeAction
+            ChangeVariableName: Order
+            Commit: "Yes"
+            ErrorHandlingType: Rollback
+            Items:
+                - $Type: Microflows$ChangeActionItem
+                  Association: ""
+                  Attribute: Rick_TESTING_MxLint.Order.OrderNumber
+                  Value: $OrderNr
+            RefreshInClient: false
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+        - $Type: Microflows$MicroflowParameter
+          DefaultValue: ""
+          Documentation: ""
+          HasVariableNameBeenChanged: false
+          IsRequired: true
+          Name: Order
+          VariableType:
+            $Type: DataTypes$ObjectType
+            Entity: Rick_TESTING_MxLint.Order
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$MicroflowCallAction
+            ErrorHandlingType: Rollback
+            MicroflowCall:
+                $Type: Microflows$MicroflowCall
+                Microflow: Rick_TESTING_MxLint.MF_Test_CommitInLoop
+                ParameterMappings: []
+                QueueSettings: null
+            ResultVariableName: ""
+            UseReturnVariable: true
+          AutoGenerateCaption: true
+          BackgroundColor: Default
+          Caption: Activity
+          Disabled: false
+          Documentation: ""
+ReturnVariableName: Order
+Url: ""
+UrlSearchParameters: []
+WorkflowActionInfo: null

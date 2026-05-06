@@ -1,0 +1,73 @@
+$Type: DomainModels$DomainModel
+Annotations: []
+Associations: []
+CrossAssociations: []
+Documentation: ""
+Entities:
+    - $Type: DomainModels$EntityImpl
+      AccessRules:
+        - $Type: DomainModels$AccessRule
+          AllowCreate: true
+          AllowDelete: true
+          AllowedModuleRoles:
+            - TestLucas.user
+          DefaultMemberAccessRights: ReadWrite
+          Documentation: ""
+          MemberAccesses:
+            - $Type: DomainModels$MemberAccess
+              AccessRights: ReadWrite
+              Association: ""
+              Attribute: TestLucas.Test.testname
+          XPathConstraint: ""
+          XPathConstraintCaption: ""
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: testname
+          NewType:
+            $Type: DomainModels$StringAttributeType
+            Length: 200
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: ""
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: true
+      Name: Test
+      Source: null
+      ValidationRules: []
+    - $Type: DomainModels$EntityImpl
+      AccessRules: []
+      Attributes:
+        - $Type: DomainModels$Attribute
+          Documentation: ""
+          ExportLevel: Hidden
+          Name: Attribute
+          NewType:
+            $Type: DomainModels$BooleanAttributeType
+          Value:
+            $Type: DomainModels$StoredValue
+            DefaultValue: "false"
+      Documentation: ""
+      Events: []
+      ExportLevel: Hidden
+      Indexes: []
+      MaybeGeneralization:
+        $Type: DomainModels$NoGeneralization
+        HasChangedByAttr: false
+        HasChangedDateAttr: false
+        HasCreatedDateAttr: false
+        HasOwnerAttr: false
+        Persistable: false
+      Name: Entity
+      Source: null
+      ValidationRules: []

@@ -1,0 +1,163 @@
+TestCases:
+
+- name: PASS_act_flow_with_show_message
+  allow: true
+  input:
+    $Type: Microflows$Microflow
+    Name: ACT_Test_ShowMessage
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ShowMessageAction
+            Message:
+              $Type: Texts$Text
+              Items: []
+          BackgroundColor: Default
+
+- name: PASS_nav_flow_with_show_page
+  allow: true
+  input:
+    $Type: Microflows$Microflow
+    Name: NAV_OpenOverview
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ShowFormAction
+            FormSettings:
+              $Type: Forms$FormSettings
+              Form: MyModule.Order_Overview
+              ParameterMappings: []
+              TitleOverride: null
+            NumberOfPagesToClose: ""
+          BackgroundColor: Default
+
+- name: PASS_och_flow_with_refresh_in_client
+  allow: true
+  input:
+    $Type: Microflows$Microflow
+    Name: OCH_Order_Status
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CommitAction
+            CommitVariableName: Order
+            ErrorHandlingType: Rollback
+            RefreshInClient: true
+            WithEvents: true
+          BackgroundColor: Default
+
+- name: PASS_url_flow_with_show_message
+  allow: true
+  input:
+    $Type: Microflows$Microflow
+    Name: URL_OpenPortal
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ShowMessageAction
+            Message:
+              $Type: Texts$Text
+              Items: []
+          BackgroundColor: Default
+
+- name: PASS_val_flow_with_validation_feedback
+  allow: true
+  input:
+    $Type: Microflows$Microflow
+    Name: VAL_Customer_Check
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ValidationFeedbackAction
+            Attribute: MyModule.Customer.Name
+          BackgroundColor: Default
+
+- name: FAIL_opr_flow_with_show_message
+  allow: false
+  input:
+    $Type: Microflows$Microflow
+    Name: OPR_Test_ShowMessage
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ShowMessageAction
+            Message:
+              $Type: Texts$Text
+              Items: []
+          BackgroundColor: Default
+
+- name: FAIL_ctl_flow_with_show_page
+  allow: false
+  input:
+    $Type: Microflows$Microflow
+    Name: CTL_OpenSomething
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ShowFormAction
+            FormSettings:
+              $Type: Forms$FormSettings
+              Form: MyModule.Order_Overview
+              ParameterMappings: []
+              TitleOverride: null
+            NumberOfPagesToClose: ""
+          BackgroundColor: Default
+
+- name: FAIL_ret_flow_with_download_file
+  allow: false
+  input:
+    $Type: Microflows$Microflow
+    Name: RET_ExportCustomer
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$DownloadFileAction
+            FileDocumentVariableName: ExportFile
+          BackgroundColor: Default
+
+- name: FAIL_act_flow_with_validation_feedback
+  allow: false
+  input:
+    $Type: Microflows$Microflow
+    Name: ACT_Test_ValidationFeedback
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$ValidationFeedbackAction
+            Attribute: MyModule.Customer.Name
+          BackgroundColor: Default
+
+- name: PASS_opr_flow_without_client_activity
+  allow: true
+  input:
+    $Type: Microflows$Microflow
+    Name: OPR_CalculateDiscount
+    ObjectCollection:
+      $Type: Microflows$MicroflowObjectCollection
+      Objects:
+        - $Type: Microflows$ActionActivity
+          Action:
+            $Type: Microflows$CreateVariableAction
+            VariableName: Discount
+            InitialValue: "10"
+            VariableType:
+              $Type: DataTypes$IntegerType
+          BackgroundColor: Default
