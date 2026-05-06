@@ -42,9 +42,10 @@ UserRoles:
       ManageUsersWithoutRoles: false
       ManageableRoles: []
       ModuleRoles:
-        - System.Administrator
         - Administration.Administrator
+        - System.Administrator
         - Rick_TESTING_MxLint.User
+        - Patrick_TESTING_MxLint.User
       Name: Administrator
     - $Type: Security$UserRole
       CheckSecurity: true
@@ -57,6 +58,7 @@ UserRoles:
         - FeedbackModule.User
         - System.User
         - Rick_TESTING_MxLint.User
+        - Patrick_TESTING_MxLint.User
       Name: User
     - $Type: Security$UserRole
       CheckSecurity: true
@@ -67,4 +69,5 @@ UserRoles:
       ModuleRoles:
         - System.User
         - Rick_TESTING_MxLint.Tester
+        - Patrick_TESTING_MxLint.Tester
       Name: Tester

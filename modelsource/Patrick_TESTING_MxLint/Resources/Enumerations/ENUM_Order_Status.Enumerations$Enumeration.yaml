@@ -1,0 +1,43 @@
+$Type: Enumerations$Enumeration
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+Name: ENUM_Order_Status
+RemoteSource: null
+Values:
+    - $Type: Enumerations$EnumerationValue
+      Caption:
+        $Type: Texts$Text
+        Items:
+            - $Type: Texts$Translation
+              LanguageCode: en_US
+              Text: Draft
+      Name: Draft
+      RemoteValue: null
+    - $Type: Enumerations$EnumerationValue
+      Caption:
+        $Type: Texts$Text
+        Items:
+            - $Type: Texts$Translation
+              LanguageCode: en_US
+              Text: Confirmed
+      Name: Confirmed
+      RemoteValue: null
+    - $Type: Enumerations$EnumerationValue
+      Caption:
+        $Type: Texts$Text
+        Items:
+            - $Type: Texts$Translation
+              LanguageCode: en_US
+              Text: Shipped
+      Name: Shipped
+      RemoteValue: null
+    - $Type: Enumerations$EnumerationValue
+      Caption:
+        $Type: Texts$Text
+        Items:
+            - $Type: Texts$Translation
+              LanguageCode: en_US
+              Text: Cancelled
+      Name: Cancelled
+      RemoteValue: null

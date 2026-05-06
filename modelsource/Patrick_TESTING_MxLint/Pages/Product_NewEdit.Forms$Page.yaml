@@ -1,0 +1,3572 @@
+$Type: Forms$Page
+AllowedModuleRoles:
+    - Rick_TESTING_MxLint.User
+Appearance:
+    $Type: Forms$Appearance
+    Class: ""
+    DesignProperties: []
+    DynamicClasses: ""
+    Style: ""
+CanvasHeight: 600
+CanvasWidth: 800
+Documentation: ""
+Excluded: false
+ExportLevel: Hidden
+FormCall:
+    $Type: Forms$LayoutCall
+    Arguments:
+        - $Type: Forms$FormCallArgument
+          Parameter: Atlas_Core.PopupLayout.Main
+          Widgets:
+            - $Type: Forms$LayoutGrid
+              Appearance:
+                $Type: Forms$Appearance
+                Class: ""
+                DesignProperties: []
+                DynamicClasses: ""
+                Style: ""
+              ConditionalVisibilitySettings: null
+              Name: layoutGrid1
+              Rows:
+                - $Type: Forms$LayoutGridRow
+                  Appearance:
+                    $Type: Forms$Appearance
+                    Class: ""
+                    DesignProperties: []
+                    DynamicClasses: ""
+                    Style: ""
+                  Columns:
+                    - $Type: Forms$LayoutGridColumn
+                      Appearance:
+                        $Type: Forms$Appearance
+                        Class: ""
+                        DesignProperties: []
+                        DynamicClasses: ""
+                        Style: ""
+                      PhoneWeight: -1
+                      PreviewWidth: -1
+                      TabletWeight: -1
+                      VerticalAlignment: None
+                      Weight: -1
+                      Widgets:
+                        - $Type: Forms$DataView
+                          Appearance:
+                            $Type: Forms$Appearance
+                            Class: ""
+                            DesignProperties: []
+                            DynamicClasses: ""
+                            Style: ""
+                          ConditionalEditabilitySettings: null
+                          ConditionalVisibilitySettings: null
+                          DataSource:
+                            $Type: Forms$DataViewSource
+                            EntityRef:
+                                $Type: DomainModels$DirectEntityRef
+                                Entity: Rick_TESTING_MxLint.Product
+                            ForceFullObjects: false
+                            SourceVariable:
+                                $Type: Forms$PageVariable
+                                LocalVariable: ""
+                                PageParameter: Product
+                                SnippetParameter: ""
+                                UseAllPages: false
+                                Widget: ""
+                          Editability: Always
+                          FooterWidgets:
+                            - $Type: Forms$ActionButton
+                              Action:
+                                $Type: Forms$SaveChangesClientAction
+                                ClosePage: true
+                                DisabledDuringExecution: true
+                                SyncAutomatically: false
+                              Appearance:
+                                $Type: Forms$Appearance
+                                Class: ""
+                                DesignProperties: []
+                                DynamicClasses: ""
+                                Style: ""
+                              AriaRole: Button
+                              ButtonStyle: Success
+                              CaptionTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items:
+                                        - $Type: Texts$Translation
+                                          LanguageCode: en_US
+                                          Text: Save
+                              ConditionalVisibilitySettings: null
+                              Icon: null
+                              Name: actionButton1
+                              NativeAccessibilitySettings: null
+                              RenderType: Button
+                              TabIndex: 0
+                              Tooltip:
+                                $Type: Texts$Text
+                                Items: []
+                            - $Type: Forms$ActionButton
+                              Action:
+                                $Type: Forms$CancelChangesClientAction
+                                ClosePage: true
+                                DisabledDuringExecution: true
+                              Appearance:
+                                $Type: Forms$Appearance
+                                Class: ""
+                                DesignProperties: []
+                                DynamicClasses: ""
+                                Style: ""
+                              AriaRole: Button
+                              ButtonStyle: Default
+                              CaptionTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items:
+                                        - $Type: Texts$Translation
+                                          LanguageCode: en_US
+                                          Text: Cancel
+                              ConditionalVisibilitySettings: null
+                              Icon: null
+                              Name: actionButton2
+                              NativeAccessibilitySettings: null
+                              RenderType: Button
+                              TabIndex: 0
+                              Tooltip:
+                                $Type: Texts$Text
+                                Items: []
+                          LabelWidth: 3
+                          Name: dataView1
+                          NoEntityMessage:
+                            $Type: Texts$Text
+                            Items: []
+                          ReadOnlyStyle: Control
+                          ShowFooter: true
+                          TabIndex: 0
+                          Widgets:
+                            - $Type: Forms$TextBox
+                              Appearance:
+                                $Type: Forms$Appearance
+                                Class: ""
+                                DesignProperties: []
+                                DynamicClasses: ""
+                                Style: ""
+                              AriaRequired: false
+                              AttributeRef:
+                                $Type: DomainModels$AttributeRef
+                                Attribute: Rick_TESTING_MxLint.Product.Name
+                                EntityRef: null
+                              AutoFocus: false
+                              Autocomplete: true
+                              AutocompletePurpose: "On"
+                              ConditionalEditabilitySettings: null
+                              ConditionalVisibilitySettings: null
+                              Editable: Always
+                              FormattingInfo:
+                                $Type: Forms$FormattingInfo
+                                CustomDateFormat: ""
+                                DateFormat: Date
+                                DecimalPrecision: 2
+                                EnumFormat: Text
+                                GroupDigits: false
+                              InputMask: ""
+                              IsPasswordBox: false
+                              KeyboardType: Default
+                              LabelTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items:
+                                        - $Type: Texts$Translation
+                                          LanguageCode: en_US
+                                          Text: Name
+                              MaxLengthCode: -1
+                              Name: textBox1
+                              NativeAccessibilitySettings: null
+                              OnChangeAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnEnterAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnEnterKeyPressAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnLeaveAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              PlaceholderTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items: []
+                              ReadOnlyStyle: Inherit
+                              ScreenReaderLabel: null
+                              SourceVariable: null
+                              SubmitBehaviour: OnEndEditing
+                              SubmitOnInputDelay: 300
+                              TabIndex: 0
+                              Validation:
+                                $Type: Forms$WidgetValidation
+                                Expression: ""
+                                Message:
+                                    $Type: Texts$Text
+                                    Items: []
+                            - $Type: Forms$TextBox
+                              Appearance:
+                                $Type: Forms$Appearance
+                                Class: ""
+                                DesignProperties: []
+                                DynamicClasses: ""
+                                Style: ""
+                              AriaRequired: false
+                              AttributeRef:
+                                $Type: DomainModels$AttributeRef
+                                Attribute: Rick_TESTING_MxLint.Product.Description
+                                EntityRef: null
+                              AutoFocus: false
+                              Autocomplete: true
+                              AutocompletePurpose: "On"
+                              ConditionalEditabilitySettings: null
+                              ConditionalVisibilitySettings: null
+                              Editable: Always
+                              FormattingInfo:
+                                $Type: Forms$FormattingInfo
+                                CustomDateFormat: ""
+                                DateFormat: Date
+                                DecimalPrecision: 2
+                                EnumFormat: Text
+                                GroupDigits: false
+                              InputMask: ""
+                              IsPasswordBox: false
+                              KeyboardType: Default
+                              LabelTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items:
+                                        - $Type: Texts$Translation
+                                          LanguageCode: en_US
+                                          Text: Description
+                              MaxLengthCode: -1
+                              Name: textBox2
+                              NativeAccessibilitySettings: null
+                              OnChangeAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnEnterAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnEnterKeyPressAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnLeaveAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              PlaceholderTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items: []
+                              ReadOnlyStyle: Inherit
+                              ScreenReaderLabel: null
+                              SourceVariable: null
+                              SubmitBehaviour: OnEndEditing
+                              SubmitOnInputDelay: 300
+                              TabIndex: 0
+                              Validation:
+                                $Type: Forms$WidgetValidation
+                                Expression: ""
+                                Message:
+                                    $Type: Texts$Text
+                                    Items: []
+                            - $Type: Forms$TextBox
+                              Appearance:
+                                $Type: Forms$Appearance
+                                Class: ""
+                                DesignProperties: []
+                                DynamicClasses: ""
+                                Style: ""
+                              AriaRequired: false
+                              AttributeRef:
+                                $Type: DomainModels$AttributeRef
+                                Attribute: Rick_TESTING_MxLint.Product.Price
+                                EntityRef: null
+                              AutoFocus: false
+                              Autocomplete: true
+                              AutocompletePurpose: "On"
+                              ConditionalEditabilitySettings: null
+                              ConditionalVisibilitySettings: null
+                              Editable: Always
+                              FormattingInfo:
+                                $Type: Forms$FormattingInfo
+                                CustomDateFormat: ""
+                                DateFormat: Date
+                                DecimalPrecision: 2
+                                EnumFormat: Text
+                                GroupDigits: false
+                              InputMask: ""
+                              IsPasswordBox: false
+                              KeyboardType: Default
+                              LabelTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items:
+                                        - $Type: Texts$Translation
+                                          LanguageCode: en_US
+                                          Text: Price
+                              MaxLengthCode: -1
+                              Name: textBox3
+                              NativeAccessibilitySettings: null
+                              OnChangeAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnEnterAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnEnterKeyPressAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              OnLeaveAction:
+                                $Type: Forms$NoAction
+                                DisabledDuringExecution: true
+                              PlaceholderTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items: []
+                              ReadOnlyStyle: Inherit
+                              ScreenReaderLabel: null
+                              SourceVariable: null
+                              SubmitBehaviour: OnEndEditing
+                              SubmitOnInputDelay: 300
+                              TabIndex: 0
+                              Validation:
+                                $Type: Forms$WidgetValidation
+                                Expression: ""
+                                Message:
+                                    $Type: Texts$Text
+                                    Items: []
+                            - $Type: CustomWidgets$CustomWidget
+                              Appearance:
+                                $Type: Forms$Appearance
+                                Class: ""
+                                DesignProperties: []
+                                DynamicClasses: ""
+                                Style: ""
+                              ConditionalEditabilitySettings: null
+                              ConditionalVisibilitySettings: null
+                              Editable: Always
+                              LabelTemplate:
+                                $Type: Forms$ClientTemplate
+                                Fallback:
+                                    $Type: Texts$Text
+                                    Items: []
+                                Parameters: []
+                                Template:
+                                    $Type: Texts$Text
+                                    Items:
+                                        - $Type: Texts$Translation
+                                          LanguageCode: en_US
+                                          Text: Order
+                              Name: comboBox1
+                              Object:
+                                $Type: CustomWidgets$WidgetObject
+                                Properties:
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 26
+                                            - 102
+                                            - 122
+                                            - 220
+                                            - 154
+                                            - 140
+                                            - 104
+                                            - 64
+                                            - 159
+                                            - 137
+                                            - 32
+                                            - 167
+                                            - 128
+                                            - 219
+                                            - 95
+                                            - 44
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: context
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 153
+                                                - 205
+                                                - 109
+                                                - 157
+                                                - 162
+                                                - 201
+                                                - 12
+                                                - 75
+                                                - 164
+                                                - 229
+                                                - 68
+                                                - 189
+                                                - 23
+                                                - 13
+                                                - 1
+                                                - 55
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 111
+                                            - 131
+                                            - 75
+                                            - 181
+                                            - 201
+                                            - 221
+                                            - 177
+                                            - 77
+                                            - 150
+                                            - 165
+                                            - 170
+                                            - 173
+                                            - 63
+                                            - 161
+                                            - 61
+                                            - 138
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: association
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 49
+                                                - 182
+                                                - 111
+                                                - 140
+                                                - 241
+                                                - 177
+                                                - 138
+                                                - 70
+                                                - 162
+                                                - 62
+                                                - 204
+                                                - 178
+                                                - 80
+                                                - 228
+                                                - 161
+                                                - 222
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 66
+                                            - 133
+                                            - 228
+                                            - 183
+                                            - 56
+                                            - 20
+                                            - 38
+                                            - 78
+                                            - 178
+                                            - 90
+                                            - 95
+                                            - 226
+                                            - 223
+                                            - 165
+                                            - 101
+                                            - 12
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 13
+                                                - 65
+                                                - 105
+                                                - 24
+                                                - 72
+                                                - 217
+                                                - 94
+                                                - 74
+                                                - 166
+                                                - 139
+                                                - 31
+                                                - 117
+                                                - 214
+                                                - 216
+                                                - 54
+                                                - 210
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 58
+                                            - 245
+                                            - 2
+                                            - 215
+                                            - 187
+                                            - 71
+                                            - 186
+                                            - 73
+                                            - 186
+                                            - 225
+                                            - 123
+                                            - 84
+                                            - 208
+                                            - 81
+                                            - 41
+                                            - 153
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 216
+                                                - 216
+                                                - 2
+                                                - 178
+                                                - 133
+                                                - 115
+                                                - 87
+                                                - 64
+                                                - 178
+                                                - 0
+                                                - 254
+                                                - 104
+                                                - 137
+                                                - 171
+                                                - 192
+                                                - 140
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 69
+                                            - 152
+                                            - 195
+                                            - 160
+                                            - 39
+                                            - 155
+                                            - 105
+                                            - 73
+                                            - 168
+                                            - 12
+                                            - 78
+                                            - 114
+                                            - 61
+                                            - 154
+                                            - 77
+                                            - 68
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 60
+                                                - 119
+                                                - 197
+                                                - 146
+                                                - 109
+                                                - 126
+                                                - 229
+                                                - 74
+                                                - 132
+                                                - 207
+                                                - 125
+                                                - 70
+                                                - 89
+                                                - 169
+                                                - 95
+                                                - 118
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 124
+                                            - 73
+                                            - 142
+                                            - 79
+                                            - 212
+                                            - 213
+                                            - 191
+                                            - 67
+                                            - 144
+                                            - 50
+                                            - 40
+                                            - 123
+                                            - 80
+                                            - 191
+                                            - 203
+                                            - 231
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: attribute
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 86
+                                                - 84
+                                                - 122
+                                                - 156
+                                                - 179
+                                                - 55
+                                                - 194
+                                                - 76
+                                                - 187
+                                                - 97
+                                                - 103
+                                                - 64
+                                                - 190
+                                                - 92
+                                                - 170
+                                                - 68
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 93
+                                            - 230
+                                            - 34
+                                            - 241
+                                            - 82
+                                            - 82
+                                            - 206
+                                            - 76
+                                            - 134
+                                            - 177
+                                            - 70
+                                            - 201
+                                            - 236
+                                            - 118
+                                            - 216
+                                            - 241
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 5
+                                                - 15
+                                                - 3
+                                                - 213
+                                                - 69
+                                                - 131
+                                                - 102
+                                                - 74
+                                                - 148
+                                                - 109
+                                                - 178
+                                                - 22
+                                                - 193
+                                                - 204
+                                                - 235
+                                                - 123
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 190
+                                            - 58
+                                            - 235
+                                            - 194
+                                            - 34
+                                            - 87
+                                            - 140
+                                            - 75
+                                            - 184
+                                            - 132
+                                            - 41
+                                            - 64
+                                            - 209
+                                            - 205
+                                            - 117
+                                            - 9
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 239
+                                                - 35
+                                                - 17
+                                                - 80
+                                                - 72
+                                                - 196
+                                                - 57
+                                                - 64
+                                                - 190
+                                                - 217
+                                                - 180
+                                                - 154
+                                                - 38
+                                                - 130
+                                                - 38
+                                                - 151
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 148
+                                            - 134
+                                            - 176
+                                            - 66
+                                            - 10
+                                            - 162
+                                            - 44
+                                            - 68
+                                            - 141
+                                            - 207
+                                            - 251
+                                            - 27
+                                            - 210
+                                            - 228
+                                            - 27
+                                            - 110
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 14
+                                                - 196
+                                                - 38
+                                                - 177
+                                                - 176
+                                                - 1
+                                                - 96
+                                                - 78
+                                                - 156
+                                                - 16
+                                                - 206
+                                                - 31
+                                                - 94
+                                                - 172
+                                                - 161
+                                                - 205
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 128
+                                            - 0
+                                            - 173
+                                            - 222
+                                            - 72
+                                            - 109
+                                            - 211
+                                            - 67
+                                            - 153
+                                            - 224
+                                            - 107
+                                            - 129
+                                            - 219
+                                            - 122
+                                            - 23
+                                            - 25
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 85
+                                                - 242
+                                                - 66
+                                                - 223
+                                                - 160
+                                                - 247
+                                                - 78
+                                                - 69
+                                                - 151
+                                                - 113
+                                                - 196
+                                                - 210
+                                                - 228
+                                                - 121
+                                                - 175
+                                                - 222
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 160
+                                            - 146
+                                            - 197
+                                            - 92
+                                            - 170
+                                            - 172
+                                            - 118
+                                            - 68
+                                            - 189
+                                            - 231
+                                            - 123
+                                            - 96
+                                            - 124
+                                            - 172
+                                            - 177
+                                            - 32
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef:
+                                            $Type: DomainModels$IndirectEntityRef
+                                            Steps:
+                                                - $Type: DomainModels$EntityRefStep
+                                                  Association: Rick_TESTING_MxLint.Product_Order
+                                                  DestinationEntity: Rick_TESTING_MxLint.Order
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 105
+                                                - 61
+                                                - 26
+                                                - 72
+                                                - 40
+                                                - 201
+                                                - 226
+                                                - 67
+                                                - 141
+                                                - 187
+                                                - 150
+                                                - 200
+                                                - 238
+                                                - 226
+                                                - 115
+                                                - 26
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 80
+                                            - 151
+                                            - 190
+                                            - 110
+                                            - 120
+                                            - 251
+                                            - 151
+                                            - 74
+                                            - 166
+                                            - 41
+                                            - 5
+                                            - 153
+                                            - 80
+                                            - 239
+                                            - 148
+                                            - 195
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource:
+                                            $Type: CustomWidgets$CustomWidgetXPathSource
+                                            EntityRef:
+                                                $Type: DomainModels$DirectEntityRef
+                                                Entity: Rick_TESTING_MxLint.Order
+                                            ForceFullObjects: false
+                                            SortBar:
+                                                $Type: Forms$GridSortBar
+                                                SortItems: []
+                                            SourceVariable: null
+                                            XPathConstraint: ""
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 8
+                                                - 102
+                                                - 242
+                                                - 126
+                                                - 129
+                                                - 234
+                                                - 194
+                                                - 67
+                                                - 134
+                                                - 70
+                                                - 95
+                                                - 146
+                                                - 102
+                                                - 17
+                                                - 171
+                                                - 207
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 245
+                                            - 164
+                                            - 64
+                                            - 247
+                                            - 70
+                                            - 10
+                                            - 7
+                                            - 69
+                                            - 139
+                                            - 162
+                                            - 248
+                                            - 84
+                                            - 164
+                                            - 236
+                                            - 162
+                                            - 28
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: attribute
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 89
+                                                - 180
+                                                - 249
+                                                - 252
+                                                - 33
+                                                - 208
+                                                - 20
+                                                - 76
+                                                - 189
+                                                - 85
+                                                - 52
+                                                - 31
+                                                - 45
+                                                - 115
+                                                - 222
+                                                - 32
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 248
+                                            - 65
+                                            - 24
+                                            - 138
+                                            - 80
+                                            - 90
+                                            - 163
+                                            - 67
+                                            - 176
+                                            - 100
+                                            - 152
+                                            - 236
+                                            - 220
+                                            - 89
+                                            - 40
+                                            - 55
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef:
+                                            $Type: DomainModels$AttributeRef
+                                            Attribute: Rick_TESTING_MxLint.Order.Notes
+                                            EntityRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 12
+                                                - 67
+                                                - 88
+                                                - 222
+                                                - 92
+                                                - 118
+                                                - 35
+                                                - 78
+                                                - 186
+                                                - 98
+                                                - 117
+                                                - 209
+                                                - 229
+                                                - 239
+                                                - 218
+                                                - 69
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 133
+                                            - 182
+                                            - 85
+                                            - 173
+                                            - 133
+                                            - 232
+                                            - 161
+                                            - 75
+                                            - 153
+                                            - 102
+                                            - 166
+                                            - 26
+                                            - 98
+                                            - 146
+                                            - 0
+                                            - 253
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 57
+                                                - 175
+                                                - 238
+                                                - 212
+                                                - 52
+                                                - 184
+                                                - 193
+                                                - 70
+                                                - 151
+                                                - 161
+                                                - 123
+                                                - 36
+                                                - 10
+                                                - 62
+                                                - 29
+                                                - 41
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 52
+                                            - 82
+                                            - 127
+                                            - 241
+                                            - 176
+                                            - 61
+                                            - 134
+                                            - 72
+                                            - 182
+                                            - 105
+                                            - 165
+                                            - 123
+                                            - 248
+                                            - 15
+                                            - 187
+                                            - 207
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 37
+                                                - 24
+                                                - 82
+                                                - 171
+                                                - 135
+                                                - 199
+                                                - 214
+                                                - 71
+                                                - 161
+                                                - 37
+                                                - 18
+                                                - 125
+                                                - 179
+                                                - 123
+                                                - 122
+                                                - 183
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 162
+                                            - 205
+                                            - 129
+                                            - 138
+                                            - 166
+                                            - 218
+                                            - 178
+                                            - 72
+                                            - 190
+                                            - 220
+                                            - 144
+                                            - 117
+                                            - 200
+                                            - 112
+                                            - 233
+                                            - 177
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 155
+                                                - 87
+                                                - 148
+                                                - 231
+                                                - 39
+                                                - 156
+                                                - 130
+                                                - 73
+                                                - 164
+                                                - 7
+                                                - 147
+                                                - 99
+                                                - 65
+                                                - 174
+                                                - 184
+                                                - 62
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 172
+                                            - 152
+                                            - 245
+                                            - 46
+                                            - 95
+                                            - 215
+                                            - 196
+                                            - 65
+                                            - 138
+                                            - 35
+                                            - 179
+                                            - 77
+                                            - 140
+                                            - 233
+                                            - 252
+                                            - 34
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items: []
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 93
+                                                - 103
+                                                - 226
+                                                - 164
+                                                - 98
+                                                - 85
+                                                - 12
+                                                - 76
+                                                - 129
+                                                - 116
+                                                - 57
+                                                - 74
+                                                - 73
+                                                - 130
+                                                - 249
+                                                - 30
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 215
+                                            - 15
+                                            - 25
+                                            - 64
+                                            - 108
+                                            - 235
+                                            - 201
+                                            - 67
+                                            - 150
+                                            - 17
+                                            - 186
+                                            - 18
+                                            - 111
+                                            - 197
+                                            - 86
+                                            - 129
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: contains
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 37
+                                                - 16
+                                                - 39
+                                                - 174
+                                                - 69
+                                                - 89
+                                                - 199
+                                                - 72
+                                                - 152
+                                                - 114
+                                                - 244
+                                                - 178
+                                                - 50
+                                                - 165
+                                                - 61
+                                                - 13
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 230
+                                            - 226
+                                            - 53
+                                            - 86
+                                            - 87
+                                            - 255
+                                            - 156
+                                            - 71
+                                            - 133
+                                            - 136
+                                            - 156
+                                            - 135
+                                            - 184
+                                            - 83
+                                            - 254
+                                            - 148
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items: []
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 88
+                                                - 34
+                                                - 135
+                                                - 168
+                                                - 219
+                                                - 246
+                                                - 175
+                                                - 64
+                                                - 139
+                                                - 185
+                                                - 138
+                                                - 0
+                                                - 55
+                                                - 18
+                                                - 123
+                                                - 22
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 132
+                                            - 73
+                                            - 212
+                                            - 226
+                                            - 110
+                                            - 113
+                                            - 76
+                                            - 72
+                                            - 158
+                                            - 188
+                                            - 251
+                                            - 36
+                                            - 187
+                                            - 167
+                                            - 219
+                                            - 159
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "true"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 163
+                                                - 137
+                                                - 88
+                                                - 45
+                                                - 219
+                                                - 32
+                                                - 232
+                                                - 77
+                                                - 151
+                                                - 44
+                                                - 241
+                                                - 81
+                                                - 207
+                                                - 219
+                                                - 161
+                                                - 183
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 95
+                                            - 249
+                                            - 4
+                                            - 229
+                                            - 178
+                                            - 27
+                                            - 14
+                                            - 71
+                                            - 136
+                                            - 86
+                                            - 254
+                                            - 236
+                                            - 33
+                                            - 201
+                                            - 129
+                                            - 92
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "no"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 162
+                                                - 151
+                                                - 239
+                                                - 136
+                                                - 64
+                                                - 187
+                                                - 161
+                                                - 77
+                                                - 157
+                                                - 63
+                                                - 42
+                                                - 108
+                                                - 203
+                                                - 190
+                                                - 205
+                                                - 249
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 206
+                                            - 249
+                                            - 250
+                                            - 142
+                                            - 90
+                                            - 104
+                                            - 151
+                                            - 75
+                                            - 150
+                                            - 170
+                                            - 14
+                                            - 93
+                                            - 144
+                                            - 114
+                                            - 218
+                                            - 1
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 32
+                                                - 60
+                                                - 172
+                                                - 85
+                                                - 27
+                                                - 123
+                                                - 185
+                                                - 73
+                                                - 175
+                                                - 94
+                                                - 44
+                                                - 119
+                                                - 230
+                                                - 47
+                                                - 204
+                                                - 90
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 116
+                                            - 248
+                                            - 42
+                                            - 141
+                                            - 250
+                                            - 120
+                                            - 79
+                                            - 76
+                                            - 143
+                                            - 245
+                                            - 187
+                                            - 189
+                                            - 166
+                                            - 180
+                                            - 68
+                                            - 60
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "no"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 64
+                                                - 18
+                                                - 124
+                                                - 237
+                                                - 104
+                                                - 24
+                                                - 219
+                                                - 72
+                                                - 150
+                                                - 210
+                                                - 156
+                                                - 198
+                                                - 142
+                                                - 127
+                                                - 236
+                                                - 120
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 61
+                                            - 158
+                                            - 67
+                                            - 26
+                                            - 28
+                                            - 112
+                                            - 40
+                                            - 66
+                                            - 180
+                                            - 70
+                                            - 222
+                                            - 145
+                                            - 41
+                                            - 252
+                                            - 49
+                                            - 175
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 187
+                                                - 245
+                                                - 33
+                                                - 112
+                                                - 85
+                                                - 10
+                                                - 171
+                                                - 68
+                                                - 144
+                                                - 218
+                                                - 180
+                                                - 114
+                                                - 1
+                                                - 139
+                                                - 18
+                                                - 219
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 190
+                                            - 209
+                                            - 50
+                                            - 222
+                                            - 154
+                                            - 88
+                                            - 21
+                                            - 71
+                                            - 175
+                                            - 15
+                                            - 125
+                                            - 1
+                                            - 219
+                                            - 216
+                                            - 68
+                                            - 124
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "no"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 27
+                                                - 214
+                                                - 79
+                                                - 16
+                                                - 86
+                                                - 131
+                                                - 201
+                                                - 67
+                                                - 134
+                                                - 196
+                                                - 28
+                                                - 58
+                                                - 130
+                                                - 69
+                                                - 2
+                                                - 152
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 212
+                                            - 215
+                                            - 244
+                                            - 111
+                                            - 172
+                                            - 131
+                                            - 140
+                                            - 66
+                                            - 139
+                                            - 255
+                                            - 110
+                                            - 128
+                                            - 184
+                                            - 253
+                                            - 208
+                                            - 120
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "false"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 173
+                                                - 243
+                                                - 126
+                                                - 235
+                                                - 73
+                                                - 20
+                                                - 40
+                                                - 79
+                                                - 167
+                                                - 86
+                                                - 226
+                                                - 232
+                                                - 4
+                                                - 1
+                                                - 109
+                                                - 35
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 111
+                                            - 96
+                                            - 126
+                                            - 30
+                                            - 63
+                                            - 244
+                                            - 182
+                                            - 66
+                                            - 152
+                                            - 216
+                                            - 210
+                                            - 56
+                                            - 35
+                                            - 34
+                                            - 116
+                                            - 65
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 175
+                                                - 136
+                                                - 251
+                                                - 224
+                                                - 128
+                                                - 42
+                                                - 212
+                                                - 76
+                                                - 181
+                                                - 68
+                                                - 181
+                                                - 71
+                                                - 112
+                                                - 146
+                                                - 38
+                                                - 118
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 41
+                                            - 135
+                                            - 50
+                                            - 232
+                                            - 215
+                                            - 44
+                                            - 111
+                                            - 66
+                                            - 144
+                                            - 245
+                                            - 135
+                                            - 57
+                                            - 135
+                                            - 114
+                                            - 20
+                                            - 57
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: checkbox
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 5
+                                                - 44
+                                                - 196
+                                                - 8
+                                                - 219
+                                                - 4
+                                                - 52
+                                                - 76
+                                                - 181
+                                                - 58
+                                                - 99
+                                                - 235
+                                                - 36
+                                                - 244
+                                                - 38
+                                                - 168
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 222
+                                            - 144
+                                            - 76
+                                            - 52
+                                            - 107
+                                            - 160
+                                            - 230
+                                            - 74
+                                            - 149
+                                            - 225
+                                            - 72
+                                            - 15
+                                            - 215
+                                            - 137
+                                            - 133
+                                            - 46
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: text
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 146
+                                                - 5
+                                                - 157
+                                                - 32
+                                                - 69
+                                                - 172
+                                                - 107
+                                                - 75
+                                                - 175
+                                                - 119
+                                                - 38
+                                                - 192
+                                                - 119
+                                                - 22
+                                                - 224
+                                                - 127
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 100
+                                            - 180
+                                            - 34
+                                            - 78
+                                            - 231
+                                            - 19
+                                            - 35
+                                            - 72
+                                            - 140
+                                            - 220
+                                            - 45
+                                            - 73
+                                            - 160
+                                            - 90
+                                            - 247
+                                            - 2
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "false"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 162
+                                                - 55
+                                                - 77
+                                                - 155
+                                                - 154
+                                                - 235
+                                                - 72
+                                                - 66
+                                                - 185
+                                                - 14
+                                                - 14
+                                                - 44
+                                                - 212
+                                                - 95
+                                                - 34
+                                                - 10
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 72
+                                            - 180
+                                            - 116
+                                            - 121
+                                            - 32
+                                            - 11
+                                            - 130
+                                            - 78
+                                            - 156
+                                            - 109
+                                            - 134
+                                            - 63
+                                            - 101
+                                            - 130
+                                            - 180
+                                            - 73
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 46
+                                                - 240
+                                                - 117
+                                                - 172
+                                                - 102
+                                                - 47
+                                                - 117
+                                                - 64
+                                                - 175
+                                                - 215
+                                                - 69
+                                                - 136
+                                                - 209
+                                                - 31
+                                                - 220
+                                                - 87
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 104
+                                            - 156
+                                            - 80
+                                            - 204
+                                            - 170
+                                            - 82
+                                            - 56
+                                            - 77
+                                            - 164
+                                            - 161
+                                            - 35
+                                            - 238
+                                            - 47
+                                            - 152
+                                            - 103
+                                            - 229
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: bordered
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 242
+                                                - 7
+                                                - 253
+                                                - 56
+                                                - 110
+                                                - 1
+                                                - 212
+                                                - 72
+                                                - 183
+                                                - 228
+                                                - 21
+                                                - 42
+                                                - 98
+                                                - 189
+                                                - 216
+                                                - 180
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 46
+                                            - 88
+                                            - 43
+                                            - 63
+                                            - 46
+                                            - 95
+                                            - 249
+                                            - 71
+                                            - 128
+                                            - 236
+                                            - 153
+                                            - 144
+                                            - 48
+                                            - 169
+                                            - 120
+                                            - 83
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 83
+                                                - 129
+                                                - 21
+                                                - 82
+                                                - 99
+                                                - 182
+                                                - 144
+                                                - 70
+                                                - 167
+                                                - 157
+                                                - 30
+                                                - 153
+                                                - 182
+                                                - 109
+                                                - 221
+                                                - 125
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 19
+                                            - 20
+                                            - 126
+                                            - 177
+                                            - 117
+                                            - 243
+                                            - 89
+                                            - 67
+                                            - 134
+                                            - 74
+                                            - 225
+                                            - 43
+                                            - 61
+                                            - 60
+                                            - 104
+                                            - 142
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 162
+                                                - 2
+                                                - 170
+                                                - 198
+                                                - 210
+                                                - 235
+                                                - 51
+                                                - 72
+                                                - 178
+                                                - 76
+                                                - 155
+                                                - 229
+                                                - 139
+                                                - 158
+                                                - 39
+                                                - 79
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 189
+                                            - 122
+                                            - 225
+                                            - 231
+                                            - 185
+                                            - 111
+                                            - 181
+                                            - 77
+                                            - 130
+                                            - 139
+                                            - 242
+                                            - 234
+                                            - 41
+                                            - 145
+                                            - 201
+                                            - 77
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 90
+                                                - 215
+                                                - 98
+                                                - 217
+                                                - 11
+                                                - 82
+                                                - 216
+                                                - 74
+                                                - 188
+                                                - 151
+                                                - 42
+                                                - 253
+                                                - 103
+                                                - 17
+                                                - 45
+                                                - 50
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 94
+                                            - 100
+                                            - 16
+                                            - 22
+                                            - 177
+                                            - 166
+                                            - 158
+                                            - 78
+                                            - 152
+                                            - 199
+                                            - 130
+                                            - 202
+                                            - 184
+                                            - 228
+                                            - 13
+                                            - 16
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: "false"
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 31
+                                                - 115
+                                                - 212
+                                                - 145
+                                                - 42
+                                                - 228
+                                                - 124
+                                                - 76
+                                                - 159
+                                                - 100
+                                                - 57
+                                                - 43
+                                                - 206
+                                                - 196
+                                                - 143
+                                                - 79
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 194
+                                            - 132
+                                            - 55
+                                            - 45
+                                            - 9
+                                            - 225
+                                            - 192
+                                            - 65
+                                            - 171
+                                            - 138
+                                            - 77
+                                            - 131
+                                            - 40
+                                            - 21
+                                            - 14
+                                            - 41
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items:
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: en_US
+                                                      Text: Clear selection
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: nl_NL
+                                                      Text: Selectie wissen
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 24
+                                                - 49
+                                                - 178
+                                                - 95
+                                                - 19
+                                                - 182
+                                                - 147
+                                                - 79
+                                                - 175
+                                                - 139
+                                                - 208
+                                                - 168
+                                                - 17
+                                                - 74
+                                                - 187
+                                                - 158
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 209
+                                            - 40
+                                            - 174
+                                            - 213
+                                            - 245
+                                            - 123
+                                            - 123
+                                            - 73
+                                            - 165
+                                            - 179
+                                            - 137
+                                            - 0
+                                            - 123
+                                            - 75
+                                            - 245
+                                            - 115
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items:
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: en_US
+                                                      Text: Remove value
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: nl_NL
+                                                      Text: Waarde verwijderen
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 216
+                                                - 124
+                                                - 153
+                                                - 229
+                                                - 60
+                                                - 90
+                                                - 166
+                                                - 66
+                                                - 161
+                                                - 164
+                                                - 148
+                                                - 23
+                                                - 67
+                                                - 13
+                                                - 9
+                                                - 29
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 99
+                                            - 22
+                                            - 190
+                                            - 251
+                                            - 50
+                                            - 168
+                                            - 127
+                                            - 67
+                                            - 165
+                                            - 240
+                                            - 202
+                                            - 75
+                                            - 83
+                                            - 96
+                                            - 59
+                                            - 24
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items:
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: en_US
+                                                      Text: 'Selected value:'
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: nl_NL
+                                                      Text: 'Geselecteerde waarde:'
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 5
+                                                - 67
+                                                - 4
+                                                - 121
+                                                - 11
+                                                - 78
+                                                - 187
+                                                - 71
+                                                - 139
+                                                - 121
+                                                - 103
+                                                - 84
+                                                - 206
+                                                - 2
+                                                - 142
+                                                - 186
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 206
+                                            - 6
+                                            - 121
+                                            - 72
+                                            - 228
+                                            - 201
+                                            - 76
+                                            - 71
+                                            - 189
+                                            - 232
+                                            - 236
+                                            - 154
+                                            - 11
+                                            - 161
+                                            - 200
+                                            - 120
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items:
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: en_US
+                                                      Text: 'Number of options available:'
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: nl_NL
+                                                      Text: 'Aantal beschikbare opties:'
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 169
+                                                - 221
+                                                - 228
+                                                - 18
+                                                - 33
+                                                - 39
+                                                - 136
+                                                - 75
+                                                - 138
+                                                - 147
+                                                - 66
+                                                - 208
+                                                - 198
+                                                - 138
+                                                - 211
+                                                - 112
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 67
+                                            - 247
+                                            - 142
+                                            - 65
+                                            - 135
+                                            - 142
+                                            - 193
+                                            - 72
+                                            - 187
+                                            - 223
+                                            - 128
+                                            - 211
+                                            - 94
+                                            - 172
+                                            - 72
+                                            - 64
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items:
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: en_US
+                                                      Text: Use up and down arrow keys to navigate. Press Enter or Space Bar keys to select.
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: nl_NL
+                                                      Text: Gebruik de pijltjestoetsen (omhoog en omlaag) om te navigeren. Druk op Enter of de spatiebalk om de waarde te selecteren.
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 29
+                                                - 27
+                                                - 222
+                                                - 67
+                                                - 37
+                                                - 124
+                                                - 206
+                                                - 70
+                                                - 147
+                                                - 162
+                                                - 32
+                                                - 229
+                                                - 240
+                                                - 121
+                                                - 195
+                                                - 21
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 126
+                                            - 11
+                                            - 218
+                                            - 95
+                                            - 144
+                                            - 73
+                                            - 178
+                                            - 68
+                                            - 138
+                                            - 75
+                                            - 239
+                                            - 100
+                                            - 200
+                                            - 220
+                                            - 250
+                                            - 52
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: "true"
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 45
+                                                - 185
+                                                - 224
+                                                - 126
+                                                - 78
+                                                - 210
+                                                - 222
+                                                - 66
+                                                - 178
+                                                - 7
+                                                - 61
+                                                - 129
+                                                - 130
+                                                - 28
+                                                - 156
+                                                - 227
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 104
+                                            - 163
+                                            - 193
+                                            - 87
+                                            - 139
+                                            - 108
+                                            - 216
+                                            - 70
+                                            - 143
+                                            - 168
+                                            - 248
+                                            - 124
+                                            - 66
+                                            - 248
+                                            - 155
+                                            - 7
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: spinner
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 106
+                                                - 11
+                                                - 73
+                                                - 88
+                                                - 152
+                                                - 169
+                                                - 53
+                                                - 69
+                                                - 174
+                                                - 183
+                                                - 72
+                                                - 227
+                                                - 222
+                                                - 242
+                                                - 23
+                                                - 90
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 128
+                                            - 82
+                                            - 138
+                                            - 63
+                                            - 132
+                                            - 101
+                                            - 155
+                                            - 77
+                                            - 172
+                                            - 108
+                                            - 92
+                                            - 39
+                                            - 211
+                                            - 126
+                                            - 176
+                                            - 13
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: Single
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 136
+                                                - 176
+                                                - 214
+                                                - 39
+                                                - 134
+                                                - 214
+                                                - 236
+                                                - 78
+                                                - 147
+                                                - 119
+                                                - 188
+                                                - 98
+                                                - 41
+                                                - 130
+                                                - 209
+                                                - 221
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 66
+                                            - 144
+                                            - 115
+                                            - 146
+                                            - 199
+                                            - 203
+                                            - 129
+                                            - 74
+                                            - 181
+                                            - 88
+                                            - 127
+                                            - 160
+                                            - 177
+                                            - 54
+                                            - 229
+                                            - 215
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: default
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 201
+                                                - 24
+                                                - 120
+                                                - 214
+                                                - 21
+                                                - 8
+                                                - 77
+                                                - 64
+                                                - 142
+                                                - 235
+                                                - 37
+                                                - 112
+                                                - 94
+                                                - 225
+                                                - 88
+                                                - 109
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 140
+                                            - 188
+                                            - 57
+                                            - 79
+                                            - 195
+                                            - 205
+                                            - 23
+                                            - 77
+                                            - 184
+                                            - 147
+                                            - 203
+                                            - 30
+                                            - 47
+                                            - 237
+                                            - 211
+                                            - 13
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: "false"
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 0
+                                                - 93
+                                                - 206
+                                                - 242
+                                                - 149
+                                                - 234
+                                                - 54
+                                                - 68
+                                                - 169
+                                                - 130
+                                                - 211
+                                                - 143
+                                                - 245
+                                                - 175
+                                                - 136
+                                                - 70
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 93
+                                            - 69
+                                            - 80
+                                            - 27
+                                            - 68
+                                            - 193
+                                            - 51
+                                            - 69
+                                            - 144
+                                            - 30
+                                            - 57
+                                            - 160
+                                            - 38
+                                            - 97
+                                            - 110
+                                            - 214
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 102
+                                                - 125
+                                                - 201
+                                                - 147
+                                                - 132
+                                                - 94
+                                                - 115
+                                                - 69
+                                                - 135
+                                                - 63
+                                                - 122
+                                                - 144
+                                                - 49
+                                                - 81
+                                                - 82
+                                                - 77
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 22
+                                            - 182
+                                            - 49
+                                            - 38
+                                            - 0
+                                            - 114
+                                            - 239
+                                            - 74
+                                            - 170
+                                            - 48
+                                            - 64
+                                            - 4
+                                            - 165
+                                            - 116
+                                            - 51
+                                            - 27
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: ""
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate:
+                                            $Type: Forms$ClientTemplate
+                                            Fallback:
+                                                $Type: Texts$Text
+                                                Items: []
+                                            Parameters: []
+                                            Template:
+                                                $Type: Texts$Text
+                                                Items:
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: en_US
+                                                      Text: Combo box
+                                                    - $Type: Texts$Translation
+                                                      LanguageCode: nl_NL
+                                                      Text: Keuzelijst
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 170
+                                                - 167
+                                                - 179
+                                                - 129
+                                                - 124
+                                                - 25
+                                                - 220
+                                                - 72
+                                                - 186
+                                                - 138
+                                                - 161
+                                                - 214
+                                                - 54
+                                                - 249
+                                                - 212
+                                                - 234
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                    - $Type: CustomWidgets$WidgetProperty
+                                      TypePointer:
+                                        subtype: 0
+                                        data:
+                                            - 104
+                                            - 85
+                                            - 87
+                                            - 210
+                                            - 159
+                                            - 80
+                                            - 80
+                                            - 75
+                                            - 171
+                                            - 195
+                                            - 200
+                                            - 169
+                                            - 36
+                                            - 151
+                                            - 107
+                                            - 180
+                                      Value:
+                                        $Type: CustomWidgets$WidgetValue
+                                        Action:
+                                            $Type: Forms$NoAction
+                                            DisabledDuringExecution: true
+                                        AttributeRef: null
+                                        DataSource: null
+                                        EntityRef: null
+                                        Expression: ""
+                                        Form: ""
+                                        Icon: null
+                                        Microflow: ""
+                                        Nanoflow: ""
+                                        Objects: []
+                                        PrimitiveValue: none
+                                        Selection: None
+                                        SourceVariable: null
+                                        TextTemplate: null
+                                        TranslatableValue: null
+                                        TypePointer:
+                                            subtype: 0
+                                            data:
+                                                - 24
+                                                - 207
+                                                - 212
+                                                - 37
+                                                - 93
+                                                - 32
+                                                - 20
+                                                - 64
+                                                - 156
+                                                - 146
+                                                - 42
+                                                - 158
+                                                - 34
+                                                - 112
+                                                - 70
+                                                - 41
+                                        Widgets: []
+                                        XPathConstraint: ""
+                                TypePointer:
+                                    subtype: 0
+                                    data:
+                                        - 34
+                                        - 210
+                                        - 48
+                                        - 42
+                                        - 234
+                                        - 106
+                                        - 132
+                                        - 66
+                                        - 169
+                                        - 250
+                                        - 33
+                                        - 254
+                                        - 186
+                                        - 109
+                                        - 136
+                                        - 142
+                              TabIndex: 0
+                  ConditionalVisibilitySettings: null
+                  HorizontalAlignment: None
+                  SpacingBetweenColumns: true
+                  VerticalAlignment: None
+              TabIndex: 0
+              Width: FullWidth
+    Form: Atlas_Core.PopupLayout
+MarkAsUsed: false
+Name: Product_NewEdit
+Parameters:
+    - $Type: Forms$PageParameter
+      Name: Product
+      ParameterType:
+        $Type: DataTypes$ObjectType
+        Entity: Rick_TESTING_MxLint.Product
+PopupCloseAction: ""
+PopupHeight: 0
+PopupResizable: true
+PopupWidth: 0
+Title:
+    $Type: Texts$Text
+    Items:
+        - $Type: Texts$Translation
+          LanguageCode: en_US
+          Text: Edit Product
+Url: ""
+Variables: []
